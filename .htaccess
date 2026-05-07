@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# Disable MultiViews to prevent /blog from incorrectly matching blogs.php
+Options -MultiViews -Indexes
+
+# Redirect old blog posts to new blog location
+Redirect 301 /what-is-the-best-way-to-take-moringa-for-diabetes/ /blog/what-is-the-best-way-to-take-moringa-for-diabetes.php
+Redirect 301 /will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts/ /blog/will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts.php
+Redirect 301 /homeopathic-remedy-for-headache-natural-relief-guide/ /blog/homeopathic-remedy-for-headache-natural-relief-guide.php
+Redirect 301 /pair-me-jhunjhuni-hona/ /blog/pair-me-jhunjhuni-hona.php
+Redirect 301 /gas-se-peeth-dard-kyun-hota-hai/ /blog/gas-se-peeth-dard-kyun-hota-hai.php
+Redirect 301 /pair-me-khujli-hona/ /blog/pair-me-khujli-hona.php
+Redirect 301 /lungs-me-dard-hona/ /blog/lungs-me-dard-hona.php
+Redirect 301 /pair-me-jalan/ /blog/pair-me-jalan.php
+Redirect 301 /bp-high-hone-par-kya-kare/ /blog/bp-high-hone-par-kya-kare.php
+Redirect 301 /hiv-symptoms-in-women/ /blog/hiv-symptoms-in-women.php
+Redirect 301 /pair-me-sujan/ /blog/pair-me-sujan.php
+
+# Redirect old IVF page to new service page
+Redirect 301 /departments/ivf/ /ivf-treatment-in-ambikapur.php
+
+# Remove .php extension, but ignore blog directory
+RewriteCond %{REQUEST_URI} !^/blog/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
