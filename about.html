@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Sankalp Hospital - Best Hospital In Ambikapur</title>
+  <meta name="description" content="Learn about Sankalp Hospital's vision, mission, and commitment to providing world-class healthcare in Ambikapur, Chhattisgarh.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .page-hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;padding:80px 0 100px;text-align:center;position:relative;overflow:hidden}
+    .page-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(255,255,255,.08) 0,transparent 30%),radial-gradient(circle at 80% 70%,rgba(255,255,255,.06) 0,transparent 30%);pointer-events:none}
+    .page-hero .breadcrumbs{position:relative;z-index:1;color:rgba(255,255,255,.85);font-size:14px;margin-bottom:14px}
+    .page-hero .breadcrumbs a{color:#fff;font-weight:600}
+    .page-hero h1{color:#fff;font-size:42px;font-weight:700;position:relative;z-index:1}
+    .page-hero p{position:relative;z-index:1;max-width:700px;margin:14px auto 0;font-size:18px;opacity:.9}
+    .nav-tabs-custom{background:#fff;border-radius:10px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,.06);margin-bottom:40px}
+    .nav-tabs-custom .nav-tabs{border:none;display:flex;flex-wrap:wrap;gap:8px}
+    .nav-tabs-custom .nav-tabs .nav-link{border:none;border-radius:8px;padding:12px 24px;color:var(--dark);font-weight:600;transition:all .25s;background:var(--bg-soft)}
+    .nav-tabs-custom .nav-tabs .nav-link:hover{background:var(--primary);color:#fff}
+    .nav-tabs-custom .nav-tabs .nav-link.active{background:var(--primary);color:#fff}
+    .tab-content-custom{padding:30px 0}
+    .vision-mission-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+    .vm-card{background:#fff;border-radius:12px;padding:32px;box-shadow:0 4px 16px rgba(0,0,0,.06);border-top:4px solid var(--primary)}
+    .vm-card:nth-child(2){border-top-color:var(--accent)}
+    .vm-card i{font-size:42px;color:var(--primary);margin-bottom:18px}
+    .vm-card:nth-child(2) i{color:var(--accent)}
+    .vm-card h3{font-size:24px;margin-bottom:14px}
+    .vm-card p{color:#555;line-height:1.8}
+    .director-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+    .director-card .director-img{width:100%;max-width:280px;aspect-ratio:1;object-fit:cover}
+    .director-card .director-img-placeholder{width:100%;max-width:280px;aspect-ratio:1;background:linear-gradient(135deg,var(--primary),var(--primary-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-size:80px}
+    .director-message{font-style:italic;font-size:17px;color:#555;line-height:1.9;border-left:4px solid var(--primary);padding-left:24px;margin:24px 0}
+    .achievements-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+    .achievement-item{background:#fff;border-radius:10px;padding:28px 20px;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.06);transition:transform .3s}
+    .achievement-item:hover{transform:translateY(-5px)}
+    .achievement-item i{font-size:36px;color:var(--primary);margin-bottom:12px}
+    .achievement-item h4{font-size:32px;font-weight:700;color:var(--dark);margin-bottom:6px}
+    .achievement-item p{font-size:14px;color:#666;margin:0}
+    .care-values{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+    .care-values li{display:flex;align-items:flex-start;gap:14px;padding:18px;background:#fff;border-radius:8px;border-left:3px solid var(--primary)}
+    .care-values li i{color:var(--accent);font-size:22px;margin-top:2px}
+    .care-values li strong{display:block;color:var(--dark);margin-bottom:4px}
+    .care-values li span{color:#666;font-size:14px}
+    .facilities-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+    .facility-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 3px 14px rgba(0,0,0,.06)}
+    .facility-card img{width:100%;aspect-ratio:16/10;object-fit:cover}
+    .facility-card-body{padding:20px}
+    .facility-card-body h4{font-size:18px;margin-bottom:8px}
+    .facility-card-body p{color:#666;font-size:14px;margin:0}
+    @media (max-width:767px){
+      .page-hero{padding:60px 0 80px}
+      .page-hero h1{font-size:28px}
+      .nav-tabs-custom .nav-tabs .nav-link{padding:10px 16px;font-size:13px}
+      .director-card .director-img,.director-card .director-img-placeholder{max-width:200px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="top-bar-info">
+        <a href="mailto:info.sankalpslms@gmail.com"><i class="fas fa-envelope"></i> info.sankalpslms@gmail.com</a>
+        <a href="tel:+919584889068"><i class="fas fa-phone-alt"></i> +91 9584 889068</a>
+      </div>
+      <div class="top-bar-actions">
+        <a href="#" class="btn-pkg"><i class="fas fa-heartbeat"></i> HEALTHCARE PACKAGES</a>
+        <a href="https://www.facebook.com/sankalphospitals/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sankalphospitals/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header sticky-top">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-lg-3 col-6">
+        <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Sankalp Hospital" class="brand-logo"></a>
+      </div>
+      <div class="col-lg-9 col-6 d-flex justify-content-end align-items-center gap-3">
+        <div class="header-info d-none d-xl-flex align-items-center">
+          <img src="assets/img/emergency-247.png" alt="24/7" class="emergency-img">
+          <div>
+            <small>Contact Number</small>
+            <p>+91 9584 889068</p>
+          </div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary d-none d-md-inline-flex"><i class="far fa-calendar"></i> &nbsp;BOOK AN APPOINTMENT</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-nav d-none d-lg-block">
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="active has-sub"><a href="about.html">About <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="about.html#vision">Vision Mission</a></li>
+            <li><a href="about.html#director">Director's Message</a></li>
+            <li><a href="about.html#achievements">Achievements</a></li>
+            <li><a href="about.html#care">Patients Care</a></li>
+            <li><a href="departments.html">Services &amp; Facilities</a></li>
+            <li><a href="faq.html">FAQ's</a></li>
+            <li><a href="myths-facts.html">Myths &amp; Facts</a></li>
+            <li><a href="ivf.html">IUI – IVF – ICSI</a></li>
+            <li><a href="glossary.html">Glossary Of Terms</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="departments.html">Departments <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu sub-menu-wide">
+            <li><a href="departments.html#ent">ENT</a></li>
+            <li><a href="departments.html#urology">Urology</a></li>
+            <li><a href="departments.html#ophthalmology">Ophthalmology</a></li>
+            <li><a href="departments.html#psychiatry">Psychiatry</a></li>
+            <li><a href="departments.html#pediatrics">Pediatrics</a></li>
+            <li><a href="departments.html#dialysis">Dialysis</a></li>
+            <li><a href="departments.html#gynecology">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="departments.html#orthopaedics">Orthopaedics Surgery</a></li>
+            <li><a href="ivf.html">Assisted Fertility (IVF/ICSI/IUI)</a></li>
+            <li><a href="departments.html#surgery">General &amp; Laparoscopic Surgery</a></li>
+            <li><a href="departments.html#emergency">Emergency And Trauma Services</a></li>
+            <li><a href="departments.html#chemotherapy">Chemotherapy Services</a></li>
+            <li><a href="departments.html#anesthesia">Department of Anesthesia</a></li>
+            <li><a href="departments.html#onco">Onco Surgery</a></li>
+            <li><a href="departments.html#oral">Oral and Maxillofacial Surgery</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#doctors">Our Experts</a></li>
+        <li class="has-sub"><a href="gallery.html">Gallery <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="gallery.html">Image Gallery</a></li>
+            <li><a href="video-gallery.html">Video Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="empanelments.html">Empanelments</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE OFFCANVAS NAV -->
+<div class="offcanvas offcanvas-start" id="mobileNav">
+  <div class="offcanvas-header">
+    <img src="assets/img/logo.png" alt="" style="height:40px">
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="index.html#doctors">Our Experts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="empanelments.html">Empanelments</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+    <a href="index.html#appointment" class="btn btn-primary w-100 mt-3" data-bs-dismiss="offcanvas">Book An Appointment</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> About Us</p>
+    <h1>About Sankalp Hospital</h1>
+    <p>Bringing world-class healthcare to Ambikapur and surrounding regions since 2008</p>
+  </div>
+</section>
+
+<!-- ABOUT CONTENT -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-8">
+        <div class="nav-tabs-custom">
+          <ul class="nav nav-tabs" id="aboutTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab">Vision & Mission</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="director-tab" data-bs-toggle="tab" data-bs-target="#director" type="button" role="tab">Director's Message</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="achievements-tab" data-bs-toggle="tab" data-bs-target="#achievements" type="button" role="tab">Achievements</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="care-tab" data-bs-toggle="tab" data-bs-target="#care" type="button" role="tab">Patient Care</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content tab-content-custom" id="aboutTabContent">
+          <!-- VISION & MISSION -->
+          <div class="tab-pane fade show active" id="vision" role="tabpanel">
+            <div class="vision-mission-grid">
+              <div class="vm-card">
+                <i class="fas fa-eye"></i>
+                <h3>Our Vision</h3>
+                <p>To bring world-class healthcare facilities for the people of Surguja and its neighbouring areas in Chhattisgarh state. To adapt a single standard of care for all rich and poor alike. To spread knowledge and the concept of personalized care to distant parts of this country.</p>
+              </div>
+              <div class="vm-card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Our Mission</h3>
+                <p>To provide accessible, affordable, and quality healthcare to every individual who walks through our doors. We are committed to clinical excellence, patient safety, and compassionate care. Our mission is to make super-specialty medical services available in rural Chhattisgarh.</p>
+              </div>
+            </div>
+            <div class="mt-5">
+              <h4 class="mb-4">Our Core Values</h4>
+              <ul class="care-values">
+                <li><i class="fas fa-heart"></i><div><strong>Compassion</strong><span>Treating every patient with empathy and dignity</span></div></li>
+                <li><i class="fas fa-award"></i><div><strong>Excellence</strong><span>Striving for the highest standards in clinical care</span></div></li>
+                <li><i class="fas fa-hand-holding-medical"></i><div><strong>Integrity</strong><span>Honest and transparent healthcare practices</span></div></li>
+                <li><i class="fas fa-users"></i><div><strong>Accessibility</strong><span>Healthcare available to all, regardless of background</span></div></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DIRECTOR'S MESSAGE -->
+          <div class="tab-pane fade" id="director" role="tabpanel">
+            <div class="director-card p-4">
+              <div class="d-flex flex-wrap gap-4 align-items-center">
+                <div class="director-img-placeholder"><i class="fas fa-user"></i></div>
+                <div class="flex-grow-1">
+                  <h3 class="mb-1">Dr. Sanjay Goyal</h3>
+                  <p class="text-muted mb-3">Founder & Director, Sankalp Hospital</p>
+                  <p class="director-message">"Healthcare is not a privilege for the few but a fundamental right of every individual. At Sankalp Hospital, we have worked tirelessly to bring the best medical facilities to Ambikapur and surrounding regions. Our journey from a modest nursing home to a multi-specialty super-care hospital reflects our commitment to excellence and our passion for serving the community."</p>
+                  <p>Over the years, we have introduced advanced technologies, recruited highly skilled specialists, and created an environment where patients feel safe and cared for. Our team believes in the philosophy that every patient deserves the best possible care, and we continue to strive for clinical excellence every single day.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ACHIEVEMENTS -->
+          <div class="tab-pane fade" id="achievements" role="tabpanel">
+            <h4 class="mb-4">Our Milestones</h4>
+            <div class="achievements-grid mb-5">
+              <div class="achievement-item">
+                <i class="fas fa-baby"></i>
+                <h4>1st</h4>
+                <p>Test Tube Baby in Surguja District</p>
+              </div>
+              <div class="achievement-item">
+                <i class="fas fa-hospital"></i>
+                <h4>15+</h4>
+                <p>Medical Specialties</p>
+              </div>
+              <div class="achievement-item">
+                <i class="fas fa-user-md"></i>
+                <h4>50+</h4>
+                <p>Expert Doctors</p>
+              </div>
+              <div class="achievement-item">
+                <i class="fas fa-procedures"></i>
+                <h4>100+</h4>
+                <p>Beds & Modern Infrastructure</p>
+              </div>
+              <div class="achievement-item">
+                <i class="fas fa-calendar-check"></i>
+                <h4>15+</h4>
+                <p>Years of Service</p>
+              </div>
+              <div class="achievement-item">
+                <i class="fas fa-smile"></i>
+                <h4>1L+</h4>
+                <p>Happy Patients</p>
+              </div>
+            </div>
+            <h4 class="mb-4">Key Accomplishments</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i> First IVF center in Surguja district with successful pregnancies</li>
+              <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i> Advanced cataract surgery with state-of-the-art equipment</li>
+              <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i> 24/7 Emergency and Trauma care with dedicated team</li>
+              <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i> Fully equipped ICU and NICU facilities</li>
+              <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i> Empaneled with major insurance companies and TPAs</li>
+            </ul>
+          </div>
+
+          <!-- PATIENT CARE -->
+          <div class="tab-pane fade" id="care" role="tabpanel">
+            <h4 class="mb-4">Patient-Centric Approach</h4>
+            <p class="mb-4">At Sankalp Hospital, patient care is at the heart of everything we do. We have implemented several initiatives to ensure comfort, safety, and satisfaction for every patient who walks through our doors.</p>
+            <div class="facilities-grid">
+              <div class="facility-card">
+                <div style="height:180px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px"><i class="fas fa-stethoscope"></i></div>
+                <div class="facility-card-body">
+                  <h4>Qualified Consultants</h4>
+                  <p>Experienced specialists available round the clock for consultations</p>
+                </div>
+              </div>
+              <div class="facility-card">
+                <div style="height:180px;background:linear-gradient(135deg,var(--accent),#c67b30);display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px"><i class="fas fa-nurse"></i></div>
+                <div class="facility-card-body">
+                  <h4>Dedicated Nursing Staff</h4>
+                  <p>Compassionate and trained nursing team for patient comfort</p>
+                </div>
+              </div>
+              <div class="facility-card">
+                <div style="height:180px;background:linear-gradient(135deg,var(--dark),#1a2629);display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px"><i class="fas fa-ambulance"></i></div>
+                <div class="facility-card-body">
+                  <h4>Emergency Services</h4>
+                  <p>24/7 emergency response with fully equipped ambulance service</p>
+                </div>
+              </div>
+              <div class="facility-card">
+                <div style="height:180px;background:linear-gradient(135deg,var(--primary-light),var(--primary));display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px"><i class="fas fa-pills"></i></div>
+                <div class="facility-card-body">
+                  <h4>In-house Pharmacy</h4>
+                  <p>Fully stocked pharmacy within the hospital campus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body p-4">
+            <h4 class="mb-3">Quick Contact</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3 d-flex align-items-start"><i class="fas fa-phone-alt text-primary me-3 mt-1"></i><div><strong>Phone</strong><br>+91 9584 889068</div></li>
+              <li class="mb-3 d-flex align-items-start"><i class="fas fa-envelope text-primary me-3 mt-1"></i><div><strong>Email</strong><br>info.sankalpslms@gmail.com</div></li>
+              <li class="mb-3 d-flex align-items-start"><i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i><div><strong>Address</strong><br>Near Distt. Hospital, Manipur, Ambikapur, CG 497001</div></li>
+            </ul>
+            <a href="index.html#appointment" class="btn btn-primary w-100 mt-2"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm" style="background:var(--primary)">
+          <div class="card-body p-4 text-white">
+            <h4 class="text-white mb-3">Emergency?</h4>
+            <p>Don't wait. Our 24/7 emergency services are always ready to help.</p>
+            <a href="tel:+919584889068" class="btn btn-light w-100"><i class="fas fa-phone-alt me-2"></i>Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="site-footer">
+  <div class="footer-main py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <img src="assets/img/logo-white.png" alt="Sankalp Hospital" class="footer-logo mb-3">
+          <h3>About</h3>
+          <p>Sankalp Hospital is a leading healthcare facility in Ambikapur, Chhattisgarh, dedicated to providing top-quality medical services. Equipped with advanced technology and a team of skilled healthcare professionals, we ensure comprehensive care for all patients.</p>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <h3>Departments</h3>
+          <ul class="footer-list">
+            <li><a href="departments.html">Ophthalmology</a></li>
+            <li><a href="ivf.html">Assisted Fertility</a></li>
+            <li><a href="departments.html#gynecology">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="departments.html#surgery">General &amp; Laparoscopic Surgery</a></li>
+            <li><a href="departments.html#orthopaedics">Orthopaedics</a></li>
+            <li><a href="departments.html#pediatrics">Pediatrics</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="ivf.html">IVF / ICSI / IUI</a></li>
+            <li><a href="departments.html">Critical Pregnancy Care</a></li>
+            <li><a href="departments.html#ophthalmology">Cataract Surgery</a></li>
+            <li><a href="departments.html#ophthalmology">Diabetic Retinopathy</a></li>
+            <li><a href="departments.html#emergency">Emergency and Trauma Services</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Reach Us At</h3>
+          <ul class="footer-list">
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+919584889068">+91-958 488 9068</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info.sankalpslms@gmail.com">info.sankalpslms@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Near Distt. Hospital, Manipur, Ambikapur Chhattisgarh (CG) 497001</li>
+          </ul>
+          <div class="social-icons mt-3">
+            <a href="https://www.facebook.com/sankalphospitals/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sankalphospitals/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center text-center">
+        <p class="mb-0">© Copyright <span id="year"></span> All Rights Reserved <a href="index.html"><strong>Sankalp Hospital</strong></a></p>
+        <p class="mb-0">Designed by <a href="https://brandingpioneers.com/" target="_blank"><strong>Brandingpioneers</strong></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+919584889068" class="float-call" aria-label="Call us"><i class="fas fa-phone-alt"></i></a>
+<a href="https://wa.me/919584889068" target="_blank" class="float-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Sankalp Hospital - Frequently Asked Questions</title>
+  <meta name="description" content="Find answers to frequently asked questions about Sankalp Hospital services, treatments, appointments, and facilities.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .page-hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;padding:80px 0 100px;text-align:center;position:relative;overflow:hidden}
+    .page-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(255,255,255,.08) 0,transparent 30%),radial-gradient(circle at 80% 70%,rgba(255,255,255,.06) 0,transparent 30%);pointer-events:none}
+    .page-hero .breadcrumbs{position:relative;z-index:1;color:rgba(255,255,255,.85);font-size:14px;margin-bottom:14px}
+    .page-hero .breadcrumbs a{color:#fff;font-weight:600}
+    .page-hero h1{color:#fff;font-size:42px;font-weight:700;position:relative;z-index:1}
+    .page-hero p{position:relative;z-index:1;max-width:700px;margin:14px auto 0;font-size:18px;opacity:.9}
+    .faq-category{background:#fff;border-radius:12px;padding:24px;margin-bottom:24px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+    .faq-category h3{font-size:20px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+    .faq-category h3 i{color:var(--primary)}
+    .faq-item{background:var(--bg-soft);border-radius:8px;margin-bottom:12px;overflow:hidden}
+    .faq-question{padding:18px 20px;cursor:pointer;font-weight:600;color:var(--dark);display:flex;justify-content:space-between;align-items:center;transition:background .25s}
+    .faq-question:hover{background:#e0f0ee}
+    .faq-question i{color:var(--primary);transition:transform .3s}
+    .faq-item.active .faq-question i{transform:rotate(180deg)}
+    .faq-answer{padding:0 20px;max-height:0;overflow:hidden;transition:all .3s}
+    .faq-item.active .faq-answer{padding:0 20px 18px;max-height:500px}
+    .faq-answer p{color:#666;line-height:1.7}
+    .search-box{background:#fff;border-radius:12px;padding:24px;margin-bottom:40px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+    .search-box input{padding:14px 20px;border:2px solid #e3e9ee;border-radius:8px;font-size:16px;width:100%}
+    .search-box input:focus{border-color:var(--primary);outline:none}
+    @media (max-width:767px){
+      .page-hero{padding:60px 0 80px}
+      .page-hero h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="top-bar-info">
+        <a href="mailto:info.sankalpslms@gmail.com"><i class="fas fa-envelope"></i> info.sankalpslms@gmail.com</a>
+        <a href="tel:+919584889068"><i class="fas fa-phone-alt"></i> +91 9584 889068</a>
+      </div>
+      <div class="top-bar-actions">
+        <a href="#" class="btn-pkg"><i class="fas fa-heartbeat"></i> HEALTHCARE PACKAGES</a>
+        <a href="https://www.facebook.com/sankalphospitals/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sankalphospitals/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header sticky-top">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-lg-3 col-6">
+        <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Sankalp Hospital" class="brand-logo"></a>
+      </div>
+      <div class="col-lg-9 col-6 d-flex justify-content-end align-items-center gap-3">
+        <div class="header-info d-none d-xl-flex align-items-center">
+          <img src="assets/img/emergency-247.png" alt="24/7" class="emergency-img">
+          <div>
+            <small>Contact Number</small>
+            <p>+91 9584 889068</p>
+          </div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary d-none d-md-inline-flex"><i class="far fa-calendar"></i> &nbsp;BOOK AN APPOINTMENT</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-nav d-none d-lg-block">
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="active has-sub"><a href="about.html">About <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="about.html#vision">Vision Mission</a></li>
+            <li><a href="about.html#director">Director's Message</a></li>
+            <li><a href="about.html#achievements">Achievements</a></li>
+            <li><a href="about.html#care">Patients Care</a></li>
+            <li><a href="departments.html">Services &amp; Facilities</a></li>
+            <li><a href="faq.html">FAQ's</a></li>
+            <li><a href="myths-facts.html">Myths &amp; Facts</a></li>
+            <li><a href="ivf.html">IUI – IVF – ICSI</a></li>
+            <li><a href="glossary.html">Glossary Of Terms</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="departments.html">Departments <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu sub-menu-wide">
+            <li><a href="departments.html#ophthalmology">Ophthalmology</a></li>
+            <li><a href="departments.html#gynecology">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="ivf.html">Assisted Fertility (IVF/ICSI/IUI)</a></li>
+            <li><a href="departments.html#surgery">General &amp; Laparoscopic Surgery</a></li>
+            <li><a href="departments.html#emergency">Emergency And Trauma Services</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#doctors">Our Experts</a></li>
+        <li class="has-sub"><a href="gallery.html">Gallery <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="gallery.html">Image Gallery</a></li>
+            <li><a href="video-gallery.html">Video Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="empanelments.html">Empanelments</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE OFFCANVAS NAV -->
+<div class="offcanvas offcanvas-start" id="mobileNav">
+  <div class="offcanvas-header">
+    <img src="assets/img/logo.png" alt="" style="height:40px">
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="index.html#doctors">Our Experts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="empanelments.html">Empanelments</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+    <a href="index.html#appointment" class="btn btn-primary w-100 mt-3" data-bs-dismiss="offcanvas">Book An Appointment</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> About <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> FAQ</p>
+    <h1>Frequently Asked Questions</h1>
+    <p>Find answers to common questions about our hospital services and treatments</p>
+  </div>
+</section>
+
+<!-- FAQ CONTENT -->
+<section class="py-5">
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="faqSearch" placeholder="Search for a question..." onkeyup="filterFAQs()">
+    </div>
+
+    <!-- Appointments -->
+    <div class="faq-category">
+      <h3><i class="fas fa-calendar-check"></i> Appointments & OPD</h3>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How can I book an appointment? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>You can book an appointment through our website by filling out the appointment form, calling us at +91 9584 889068, or visiting the hospital directly. For online booking, fill the form and our coordinator will call you to confirm the slot.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What are the OPD timings? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>General OPD runs from 9:00 AM to 6:00 PM. However, different departments may have varying timings. Emergency services are available 24/7. Please call to confirm the specific department timing you need.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do I need a referral to see a specialist? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>No referral is required. You can directly book an appointment with any specialist based on your health concern. Our staff will help guide you to the right department if needed.</p></div>
+      </div>
+    </div>
+
+    <!-- Emergency -->
+    <div class="faq-category">
+      <h3><i class="fas fa-ambulance"></i> Emergency Services</h3>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is emergency service available 24/7? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>Yes, our Emergency and Trauma Centre operates 24 hours a day, 7 days a week with a dedicated team of emergency physicians and staff. Fully equipped ambulances are also available round the clock.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How quickly can I get emergency care? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>Our emergency team is trained to provide immediate care. Upon arrival, patients are assessed and treated based on the severity of their condition. Life-saving interventions are initiated within minutes.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do you have ambulance services? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>Yes, we have fully equipped ambulances available 24/7. For emergency pickup, call +91 9584 889068. Our ambulances are equipped with life-support systems and trained paramedics.</p></div>
+      </div>
+    </div>
+
+    <!-- Billing & Insurance -->
+    <div class="faq-category">
+      <h3><i class="fas fa-file-invoice-dollar"></i> Billing & Insurance</h3>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What insurance companies do you accept? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>We are empaneled with major insurance companies including Star Health, HDFC ERGO, ICICI Lombard, Bajaj Allianz, and many others. We also work with multiple TPAs for cashless treatment. Please check our Empanelments page or call to confirm if your insurer is covered.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How does cashless treatment work? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>If your insurance company/TPA is empaneled with us, you can avail cashless treatment. Get pre-authorization from your insurance company, bring your policy documents, and our TPA desk will assist with the process.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What payment methods are accepted? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>We accept cash, credit/debit cards, UPI payments, net banking, and all major payment apps. For larger treatments, we also offer payment plans in coordination with our billing department.</p></div>
+      </div>
+    </div>
+
+    <!-- Facilities -->
+    <div class="faq-category">
+      <h3><i class="fas fa-hospital"></i> Facilities & Services</h3>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do you have ICU facilities? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>Yes, we have fully equipped ICU with modern life-support systems, dedicated nursing staff, and round-the-clock monitoring by intensivists. We also have NICU for neonatal care.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is there a pharmacy in the hospital? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>Yes, we have a fully stocked in-house pharmacy operating 24/7. All essential medicines, surgical supplies, and implants are available within the hospital campus.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I get a second opinion? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>Absolutely. We encourage patients to seek second opinions. Our specialists will review your existing reports and provide an independent assessment. You can book a consultation specifically for a second opinion.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do you provide lodging facilities for attendants? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>While we don't have dedicated attendant lodging, we have comfortable waiting areas. For patients from outstation, our staff can suggest nearby hotels and guest houses that offer discounted rates for patient families.</p></div>
+      </div>
+    </div>
+
+    <!-- IVF Related -->
+    <div class="faq-category">
+      <h3><i class="fas fa-dna"></i> IVF & Fertility</h3>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What fertility treatments are available? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>We offer complete fertility solutions including IUI (Intra-Uterine Insemination), IVF (In-Vitro Fertilization), and ICSI (Intra-Cytoplasmic Sperm Injection). As the first IVF center in Surguja district, we have helped many couples achieve parenthood.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What is the success rate of IVF? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>Our IVF success rate is 60-70% per cycle. The actual success depends on various factors including age, cause of infertility, and individual health conditions. Our doctors provide detailed assessment during consultation.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How much does IVF cost? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-answer"><p>IVF costs start from ₹1,50,000. IUI is more affordable starting from ₹25,000. The exact cost depends on individual treatment protocols. We offer competitive pricing and can discuss payment options during consultation.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center">
+      <h3 class="mb-3">Still have questions?</h3>
+      <p class="text-muted mb-4">Our team is here to help. Contact us and we'll get back to you promptly.</p>
+      <a href="tel:+919584889068" class="btn btn-primary me-3"><i class="fas fa-phone-alt me-2"></i>Call Us</a>
+      <a href="mailto:info.sankalpslms@gmail.com" class="btn btn-outline-primary"><i class="fas fa-envelope me-2"></i>Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="site-footer">
+  <div class="footer-main py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <img src="assets/img/logo-white.png" alt="Sankalp Hospital" class="footer-logo mb-3">
+          <h3>About</h3>
+          <p>Sankalp Hospital is a leading healthcare facility in Ambikapur, Chhattisgarh, dedicated to providing top-quality medical services.</p>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <h3>Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blogs.html">Health Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Services</h3>
+          <ul class="footer-list">
+            <li><a href="ivf.html">IVF Treatment</a></li>
+            <li><a href="departments.html#emergency">24/7 Emergency</a></li>
+            <li><a href="departments.html#ophthalmology">Cataract Surgery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Reach Us At</h3>
+          <ul class="footer-list">
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+919584889068">+91-958 488 9068</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info.sankalpslms@gmail.com">info.sankalpslms@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Near Distt. Hospital, Manipur, Ambikapur, CG 497001</li>
+          </ul>
+          <div class="social-icons mt-3">
+            <a href="https://www.facebook.com/sankalphospitals/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sankalphospitals/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center text-center">
+        <p class="mb-0">© Copyright <span id="year"></span> All Rights Reserved <a href="index.html"><strong>Sankalp Hospital</strong></a></p>
+        <p class="mb-0">Designed by <a href="https://brandingpioneers.com/" target="_blank"><strong>Brandingpioneers</strong></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+919584889068" class="float-call" aria-label="Call us"><i class="fas fa-phone-alt"></i></a>
+<a href="https://wa.me/919584889068" target="_blank" class="float-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    document.querySelectorAll('.faq-item').forEach(i => {
+      if (i !== item) i.classList.remove('active');
+    });
+    item.classList.toggle('active');
+  }
+  function filterFAQs() {
+    const search = document.getElementById('faqSearch').value.toLowerCase();
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = text.includes(search) ? '' : 'none';
+    });
+  }
+</script>
+</body>
+</html>

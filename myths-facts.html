@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myths & Facts | Sankalp Hospital - Health Education</title>
+  <meta name="description" content="Debunking common health myths with scientific facts. Health education by Sankalp Hospital doctors.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .page-hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;padding:80px 0 100px;text-align:center;position:relative;overflow:hidden}
+    .page-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(255,255,255,.08) 0,transparent 30%),radial-gradient(circle at 80% 70%,rgba(255,255,255,.06) 0,transparent 30%);pointer-events:none}
+    .page-hero .breadcrumbs{position:relative;z-index:1;color:rgba(255,255,255,.85);font-size:14px;margin-bottom:14px}
+    .page-hero .breadcrumbs a{color:#fff;font-weight:600}
+    .page-hero h1{color:#fff;font-size:42px;font-weight:700;position:relative;z-index:1}
+    .page-hero p{position:relative;z-index:1;max-width:700px;margin:14px auto 0;font-size:18px;opacity:.9}
+    .myth-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.06);margin-bottom:24px}
+    .myth-header{display:flex;gap:20px;padding:24px;align-items:flex-start}
+    .myth-icon{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
+    .myth-icon.myth{background:#fde8e8;color:#c00}
+    .myth-icon.fact{background:#e8f5e9;color:#2e7d32}
+    .myth-content{flex-grow:1}
+    .myth-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+    .myth-label.myth-label{color:#c00}
+    .myth-label.fact-label{color:#2e7d32}
+    .myth-content h3{font-size:20px;margin-bottom:10px}
+    .myth-content p{color:#666;line-height:1.7}
+    .myth-expert{background:var(--bg-soft);padding:16px 24px;border-top:1px solid #eee;display:flex;align-items:center;gap:12px}
+    .myth-expert i{color:var(--primary);font-size:20px}
+    .myth-expert span{font-size:14px;color:var(--dark);font-weight:600}
+    .section-badge{display:inline-block;background:var(--accent);color:#fff;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:16px}
+    @media (max-width:767px){
+      .page-hero{padding:60px 0 80px}
+      .page-hero h1{font-size:28px}
+      .myth-header{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="top-bar-info">
+        <a href="mailto:info.sankalpslms@gmail.com"><i class="fas fa-envelope"></i> info.sankalpslms@gmail.com</a>
+        <a href="tel:+919584889068"><i class="fas fa-phone-alt"></i> +91 9584 889068</a>
+      </div>
+      <div class="top-bar-actions">
+        <a href="#" class="btn-pkg"><i class="fas fa-heartbeat"></i> HEALTHCARE PACKAGES</a>
+        <a href="https://www.facebook.com/sankalphospitals/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sankalphospitals/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header sticky-top">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-lg-3 col-6">
+        <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Sankalp Hospital" class="brand-logo"></a>
+      </div>
+      <div class="col-lg-9 col-6 d-flex justify-content-end align-items-center gap-3">
+        <div class="header-info d-none d-xl-flex align-items-center">
+          <img src="assets/img/emergency-247.png" alt="24/7" class="emergency-img">
+          <div>
+            <small>Contact Number</small>
+            <p>+91 9584 889068</p>
+          </div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary d-none d-md-inline-flex"><i class="far fa-calendar"></i> &nbsp;BOOK AN APPOINTMENT</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-nav d-none d-lg-block">
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="active has-sub"><a href="about.html">About <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="about.html#vision">Vision Mission</a></li>
+            <li><a href="about.html#director">Director's Message</a></li>
+            <li><a href="about.html#achievements">Achievements</a></li>
+            <li><a href="about.html#care">Patients Care</a></li>
+            <li><a href="departments.html">Services &amp; Facilities</a></li>
+            <li><a href="faq.html">FAQ's</a></li>
+            <li><a href="myths-facts.html">Myths &amp; Facts</a></li>
+            <li><a href="ivf.html">IUI – IVF – ICSI</a></li>
+            <li><a href="glossary.html">Glossary Of Terms</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="departments.html">Departments <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu sub-menu-wide">
+            <li><a href="departments.html#ophthalmology">Ophthalmology</a></li>
+            <li><a href="departments.html#gynecology">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="ivf.html">Assisted Fertility (IVF/ICSI/IUI)</a></li>
+            <li><a href="departments.html#surgery">General &amp; Laparoscopic Surgery</a></li>
+            <li><a href="departments.html#emergency">Emergency And Trauma Services</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#doctors">Our Experts</a></li>
+        <li class="has-sub"><a href="gallery.html">Gallery <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="gallery.html">Image Gallery</a></li>
+            <li><a href="video-gallery.html">Video Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="empanelments.html">Empanelments</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE OFFCANVAS NAV -->
+<div class="offcanvas offcanvas-start" id="mobileNav">
+  <div class="offcanvas-header">
+    <img src="assets/img/logo.png" alt="" style="height:40px">
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="index.html#doctors">Our Experts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="empanelments.html">Empanelments</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+    <a href="index.html#appointment" class="btn btn-primary w-100 mt-3" data-bs-dismiss="offcanvas">Book An Appointment</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> About <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Myths & Facts</p>
+    <h1>Health Myths vs Facts</h1>
+    <p>Separating medical facts from fiction for better health decisions</p>
+  </div>
+</section>
+
+<!-- MYTHS CONTENT -->
+<section class="py-5">
+  <div class="container">
+
+    <!-- Fertility/IVF Myths -->
+    <span class="section-badge"><i class="fas fa-dna me-2"></i>Fertility & IVF</span>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon myth"><i class="fas fa-times"></i></div>
+            <div class="myth-content">
+              <span class="myth-label myth-label">Myth</span>
+              <h3>IVF babies are not normal</h3>
+              <p>IVF-conceived children are just as healthy as naturally conceived children. There is no increased risk of birth defects or developmental issues.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Lata Goyal, Fertility Specialist</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon myth"><i class="fas fa-times"></i></div>
+            <div class="myth-content">
+              <span class="myth-label myth-label">Myth</span>
+              <h3>IVF always results in twins/triplets</h3>
+              <p>Not true. While multiple pregnancies can occur, modern IVF practice aims to transfer a single embryo to avoid twin pregnancies and associated risks.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Lata Goyal, Fertility Specialist</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon fact"><i class="fas fa-check"></i></div>
+            <div class="myth-content">
+              <span class="myth-label fact-label">Fact</span>
+              <h3>IVF can work after failed attempts</h3>
+              <p>Success rates remain consistent across multiple cycles for most patients. Many couples achieve pregnancy after several attempts.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Lata Goyal, Fertility Specialist</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon fact"><i class="fas fa-check"></i></div>
+            <div class="myth-content">
+              <span class="myth-label fact-label">Fact</span>
+              <h3>Age significantly affects IVF success</h3>
+              <p>Female age is the most important factor affecting IVF success. Success rates decline significantly after age 35, making early consultation important.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Lata Goyal, Fertility Specialist</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eye Care Myths -->
+    <span class="section-badge"><i class="fas fa-eye me-2"></i>Eye Care & Cataract</span>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon myth"><i class="fas fa-times"></i></div>
+            <div class="myth-content">
+              <span class="myth-label myth-label">Myth</span>
+              <h3>Cataract surgery should be delayed until mature</h3>
+              <p>Modern cataract surgery is best done early when the cataract is less dense. Waiting too long makes surgery more complex and recovery longer.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Sanjay Goyal, Ophthalmologist</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon myth"><i class="fas fa-times"></i></div>
+            <div class="myth-content">
+              <span class="myth-label myth-label">Myth</span>
+              <h3>Eye drops can cure cataract</h3>
+              <p>Cataract cannot be cured or reversed with medication or eye drops. Surgery is the only effective treatment to restore vision.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Sanjay Goyal, Ophthalmologist</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon fact"><i class="fas fa-check"></i></div>
+            <div class="myth-content">
+              <span class="myth-label fact-label">Fact</span>
+              <h3>Cataract surgery is painless</h3>
+              <p>Modern cataract surgery is completely painless, done under local anesthesia, and takes only 10-15 minutes. Most patients go home the same day.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Sanjay Goyal, Ophthalmologist</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon fact"><i class="fas fa-check"></i></div>
+            <div class="myth-content">
+              <span class="myth-label fact-label">Fact</span>
+              <h3>Reading in dim light damages eyes</h3>
+              <p>Reading in dim light causes eye strain and fatigue but does not cause permanent damage to eyes or worsen vision.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Sanjay Goyal, Ophthalmologist</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregnancy Myths -->
+    <span class="section-badge"><i class="fas fa-baby me-2"></i>Pregnancy & Maternity</span>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon myth"><i class="fas fa-times"></i></div>
+            <div class="myth-content">
+              <span class="myth-label myth-label">Myth</span>
+              <h3>Eating for two during pregnancy</h3>
+              <p>Pregnant women only need about 300 extra calories per day, not double portions. Overeating can lead to excessive weight gain and complications.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Lata Goyal, Gynecologist</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon myth"><i class="fas fa-times"></i></div>
+            <div class="myth-content">
+              <span class="myth-label myth-label">Myth</span>
+              <h3>Exercise is dangerous during pregnancy</h3>
+              <p>Moderate exercise is safe and recommended during pregnancy. It helps manage weight, reduces complications, and aids faster recovery.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Lata Goyal, Gynecologist</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon fact"><i class="fas fa-check"></i></div>
+            <div class="myth-content">
+              <span class="myth-label fact-label">Fact</span>
+              <h3>C-section is chosen by doctors for convenience</h3>
+              <p>C-sections are performed only when medically necessary for the safety of mother or baby. Normal delivery is always preferred when safe.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Lata Goyal, Gynecologist</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon fact"><i class="fas fa-check"></i></div>
+            <div class="myth-content">
+              <span class="myth-label fact-label">Fact</span>
+              <h3>Firstborn babies are always late</h3>
+              <p>First babies can be born any time from 37 to 42 weeks. Being overdue is not always the case and can depend on many factors.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Lata Goyal, Gynecologist</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- General Health Myths -->
+    <span class="section-badge"><i class="fas fa-heartbeat me-2"></i>General Health</span>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon myth"><i class="fas fa-times"></i></div>
+            <div class="myth-content">
+              <span class="myth-label myth-label">Myth</span>
+              <h3>You need to drink 8 glasses of water daily</h3>
+              <p>Water needs vary by person, climate, and activity level. Thirst is a reliable indicator - forcing excessive water intake is unnecessary.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Shailesh Gupta, Physician</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="myth-card">
+          <div class="myth-header">
+            <div class="myth-icon myth"><i class="fas fa-times"></i></div>
+            <div class="myth-content">
+              <span class="myth-label myth-label">Myth</span>
+              <h3>Vitamin C prevents colds</h3>
+              <p>While Vitamin C supports immunity, it doesn't prevent colds. It may slightly reduce duration but proper hygiene is more effective.</p>
+            </div>
+          </div>
+          <div class="myth-expert"><i class="fas fa-user-md"></i><span>Verified by Dr. Shailesh Gupta, Physician</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h3 class="mb-3">Have more questions?</h3>
+    <p class="text-muted mb-4">Our doctors are happy to clarify any health concerns you may have.</p>
+    <a href="index.html#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book a Consultation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="site-footer">
+  <div class="footer-main py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <img src="assets/img/logo-white.png" alt="Sankalp Hospital" class="footer-logo mb-3">
+          <h3>About</h3>
+          <p>Sankalp Hospital is a leading healthcare facility in Ambikapur, Chhattisgarh, dedicated to providing top-quality medical services.</p>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <h3>Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="myths-facts.html">Health Myths</a></li>
+            <li><a href="blogs.html">Health Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Services</h3>
+          <ul class="footer-list">
+            <li><a href="ivf.html">IVF Treatment</a></li>
+            <li><a href="departments.html#emergency">24/7 Emergency</a></li>
+            <li><a href="departments.html#ophthalmology">Cataract Surgery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Reach Us At</h3>
+          <ul class="footer-list">
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+919584889068">+91-958 488 9068</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info.sankalpslms@gmail.com">info.sankalpslms@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Near Distt. Hospital, Manipur, Ambikapur, CG 497001</li>
+          </ul>
+          <div class="social-icons mt-3">
+            <a href="https://www.facebook.com/sankalphospitals/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sankalphospitals/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center text-center">
+        <p class="mb-0">© Copyright <span id="year"></span> All Rights Reserved <a href="index.html"><strong>Sankalp Hospital</strong></a></p>
+        <p class="mb-0">Designed by <a href="https://brandingpioneers.com/" target="_blank"><strong>Brandingpioneers</strong></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+919584889068" class="float-call" aria-label="Call us"><i class="fas fa-phone-alt"></i></a>
+<a href="https://wa.me/919584889068" target="_blank" class="float-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

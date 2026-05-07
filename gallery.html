@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Sankalp Hospital - Best Hospital In Ambikapur</title>
+  <meta name="description" content="View image gallery of Sankalp Hospital - our facilities, infrastructure, doctors, and hospital events.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .page-hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;padding:80px 0 100px;text-align:center;position:relative;overflow:hidden}
+    .page-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(255,255,255,.08) 0,transparent 30%),radial-gradient(circle at 80% 70%,rgba(255,255,255,.06) 0,transparent 30%);pointer-events:none}
+    .page-hero .breadcrumbs{position:relative;z-index:1;color:rgba(255,255,255,.85);font-size:14px;margin-bottom:14px}
+    .page-hero .breadcrumbs a{color:#fff;font-weight:600}
+    .page-hero h1{color:#fff;font-size:42px;font-weight:700;position:relative;z-index:1}
+    .page-hero p{position:relative;z-index:1;max-width:700px;margin:14px auto 0;font-size:18px;opacity:.9}
+    .gallery-filters{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:40px}
+    .filter-btn{padding:10px 24px;border:2px solid var(--primary);background:transparent;color:var(--primary);border-radius:30px;font-weight:600;cursor:pointer;transition:all .25s}
+    .filter-btn:hover,.filter-btn.active{background:var(--primary);color:#fff}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+    .gallery-item{position:relative;overflow:hidden;border-radius:12px;aspect-ratio:4/3;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.1)}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .gallery-item:hover img{transform:scale(1.1)}
+    .gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7) 0%,transparent 60%);display:flex;align-items:flex-end;padding:20px;opacity:0;transition:opacity .3s}
+    .gallery-item:hover .gallery-overlay{opacity:1}
+    .gallery-overlay span{color:#fff;font-weight:600;font-size:15px}
+    .gallery-placeholder{width:100%;height:100%;background:linear-gradient(135deg,var(--primary),var(--primary-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px}
+    .video-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+    .video-thumbnail{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}
+    .video-thumbnail img{width:100%;height:100%;object-fit:cover;opacity:.8}
+    .play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:70px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;transition:transform .3s}
+    .video-card:hover .play-btn{transform:translate(-50%,-50%) scale(1.1)}
+    .video-info{padding:20px}
+    .video-info h4{font-size:18px;margin-bottom:8px}
+    .video-info p{color:#666;font-size:14px;margin:0}
+    @media (max-width:767px){
+      .page-hero{padding:60px 0 80px}
+      .page-hero h1{font-size:28px}
+      .gallery-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="top-bar-info">
+        <a href="mailto:info.sankalpslms@gmail.com"><i class="fas fa-envelope"></i> info.sankalpslms@gmail.com</a>
+        <a href="tel:+919584889068"><i class="fas fa-phone-alt"></i> +91 9584 889068</a>
+      </div>
+      <div class="top-bar-actions">
+        <a href="#" class="btn-pkg"><i class="fas fa-heartbeat"></i> HEALTHCARE PACKAGES</a>
+        <a href="https://www.facebook.com/sankalphospitals/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sankalphospitals/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header sticky-top">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-lg-3 col-6">
+        <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Sankalp Hospital" class="brand-logo"></a>
+      </div>
+      <div class="col-lg-9 col-6 d-flex justify-content-end align-items-center gap-3">
+        <div class="header-info d-none d-xl-flex align-items-center">
+          <img src="assets/img/emergency-247.png" alt="24/7" class="emergency-img">
+          <div>
+            <small>Contact Number</small>
+            <p>+91 9584 889068</p>
+          </div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary d-none d-md-inline-flex"><i class="far fa-calendar"></i> &nbsp;BOOK AN APPOINTMENT</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-nav d-none d-lg-block">
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-sub"><a href="about.html">About <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="about.html#vision">Vision Mission</a></li>
+            <li><a href="about.html#director">Director's Message</a></li>
+            <li><a href="about.html#achievements">Achievements</a></li>
+            <li><a href="about.html#care">Patients Care</a></li>
+            <li><a href="departments.html">Services &amp; Facilities</a></li>
+            <li><a href="faq.html">FAQ's</a></li>
+            <li><a href="myths-facts.html">Myths &amp; Facts</a></li>
+            <li><a href="ivf.html">IUI – IVF – ICSI</a></li>
+            <li><a href="glossary.html">Glossary Of Terms</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="departments.html">Departments <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu sub-menu-wide">
+            <li><a href="departments.html#ophthalmology">Ophthalmology</a></li>
+            <li><a href="departments.html#urology">Urology</a></li>
+            <li><a href="departments.html#gynecology">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="departments.html#orthopaedics">Orthopaedics Surgery</a></li>
+            <li><a href="ivf.html">Assisted Fertility (IVF/ICSI/IUI)</a></li>
+            <li><a href="departments.html#surgery">General &amp; Laparoscopic Surgery</a></li>
+            <li><a href="departments.html#emergency">Emergency And Trauma Services</a></li>
+            <li><a href="departments.html#chemotherapy">Chemotherapy Services</a></li>
+            <li><a href="departments.html#anesthesia">Department of Anesthesia</a></li>
+            <li><a href="departments.html#onco">Onco Surgery</a></li>
+            <li><a href="departments.html#oral">Oral and Maxillofacial Surgery</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#doctors">Our Experts</a></li>
+        <li class="active has-sub"><a href="gallery.html">Gallery <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="gallery.html">Image Gallery</a></li>
+            <li><a href="video-gallery.html">Video Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="empanelments.html">Empanelments</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE OFFCANVAS NAV -->
+<div class="offcanvas offcanvas-start" id="mobileNav">
+  <div class="offcanvas-header">
+    <img src="assets/img/logo.png" alt="" style="height:40px">
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="index.html#doctors">Our Experts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="empanelments.html">Empanelments</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+    <a href="index.html#appointment" class="btn btn-primary w-100 mt-3" data-bs-dismiss="offcanvas">Book An Appointment</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Gallery</p>
+    <h1>Hospital Gallery</h1>
+    <p>Take a virtual tour of our world-class facilities and infrastructure</p>
+  </div>
+</section>
+
+<!-- IMAGE GALLERY -->
+<section class="py-5">
+  <div class="container">
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+      <button class="filter-btn" data-filter="doctors">Our Doctors</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+      <button class="filter-btn" data-filter="wings">Hospital Wings</button>
+    </div>
+    <div class="row g-3">
+      <!-- Infrastructure Images -->
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder"><i class="fas fa-microscope"></i></div>
+        <div class="gallery-overlay"><span>Eye OT</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--accent),#c67b30)"><i class="fas fa-baby"></i></div>
+        <div class="gallery-overlay"><span>Gynae OT</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder"><i class="fas fa-bone"></i></div>
+        <div class="gallery-overlay"><span>Ortho OT</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--dark),#1a2629)"><i class="fas fa-procedures"></i></div>
+        <div class="gallery-overlay"><span>Laparoscopic Surgery</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder"><i class="fas fa-heartbeat"></i></div>
+        <div class="gallery-overlay"><span>ICU</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--primary-light),var(--primary))"><i class="fas fa-child"></i></div>
+        <div class="gallery-overlay"><span>NICU</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder"><i class="fas fa-bed"></i></div>
+        <div class="gallery-overlay"><span>General Ward</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--accent),#c67b30)"><i class="fas fa-stethoscope"></i></div>
+        <div class="gallery-overlay"><span>OPD Chamber</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder"><i class="fas fa-flask"></i></div>
+        <div class="gallery-overlay"><span>Pathology Lab</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--dark),#1a2629)"><i class="fas fa-file-medical"></i></div>
+        <div class="gallery-overlay"><span>TPA Desk</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder"><i class="fas fa-hospital"></i></div>
+        <div class="gallery-overlay"><span>Hospital View</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="infrastructure">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--primary-light),var(--primary))"><i class="fas fa-ambulance"></i></div>
+        <div class="gallery-overlay"><span>Emergency Entrance</span></div>
+      </div>
+
+      <!-- Hospital Wings -->
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="wings">
+        <div class="gallery-placeholder"><i class="fas fa-building"></i></div>
+        <div class="gallery-overlay"><span>New Wing 1</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="wings">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--accent),#c67b30)"><i class="fas fa-building"></i></div>
+        <div class="gallery-overlay"><span>New Wing 2</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="wings">
+        <div class="gallery-placeholder"><i class="fas fa-building"></i></div>
+        <div class="gallery-overlay"><span>New Wing 3</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="wings">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--dark),#1a2629)"><i class="fas fa-building"></i></div>
+        <div class="gallery-overlay"><span>New Wing 4</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="wings">
+        <div class="gallery-placeholder"><i class="fas fa-building"></i></div>
+        <div class="gallery-overlay"><span>New Wing 5</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="wings">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--primary-light),var(--primary))"><i class="fas fa-building"></i></div>
+        <div class="gallery-overlay"><span>New Wing 6</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="wings">
+        <div class="gallery-placeholder"><i class="fas fa-building"></i></div>
+        <div class="gallery-overlay"><span>New Wing 7</span></div>
+      </div>
+
+      <!-- Doctors -->
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="doctors">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark))"><i class="fas fa-user-md"></i></div>
+        <div class="gallery-overlay"><span>Dr. Sanjay Goyal</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="doctors">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--accent),#c67b30)"><i class="fas fa-user-md"></i></div>
+        <div class="gallery-overlay"><span>Dr. Lata Goyal</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="doctors">
+        <div class="gallery-placeholder"><i class="fas fa-user-md"></i></div>
+        <div class="gallery-overlay"><span>Dr. Akshaya Goyal</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="doctors">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--dark),#1a2629)"><i class="fas fa-user-md"></i></div>
+        <div class="gallery-overlay"><span>Medical Team</span></div>
+      </div>
+
+      <!-- Events -->
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="events">
+        <div class="gallery-placeholder"><i class="fas fa-calendar-alt"></i></div>
+        <div class="gallery-overlay"><span>Health Camp</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="events">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--accent),#c67b30)"><i class="fas fa-award"></i></div>
+        <div class="gallery-overlay"><span>Award Ceremony</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="events">
+        <div class="gallery-placeholder"><i class="fas fa-users"></i></div>
+        <div class="gallery-overlay"><span>Team Meeting</span></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="events">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,var(--primary-light),var(--primary))"><i class="fas fa-heart"></i></div>
+        <div class="gallery-overlay"><span>Patient Care</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO GALLERY PREVIEW -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Video Gallery</h2>
+      <span class="section-divider"></span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <div class="gallery-placeholder" style="aspect-ratio:16/9;background:linear-gradient(135deg,var(--primary),var(--primary-dark))"><i class="fas fa-video"></i></div>
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="video-info">
+            <h4>Hospital Tour</h4>
+            <p>Take a virtual tour of Sankalp Hospital facilities</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <div class="gallery-placeholder" style="aspect-ratio:16/9;background:linear-gradient(135deg,var(--accent),#c67b30)"><i class="fas fa-video"></i></div>
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="video-info">
+            <h4>Patient Testimonials</h4>
+            <p>Hear from our happy patients about their experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <div class="gallery-placeholder" style="aspect-ratio:16/9;background:linear-gradient(135deg,var(--dark),#1a2629)"><i class="fas fa-video"></i></div>
+            <div class="play-btn"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="video-info">
+            <h4>IVF Success Stories</h4>
+            <p>Celebrating the joy of new beginnings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="video-gallery.html" class="btn btn-primary"><i class="fab fa-youtube me-2"></i>View All Videos</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="site-footer">
+  <div class="footer-main py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <img src="assets/img/logo-white.png" alt="Sankalp Hospital" class="footer-logo mb-3">
+          <h3>About</h3>
+          <p>Sankalp Hospital is a leading healthcare facility in Ambikapur, Chhattisgarh, dedicated to providing top-quality medical services.</p>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <h3>Departments</h3>
+          <ul class="footer-list">
+            <li><a href="departments.html">Ophthalmology</a></li>
+            <li><a href="ivf.html">Assisted Fertility</a></li>
+            <li><a href="departments.html#gynecology">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="departments.html#surgery">General Surgery</a></li>
+            <li><a href="departments.html#orthopaedics">Orthopaedics</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="video-gallery.html">Videos</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="blogs.html">Health Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Reach Us At</h3>
+          <ul class="footer-list">
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+919584889068">+91-958 488 9068</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info.sankalpslms@gmail.com">info.sankalpslms@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Near Distt. Hospital, Manipur, Ambikapur, CG 497001</li>
+          </ul>
+          <div class="social-icons mt-3">
+            <a href="https://www.facebook.com/sankalphospitals/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sankalphospitals/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center text-center">
+        <p class="mb-0">© Copyright <span id="year"></span> All Rights Reserved <a href="index.html"><strong>Sankalp Hospital</strong></a></p>
+        <p class="mb-0">Designed by <a href="https://brandingpioneers.com/" target="_blank"><strong>Brandingpioneers</strong></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+919584889068" class="float-call" aria-label="Call us"><i class="fas fa-phone-alt"></i></a>
+<a href="https://wa.me/919584889068" target="_blank" class="float-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

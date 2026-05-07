@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVF & Fertility Treatment | Sankalp Hospital - IUI, IVF, ICSI in Ambikapur</title>
+  <meta name="description" content="Learn about IVF, IUI, and ICSI fertility treatments at Sankalp Hospital. First test tube baby center in Surguja district with high success rates.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .page-hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;padding:80px 0 100px;text-align:center;position:relative;overflow:hidden}
+    .page-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(255,255,255,.08) 0,transparent 30%),radial-gradient(circle at 80% 70%,rgba(255,255,255,.06) 0,transparent 30%);pointer-events:none}
+    .page-hero .breadcrumbs{position:relative;z-index:1;color:rgba(255,255,255,.85);font-size:14px;margin-bottom:14px}
+    .page-hero .breadcrumbs a{color:#fff;font-weight:600}
+    .page-hero h1{color:#fff;font-size:42px;font-weight:700;position:relative;z-index:1}
+    .page-hero p{position:relative;z-index:1;max-width:700px;margin:14px auto 0;font-size:18px;opacity:.9}
+    .ivf-hero-badge{background:var(--accent);color:#fff;padding:8px 20px;border-radius:30px;display:inline-block;font-weight:700;font-size:14px;margin-bottom:16px}
+    .treatment-card{background:#fff;border-radius:12px;padding:32px;box-shadow:0 4px 16px rgba(0,0,0,.06);height:100%;transition:transform .3s;border-top:4px solid var(--primary)}
+    .treatment-card:hover{transform:translateY(-6px)}
+    .treatment-card.featured{border-top-color:var(--accent);background:linear-gradient(135deg,#fff 0%,#fff8ee 100%)}
+    .treatment-card i{font-size:42px;color:var(--primary);margin-bottom:18px}
+    .treatment-card.featured i{color:var(--accent)}
+    .treatment-card h3{font-size:22px;margin-bottom:12px}
+    .treatment-card p{color:#666;line-height:1.8}
+    .treatment-card .price{font-size:28px;font-weight:700;color:var(--primary);margin:16px 0}
+    .treatment-card.featured .price{color:var(--accent)}
+    .process-step{display:flex;align-items:flex-start;gap:20px;margin-bottom:30px}
+    .process-num{width:50px;height:50px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;flex-shrink:0}
+    .process-step h4{font-size:18px;margin-bottom:6px}
+    .process-step p{color:#666;font-size:14px;margin:0}
+    .success-rate{background:linear-gradient(135deg,var(--primary),var(--primary-dark));border-radius:12px;padding:40px;color:#fff;text-align:center}
+    .success-rate h2{color:#fff;font-size:48px;font-weight:700;margin-bottom:8px}
+    .success-rate p{opacity:.9;font-size:18px;margin-bottom:24px}
+    .rate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
+    .rate-item{background:rgba(255,255,255,.15);border-radius:10px;padding:20px}
+    .rate-item h3{font-size:28px;font-weight:700;color:#fff;margin-bottom:4px}
+    .rate-item p{font-size:14px;opacity:.85;margin:0}
+    .faq-item{background:#fff;border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.05);cursor:pointer;transition:all .3s}
+    .faq-item:hover{box-shadow:0 4px 16px rgba(0,0,0,.1)}
+    .faq-item h4{font-size:16px;margin-bottom:0;display:flex;justify-content:space-between;align-items:center}
+    .faq-item h4 i{color:var(--primary);transition:transform .3s}
+    .faq-item.active h4 i{transform:rotate(180deg)}
+    .faq-answer{padding-top:16px;color:#666;line-height:1.7;display:none}
+    .faq-item.active .faq-answer{display:block}
+    .testimonial-card{background:#fff;border-radius:12px;padding:28px;box-shadow:0 4px 16px rgba(0,0,0,.06);text-align:center;margin:20px 0}
+    .testimonial-card i{font-size:32px;color:var(--primary);margin-bottom:16px}
+    .testimonial-card p{font-style:italic;color:#555;font-size:16px;line-height:1.8;margin-bottom:16px}
+    .testimonial-card h5{color:var(--primary);font-size:16px;margin-bottom:4px}
+    .testimonial-card span{font-size:13px;color:#999}
+    @media (max-width:767px){
+      .page-hero{padding:60px 0 80px}
+      .page-hero h1{font-size:28px}
+      .rate-grid{grid-template-columns:1fr}
+      .process-step{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="top-bar-info">
+        <a href="mailto:info.sankalpslms@gmail.com"><i class="fas fa-envelope"></i> info.sankalpslms@gmail.com</a>
+        <a href="tel:+919584889068"><i class="fas fa-phone-alt"></i> +91 9584 889068</a>
+      </div>
+      <div class="top-bar-actions">
+        <a href="#" class="btn-pkg"><i class="fas fa-heartbeat"></i> HEALTHCARE PACKAGES</a>
+        <a href="https://www.facebook.com/sankalphospitals/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sankalphospitals/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header sticky-top">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-lg-3 col-6">
+        <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Sankalp Hospital" class="brand-logo"></a>
+      </div>
+      <div class="col-lg-9 col-6 d-flex justify-content-end align-items-center gap-3">
+        <div class="header-info d-none d-xl-flex align-items-center">
+          <img src="assets/img/emergency-247.png" alt="24/7" class="emergency-img">
+          <div>
+            <small>Contact Number</small>
+            <p>+91 9584 889068</p>
+          </div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary d-none d-md-inline-flex"><i class="far fa-calendar"></i> &nbsp;BOOK AN APPOINTMENT</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-nav d-none d-lg-block">
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-sub"><a href="about.html">About <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="about.html#vision">Vision Mission</a></li>
+            <li><a href="about.html#director">Director's Message</a></li>
+            <li><a href="about.html#achievements">Achievements</a></li>
+            <li><a href="about.html#care">Patients Care</a></li>
+            <li><a href="departments.html">Services &amp; Facilities</a></li>
+            <li><a href="faq.html">FAQ's</a></li>
+            <li><a href="myths-facts.html">Myths &amp; Facts</a></li>
+            <li><a href="ivf.html">IUI – IVF – ICSI</a></li>
+            <li><a href="glossary.html">Glossary Of Terms</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="departments.html">Departments <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu sub-menu-wide">
+            <li><a href="departments.html#ophthalmology">Ophthalmology</a></li>
+            <li><a href="departments.html#urology">Urology</a></li>
+            <li><a href="departments.html#gynecology">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="ivf.html">Assisted Fertility (IVF/ICSI/IUI)</a></li>
+            <li><a href="departments.html#surgery">General &amp; Laparoscopic Surgery</a></li>
+            <li><a href="departments.html#emergency">Emergency And Trauma Services</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#doctors">Our Experts</a></li>
+        <li class="has-sub"><a href="gallery.html">Gallery <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="gallery.html">Image Gallery</a></li>
+            <li><a href="video-gallery.html">Video Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="empanelments.html">Empanelments</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE OFFCANVAS NAV -->
+<div class="offcanvas offcanvas-start" id="mobileNav">
+  <div class="offcanvas-header">
+    <img src="assets/img/logo.png" alt="" style="height:40px">
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="index.html#doctors">Our Experts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="empanelments.html">Empanelments</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+    <a href="index.html#appointment" class="btn btn-primary w-100 mt-3" data-bs-dismiss="offcanvas">Book An Appointment</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="ivf-hero-badge"><i class="fas fa-award me-2"></i>First Test Tube Baby Center in Surguja</span>
+    <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> IVF & Fertility</p>
+    <h1>Assisted Fertility (IVF/ICSI/IUI)</h1>
+    <p>Advanced fertility treatments with high success rates. Your dream of parenthood is our priority.</p>
+  </div>
+</section>
+
+<!-- INTRO SECTION -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <h2 class="mb-4">Your Journey to Parenthood Starts Here</h2>
+        <p class="lead mb-4">At Sankalp Hospital, we understand the emotional journey of couples facing infertility. Our state-of-the-art fertility center offers comprehensive treatments with compassion and expertise.</p>
+        <p>As the first IVF center in Surguja district, we have helped hundreds of couples achieve their dream of having a baby. Our team of experienced fertility specialists uses the latest techniques and technologies to maximize your chances of success.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="index.html#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
+          <a href="tel:+919584889068" class="btn btn-outline-primary"><i class="fas fa-phone-alt me-2"></i>Call Us</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="success-rate">
+          <p class="mb-2">Our Success Rate</p>
+          <h2>60-70%</h2>
+          <p>Pregnancy rate for IVF treatments</p>
+          <div class="rate-grid">
+            <div class="rate-item">
+              <h3>500+</h3>
+              <p>Couples Treated</p>
+            </div>
+            <div class="rate-item">
+              <h3>200+</h3>
+              <p>IVF Babies Born</p>
+            </div>
+            <div class="rate-item">
+              <h3>15+</h3>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Fertility Treatments</h2>
+      <span class="section-divider"></span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="treatment-card">
+          <i class="fas fa-dna"></i>
+          <h3>IVF (In-Vitro Fertilization)</h3>
+          <p>The most advanced fertility treatment where eggs are fertilized with sperm in our laboratory. The resulting embryo is then transferred to the uterus.</p>
+          <div class="price">Starting ₹1,50,000</div>
+          <a href="index.html#appointment" class="btn btn-outline-primary w-100">Book Consultation</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="treatment-card featured">
+          <i class="fas fa-microscope"></i>
+          <h3>ICSI (Intra-Cytoplasmic Sperm Injection)</h3>
+          <p>A specialized technique where a single sperm is directly injected into an egg. Ideal for male factor infertility or previous IVF failures.</p>
+          <div class="price">Starting ₹1,80,000</div>
+          <a href="index.html#appointment" class="btn btn-primary w-100">Book Consultation</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="treatment-card">
+          <i class="fas fa-vial"></i>
+          <h3>IUI (Intra-Uterine Insemination)</h3>
+          <p>A less invasive procedure where specially prepared sperm is placed directly into the uterus around the time of ovulation.</p>
+          <div class="price">Starting ₹25,000</div>
+          <a href="index.html#appointment" class="btn btn-outline-primary w-100">Book Consultation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IVF PROCESS -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <h2 class="mb-4">IVF Treatment Process</h2>
+        <p class="mb-4">Our step-by-step approach ensures you understand every stage of your fertility journey.</p>
+        <div class="process-step">
+          <div class="process-num">1</div>
+          <div>
+            <h4>Initial Consultation</h4>
+            <p>Complete evaluation of both partners including medical history, physical examination, and necessary tests.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">2</div>
+          <div>
+            <h4>Ovarian Stimulation</h4>
+            <p>Medications to stimulate multiple egg production. Regular monitoring through ultrasound and blood tests.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">3</div>
+          <div>
+            <h4>Egg Retrieval</h4>
+            <p>Minor procedure under sedation to collect eggs. Takes about 15-20 minutes with minimal discomfort.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">4</div>
+          <div>
+            <h4>Fertilization & Culture</h4>
+            <p>Eggs are combined with sperm in our laboratory. Embryos are cultured for 3-5 days for optimal development.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">5</div>
+          <div>
+            <h4>Embryo Transfer</h4>
+            <p>The best quality embryo(s) are transferred into the uterus. Simple, painless procedure like a pap smear.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">6</div>
+          <div>
+            <h4>Pregnancy Test</h4>
+            <p>Blood test (Beta hCG) after 14 days to confirm pregnancy. Follow-up scans to monitor progress.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="bg-light rounded-3 p-4">
+          <h3 class="mb-4">What Makes Us Different?</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i><strong>Advanced Laboratory:</strong> State-of-the-art embryology lab with latest equipment</li>
+            <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i><strong>Experienced Team:</strong> Highly skilled fertility specialists and embryologists</li>
+            <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i><strong>Personalized Care:</strong> Individualized treatment plans for each couple</li>
+            <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i><strong>High Success Rates:</strong> 60-70% pregnancy rate for IVF cycles</li>
+            <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i><strong>Affordable Pricing:</strong> Competitive packages making IVF accessible</li>
+            <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i><strong>Complete Privacy:</strong> Confidential and respectful environment</li>
+            <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i><strong>Emotional Support:</strong> Counseling services throughout the journey</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <span class="section-divider"></span>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <h4>What is the success rate of IVF? <i class="fas fa-chevron-down"></i></h4>
+          <div class="faq-answer">Our IVF success rate is 60-70% per cycle. Success depends on various factors including age, cause of infertility, and embryo quality. We provide detailed consultation to help you understand your specific chances.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <h4>How long does one IVF cycle take? <i class="fas fa-chevron-down"></i></h4>
+          <div class="faq-answer">One complete IVF cycle from start to pregnancy test takes approximately 4-6 weeks. The actual treatment period is about 2-3 weeks, but preparation and initial consultations may take longer.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <h4>Is IVF treatment painful? <i class="fas fa-chevron-down"></i></h4>
+          <div class="faq-answer">The injections for ovarian stimulation are given with very fine needles and cause minimal discomfort. Egg retrieval is done under sedation so you won't feel pain. Embryo transfer is a simple, painless procedure similar to a pap smear.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <h4>What is the cost of IVF treatment? <i class="fas fa-chevron-down"></i></h4>
+          <div class="faq-answer">IVF costs start from ₹1,50,000 and IUI from ₹25,000. The exact cost depends on the specific treatment required. We offer competitive packages and flexible payment options. Consultation is free.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <h4>When should we consider IVF? <i class="fas fa-chevron-down"></i></h4>
+          <div class="faq-answer">You should consider IVF if you've been trying to conceive for over a year without success, have blocked fallopian tubes, severe male factor infertility, endometriosis, or have failed other fertility treatments.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <h4>Are there any risks with IVF? <i class="fas fa-chevron-down"></i></h4>
+          <div class="faq-answer">IVF is generally safe. Minor risks include OHSS (Ovarian Hyperstimulation Syndrome) which is carefully monitored and managed. Multiple pregnancy can be avoided by limiting embryo transfers. Our team ensures your safety throughout.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Happy Parents</h2>
+      <span class="section-divider"></span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <p>"After 8 years of trying, we finally became parents thanks to Sankalp Hospital. Dr. Lata Goyal and her team made our dream come true. The care and support we received was exceptional."</p>
+          <h5>Rajesh & Priya Sharma</h5>
+          <span>Parents of Twins, Born 2023</span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <i class="fas fa-quote-left"></i>
+          <p>"We were told we could never have children. But Sankalp Hospital gave us hope and then gave us our beautiful daughter. The first test tube baby of Surguja district is our pride."</p>
+          <h5>Amit & Sunita Verma</h5>
+          <span>Parents, First IVF Baby in District</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5" style="background:var(--primary)">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h2 class="text-white mb-3">Take the First Step Towards Parenthood</h2>
+        <p class="text-white opacity-75 mb-0">Our fertility experts are here to guide you through every step. Book a free consultation today.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+        <a href="index.html#appointment" class="btn btn-light btn-lg me-2"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+        <a href="tel:+919584889068" class="btn btn-outline-light btn-lg"><i class="fas fa-phone-alt me-2"></i>Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="site-footer">
+  <div class="footer-main py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <img src="assets/img/logo-white.png" alt="Sankalp Hospital" class="footer-logo mb-3">
+          <h3>About</h3>
+          <p>Sankalp Hospital is a leading healthcare facility in Ambikapur, Chhattisgarh, dedicated to providing top-quality medical services.</p>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <h3>Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blogs.html">Health Blog</a></li>
+            <li><a href="index.html#doctors">Our Doctors</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Services</h3>
+          <ul class="footer-list">
+            <li><a href="ivf.html">IVF Treatment</a></li>
+            <li><a href="departments.html#ophthalmology">Cataract Surgery</a></li>
+            <li><a href="departments.html#emergency">24/7 Emergency</a></li>
+            <li><a href="departments.html#surgery">Laparoscopic Surgery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Reach Us At</h3>
+          <ul class="footer-list">
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+919584889068">+91-958 488 9068</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info.sankalpslms@gmail.com">info.sankalpslms@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Near Distt. Hospital, Manipur, Ambikapur, CG 497001</li>
+          </ul>
+          <div class="social-icons mt-3">
+            <a href="https://www.facebook.com/sankalphospitals/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sankalphospitals/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center text-center">
+        <p class="mb-0">© Copyright <span id="year"></span> All Rights Reserved <a href="index.html"><strong>Sankalp Hospital</strong></a></p>
+        <p class="mb-0">Designed by <a href="https://brandingpioneers.com/" target="_blank"><strong>Brandingpioneers</strong></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+919584889068" class="float-call" aria-label="Call us"><i class="fas fa-phone-alt"></i></a>
+<a href="https://wa.me/919584889068" target="_blank" class="float-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function toggleFaq(el) {
+    document.querySelectorAll('.faq-item').forEach(item => {
+      if (item !== el) item.classList.remove('active');
+    });
+    el.classList.toggle('active');
+  }
+</script>
+</body>
+</html>

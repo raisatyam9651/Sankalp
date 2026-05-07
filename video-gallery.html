@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Gallery | Sankalp Hospital - Hospital Tour & Patient Stories</title>
+  <meta name="description" content="Watch videos of Sankalp Hospital - virtual tours, patient testimonials, doctor interviews, and health tips.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .page-hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;padding:80px 0 100px;text-align:center;position:relative;overflow:hidden}
+    .page-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(255,255,255,.08) 0,transparent 30%),radial-gradient(circle at 80% 70%,rgba(255,255,255,.06) 0,transparent 30%);pointer-events:none}
+    .page-hero .breadcrumbs{position:relative;z-index:1;color:rgba(255,255,255,.85);font-size:14px;margin-bottom:14px}
+    .page-hero .breadcrumbs a{color:#fff;font-weight:600}
+    .page-hero h1{color:#fff;font-size:42px;font-weight:700;position:relative;z-index:1}
+    .page-hero p{position:relative;z-index:1;max-width:700px;margin:14px auto 0;font-size:18px;opacity:.9}
+    .video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:30px}
+    .video-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.08);transition:transform .3s}
+    .video-card:hover{transform:translateY(-6px)}
+    .video-thumbnail{position:relative;aspect-ratio:16/9;overflow:hidden;cursor:pointer}
+    .video-thumbnail img,.video-thumbnail .placeholder{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .video-card:hover .video-thumbnail img,.video-card:hover .placeholder{transform:scale(1.05)}
+    .placeholder{background:linear-gradient(135deg,var(--primary),var(--primary-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px}
+    .video-card:nth-child(2) .placeholder{background:linear-gradient(135deg,var(--accent),#c67b30)}
+    .video-card:nth-child(3) .placeholder{background:linear-gradient(135deg,var(--dark),#1a2629)}
+    .video-card:nth-child(4) .placeholder{background:linear-gradient(135deg,var(--primary-light),var(--primary))}
+    .video-card:nth-child(5) .placeholder{background:linear-gradient(135deg,var(--primary),var(--primary-dark))}
+    .video-card:nth-child(6) .placeholder{background:linear-gradient(135deg,var(--accent),#c67b30)}
+    .play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:70px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;box-shadow:0 4px 20px rgba(22,128,119,.4);transition:transform .3s,background .3s}
+    .video-card:hover .play-btn{transform:translate(-50%,-50%) scale(1.15);background:var(--accent)}
+    .play-btn::after{content:"";position:absolute;inset:-10px;border:2px solid var(--primary);border-radius:50%;opacity:0;transition:all .3s}
+    .video-card:hover .play-btn::after{inset:-15px;opacity:.5}
+    .video-info{padding:20px}
+    .video-category{display:inline-block;background:var(--bg-soft);color:var(--primary);padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;margin-bottom:10px}
+    .video-info h4{font-size:18px;margin-bottom:8px;line-height:1.4}
+    .video-info p{color:#666;font-size:14px;margin-bottom:0}
+    .video-meta{font-size:12px;color:#999;margin-top:12px;padding-top:12px;border-top:1px solid #eee}
+    .video-meta span{margin-right:16px}
+    .video-meta i{margin-right:4px}
+    .category-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:40px}
+    .category-tab{padding:10px 24px;border:2px solid var(--primary);background:transparent;color:var(--primary);border-radius:30px;font-weight:600;cursor:pointer;transition:all .25s}
+    .category-tab:hover,.category-tab.active{background:var(--primary);color:#fff}
+    @media (max-width:767px){
+      .page-hero{padding:60px 0 80px}
+      .page-hero h1{font-size:28px}
+      .video-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar d-none d-lg-block">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="top-bar-info">
+        <a href="mailto:info.sankalpslms@gmail.com"><i class="fas fa-envelope"></i> info.sankalpslms@gmail.com</a>
+        <a href="tel:+919584889068"><i class="fas fa-phone-alt"></i> +91 9584 889068</a>
+      </div>
+      <div class="top-bar-actions">
+        <a href="#" class="btn-pkg"><i class="fas fa-heartbeat"></i> HEALTHCARE PACKAGES</a>
+        <a href="https://www.facebook.com/sankalphospitals/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sankalphospitals/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header sticky-top">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-lg-3 col-6">
+        <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Sankalp Hospital" class="brand-logo"></a>
+      </div>
+      <div class="col-lg-9 col-6 d-flex justify-content-end align-items-center gap-3">
+        <div class="header-info d-none d-xl-flex align-items-center">
+          <img src="assets/img/emergency-247.png" alt="24/7" class="emergency-img">
+          <div>
+            <small>Contact Number</small>
+            <p>+91 9584 889068</p>
+          </div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary d-none d-md-inline-flex"><i class="far fa-calendar"></i> &nbsp;BOOK AN APPOINTMENT</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-nav d-none d-lg-block">
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-sub"><a href="about.html">About <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="about.html#vision">Vision Mission</a></li>
+            <li><a href="about.html#director">Director's Message</a></li>
+            <li><a href="about.html#achievements">Achievements</a></li>
+            <li><a href="about.html#care">Patients Care</a></li>
+            <li><a href="departments.html">Services &amp; Facilities</a></li>
+            <li><a href="faq.html">FAQ's</a></li>
+            <li><a href="myths-facts.html">Myths &amp; Facts</a></li>
+            <li><a href="ivf.html">IUI – IVF – ICSI</a></li>
+            <li><a href="glossary.html">Glossary Of Terms</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="departments.html">Departments <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu sub-menu-wide">
+            <li><a href="departments.html#ophthalmology">Ophthalmology</a></li>
+            <li><a href="departments.html#gynecology">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="ivf.html">Assisted Fertility (IVF/ICSI/IUI)</a></li>
+            <li><a href="departments.html#surgery">General &amp; Laparoscopic Surgery</a></li>
+            <li><a href="departments.html#emergency">Emergency And Trauma Services</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#doctors">Our Experts</a></li>
+        <li class="active has-sub"><a href="gallery.html">Gallery <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="gallery.html">Image Gallery</a></li>
+            <li><a href="video-gallery.html">Video Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="empanelments.html">Empanelments</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- MOBILE OFFCANVAS NAV -->
+<div class="offcanvas offcanvas-start" id="mobileNav">
+  <div class="offcanvas-header">
+    <img src="assets/img/logo.png" alt="" style="height:40px">
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="departments.html">Departments</a></li>
+      <li><a href="index.html#doctors">Our Experts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="empanelments.html">Empanelments</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+    <a href="index.html#appointment" class="btn btn-primary w-100 mt-3" data-bs-dismiss="offcanvas">Book An Appointment</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumbs"><a href="index.html">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Gallery <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Video Gallery</p>
+    <h1>Video Gallery</h1>
+    <p>Watch hospital tours, patient stories, doctor interviews, and health tips</p>
+  </div>
+</section>
+
+<!-- VIDEO GALLERY -->
+<section class="py-5">
+  <div class="container">
+    <div class="category-tabs">
+      <button class="category-tab active">All Videos</button>
+      <button class="category-tab">Hospital Tours</button>
+      <button class="category-tab">Patient Stories</button>
+      <button class="category-tab">Doctor Interviews</button>
+      <button class="category-tab">Health Tips</button>
+    </div>
+
+    <div class="video-grid">
+      <!-- Hospital Tour -->
+      <div class="video-card">
+        <div class="video-thumbnail" onclick="playVideo(this)">
+          <div class="placeholder"><i class="fas fa-hospital"></i></div>
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="video-info">
+          <span class="video-category">Hospital Tour</span>
+          <h4>Virtual Tour of Sankalp Hospital</h4>
+          <p>Take a complete tour of our state-of-the-art facilities, operation theaters, and patient rooms.</p>
+          <div class="video-meta">
+            <span><i class="far fa-clock"></i> 8:45</span>
+            <span><i class="far fa-eye"></i> 12.5K views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Patient Stories -->
+      <div class="video-card">
+        <div class="video-thumbnail" onclick="playVideo(this)">
+          <div class="placeholder"><i class="fas fa-heart"></i></div>
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="video-info">
+          <span class="video-category">Patient Stories</span>
+          <h4>First Test Tube Baby of Surguja</h4>
+          <p>Celebrating the joy of new parenthood with the first IVF baby born at Sankalp Hospital.</p>
+          <div class="video-meta">
+            <span><i class="far fa-clock"></i> 5:30</span>
+            <span><i class="far fa-eye"></i> 25K views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctor Interview -->
+      <div class="video-card">
+        <div class="video-thumbnail" onclick="playVideo(this)">
+          <div class="placeholder"><i class="fas fa-user-md"></i></div>
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="video-info">
+          <span class="video-category">Doctor Interviews</span>
+          <h4>Understanding IVF with Dr. Lata Goyal</h4>
+          <p>Our fertility specialist explains the IVF process, success rates, and what to expect.</p>
+          <div class="video-meta">
+            <span><i class="far fa-clock"></i> 12:15</span>
+            <span><i class="far fa-eye"></i> 8.2K views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Health Tips -->
+      <div class="video-card">
+        <div class="video-thumbnail" onclick="playVideo(this)">
+          <div class="placeholder"><i class="fas fa-eye"></i></div>
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="video-info">
+          <span class="video-category">Health Tips</span>
+          <h4>Cataract Surgery: What to Expect</h4>
+          <p>Dr. Sanjay Goyal explains modern cataract surgery techniques and recovery.</p>
+          <div class="video-meta">
+            <span><i class="far fa-clock"></i> 7:50</span>
+            <span><i class="far fa-eye"></i> 5.4K views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Patient Stories -->
+      <div class="video-card">
+        <div class="video-thumbnail" onclick="playVideo(this)">
+          <div class="placeholder"><i class="fas fa-smile"></i></div>
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="video-info">
+          <span class="video-category">Patient Stories</span>
+          <h4>Happy Patient Testimonials</h4>
+          <p>Hear from our patients about their experience with treatment and care at Sankalp Hospital.</p>
+          <div class="video-meta">
+            <span><i class="far fa-clock"></i> 6:20</span>
+            <span><i class="far fa-eye"></i> 15K views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hospital Tour -->
+      <div class="video-card">
+        <div class="video-thumbnail" onclick="playVideo(this)">
+          <div class="placeholder"><i class="fas fa-procedures"></i></div>
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="video-info">
+          <span class="video-category">Hospital Tour</span>
+          <h4>Our New IVF Laboratory</h4>
+          <p>A look inside our advanced embryology lab where miracles of life begin.</p>
+          <div class="video-meta">
+            <span><i class="far fa-clock"></i> 4:30</span>
+            <span><i class="far fa-eye"></i> 7.8K views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctor Interview -->
+      <div class="video-card">
+        <div class="video-thumbnail" onclick="playVideo(this)">
+          <div class="placeholder"><i class="fas fa-baby"></i></div>
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="video-info">
+          <span class="video-category">Doctor Interviews</span>
+          <h4>Pregnancy Care with Dr. Vijaya Singh</h4>
+          <p>Expert advice on prenatal care, nutrition, and what to expect during pregnancy.</p>
+          <div class="video-meta">
+            <span><i class="far fa-clock"></i> 15:00</span>
+            <span><i class="far fa-eye"></i> 9.1K views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Health Tips -->
+      <div class="video-card">
+        <div class="video-thumbnail" onclick="playVideo(this)">
+          <div class="placeholder"><i class="fas fa-heartbeat"></i></div>
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="video-info">
+          <span class="video-category">Health Tips</span>
+          <h4>Emergency Care: When to Rush to Hospital</h4>
+          <p>Learn about medical emergencies that require immediate attention and our 24/7 services.</p>
+          <div class="video-meta">
+            <span><i class="far fa-clock"></i> 9:45</span>
+            <span><i class="far fa-eye"></i> 11.2K views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doctor Interview -->
+      <div class="video-card">
+        <div class="video-thumbnail" onclick="playVideo(this)">
+          <div class="placeholder"><i class="fas fa-bone"></i></div>
+          <div class="play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="video-info">
+          <span class="video-category">Doctor Interviews</span>
+          <h4>Joint Replacement Surgery Guide</h4>
+          <p>Dr. Tanay Goyal explains knee and hip replacement options and recovery expectations.</p>
+          <div class="video-meta">
+            <span><i class="far fa-clock"></i> 11:30</span>
+            <span><i class="far fa-eye"></i> 6.5K views</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load More -->
+    <div class="text-center mt-5">
+      <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank" class="btn btn-primary btn-lg">
+        <i class="fab fa-youtube me-2"></i>Subscribe on YouTube
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="site-footer">
+  <div class="footer-main py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <img src="assets/img/logo-white.png" alt="Sankalp Hospital" class="footer-logo mb-3">
+          <h3>About</h3>
+          <p>Sankalp Hospital is a leading healthcare facility in Ambikapur, Chhattisgarh, dedicated to providing top-quality medical services.</p>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <h3>Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="gallery.html">Image Gallery</a></li>
+            <li><a href="video-gallery.html">Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Services</h3>
+          <ul class="footer-list">
+            <li><a href="ivf.html">IVF Treatment</a></li>
+            <li><a href="departments.html#emergency">24/7 Emergency</a></li>
+            <li><a href="departments.html#ophthalmology">Cataract Surgery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3>Reach Us At</h3>
+          <ul class="footer-list">
+            <li><i class="fas fa-phone-alt"></i> <a href="tel:+919584889068">+91-958 488 9068</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info.sankalpslms@gmail.com">info.sankalpslms@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Near Distt. Hospital, Manipur, Ambikapur, CG 497001</li>
+          </ul>
+          <div class="social-icons mt-3">
+            <a href="https://www.facebook.com/sankalphospitals/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sankalphospitals/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center text-center">
+        <p class="mb-0">© Copyright <span id="year"></span> All Rights Reserved <a href="index.html"><strong>Sankalp Hospital</strong></a></p>
+        <p class="mb-0">Designed by <a href="https://brandingpioneers.com/" target="_blank"><strong>Brandingpioneers</strong></a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+919584889068" class="float-call" aria-label="Call us"><i class="fas fa-phone-alt"></i></a>
+<a href="https://wa.me/919584889068" target="_blank" class="float-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="video-placeholder" style="aspect-ratio:16/9;background:#000;display:flex;align-items:center;justify-content:center;color:#fff;font-size:64px;">
+          <i class="fas fa-film"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function playVideo(el) {
+    var modal = new bootstrap.Modal(document.getElementById('videoModal'));
+    modal.show();
+  }
+  document.querySelectorAll('.category-tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

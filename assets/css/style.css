@@ -1,0 +1,215 @@
+/* Sankalp Hospital — Bootstrap 5 custom styles */
+:root{
+  --primary:#168077;          /* logo teal */
+  --primary-dark:#0e5a53;     /* deeper teal for hover */
+  --primary-light:#3aa39a;    /* lighter teal accent */
+  --accent:#d88d3c;           /* warm complement to teal */
+  --dark:#2d4045;             /* deep slate that pairs with teal */
+  --muted:#6b6d6e;            /* logo wordmark grey */
+  --bg-soft:#eef6f5;          /* soft tinted teal */
+}
+*{box-sizing:border-box}
+body{font-family:'Poppins',system-ui,sans-serif;color:#333;line-height:1.6;font-size:15px}
+h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;color:var(--dark);font-weight:700}
+a{color:var(--primary);text-decoration:none}
+a:hover{color:var(--primary-dark)}
+img{max-width:100%;height:auto}
+
+/* ===== TOP BAR ===== */
+.top-bar{background:var(--dark);color:#fff;padding:8px 0;font-size:13px}
+.top-bar a{color:#fff;margin-right:18px;display:inline-flex;align-items:center;gap:6px}
+.top-bar a:hover{color:#ffd76a}
+.top-bar .btn-pkg{background:var(--accent);padding:6px 14px;border-radius:3px;font-weight:600;font-size:12px;letter-spacing:.5px;margin-right:14px}
+.top-bar .btn-pkg:hover{background:#e26500;color:#fff}
+.top-bar-actions a{margin:0 6px}
+.top-bar-actions a i{font-size:14px}
+
+/* ===== HEADER ===== */
+.site-header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);z-index:1000}
+.brand-logo{max-height:60px;width:auto}
+.header-info{gap:12px}
+.header-info .emergency-img{height:50px;width:auto}
+.header-info small{font-size:11px;color:var(--muted);display:block;line-height:1}
+.header-info p{margin:0;font-weight:700;color:var(--dark);font-size:16px}
+.btn-primary{background:var(--primary);border-color:var(--primary);font-weight:600;letter-spacing:.5px;padding:10px 20px;border-radius:4px}
+.btn-primary:hover,.btn-primary:focus{background:var(--primary-dark);border-color:var(--primary-dark)}
+.navbar-toggler{border:1px solid #ddd;font-size:22px;padding:6px 12px;color:var(--primary);background:#fff}
+
+/* ===== MAIN NAV ===== */
+.main-nav{background:var(--primary);border-top:1px solid rgba(255,255,255,.1)}
+.nav-menu{list-style:none;display:flex;flex-wrap:wrap;margin:0;padding:0}
+.nav-menu>li{position:relative}
+.nav-menu>li>a{color:#fff;padding:14px 18px;display:block;font-weight:600;font-size:14px;letter-spacing:.3px;text-transform:uppercase;transition:background .2s}
+.nav-menu>li:hover>a,.nav-menu>li.active>a{background:var(--primary-dark)}
+.nav-menu .sub-menu{display:none;position:absolute;top:100%;left:0;background:#fff;min-width:240px;box-shadow:0 6px 18px rgba(0,0,0,.1);list-style:none;padding:8px 0;margin:0;z-index:200;border-top:3px solid var(--accent)}
+.nav-menu .sub-menu-wide{min-width:280px}
+.nav-menu .sub-menu li a{display:block;padding:9px 18px;color:#444;font-size:13px;font-weight:500;text-transform:none}
+.nav-menu .sub-menu li a:hover{background:var(--bg-soft);color:var(--primary);padding-left:24px}
+.nav-menu>li:hover .sub-menu{display:block}
+.nav-menu .has-sub>a i{font-size:11px;margin-left:4px}
+
+/* mobile menu */
+.mobile-menu{list-style:none;padding:0;margin:0}
+.mobile-menu li a{display:block;padding:12px 8px;border-bottom:1px solid #eee;color:var(--dark);font-weight:600}
+.mobile-menu li a:hover{color:var(--primary)}
+
+/* ===== HERO SLIDER ===== */
+.hero-slider{position:relative}
+.hero-slider .carousel-item img{width:100%;height:auto;max-height:600px;object-fit:cover}
+.hero-slider .carousel-control-prev,.hero-slider .carousel-control-next{width:5%;opacity:.7}
+.hero-slider .carousel-control-prev:hover,.hero-slider .carousel-control-next:hover{opacity:1}
+.carousel-indicators [data-bs-target]{width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid #fff;opacity:.6}
+.carousel-indicators .active{background:var(--primary);opacity:1}
+
+/* ===== NEWS TICKER ===== */
+.news-ticker{background:var(--bg-soft);padding:10px 0;border-bottom:1px solid #e3e9ee}
+.ticker-wrap{gap:14px}
+.ticker-label{background:var(--accent);color:#fff;padding:6px 16px;font-weight:700;font-size:13px;letter-spacing:.5px;border-radius:3px;flex-shrink:0;text-transform:uppercase}
+.ticker-content{overflow:hidden;position:relative}
+.ticker-content ul{list-style:none;margin:0;padding:0;display:flex;gap:40px;animation:tickerScroll 30s linear infinite;white-space:nowrap}
+.ticker-content li{font-weight:500;color:var(--dark);font-size:14px}
+.ticker-content li::before{content:"\f111";font-family:"Font Awesome 6 Free";font-weight:900;color:var(--primary);font-size:8px;margin-right:8px;vertical-align:middle}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ticker-controls button{background:transparent;border:none;color:var(--muted);padding:4px 8px;cursor:pointer}
+.ticker-controls button:hover{color:var(--primary)}
+
+/* ===== SECTION TYPOGRAPHY ===== */
+.section-title{font-size:32px;font-weight:700;color:var(--dark);margin-bottom:6px;position:relative;display:inline-block}
+.section-subtitle{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.section-divider{display:block;width:80px;height:3px;background:var(--primary);margin:15px auto 0;position:relative}
+.section-divider::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:14px;height:14px;border-radius:50%;background:var(--primary);border:3px solid #fff;box-shadow:0 0 0 1px var(--primary)}
+.divider-white{background:#fff}
+.divider-white::after{background:#fff;box-shadow:0 0 0 1px #fff}
+.section-h1{font-size:30px;color:var(--dark);position:relative;padding-bottom:14px;margin-bottom:18px}
+.section-h1::after{content:"";position:absolute;bottom:0;left:0;width:60px;height:3px;background:var(--accent)}
+
+/* ===== ABOUT ===== */
+.about-section .quick-action{display:flex;align-items:center;gap:14px;padding:18px 22px;border:1px solid #e3e9ee;border-radius:8px;background:#fff;color:var(--dark);font-weight:600;margin-bottom:14px;box-shadow:0 2px 6px rgba(0,0,0,.04);transition:all .25s}
+.about-section .quick-action i{font-size:22px;color:var(--primary);width:34px;text-align:center}
+.about-section .quick-action:hover{background:var(--primary);color:#fff;transform:translateY(-3px);border-color:var(--primary)}
+.about-section .quick-action:hover i{color:#fff}
+
+/* ===== SPECIALITIES ===== */
+.speciality-card{background:#fff;text-align:center;padding:30px 16px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.06);transition:all .3s;height:100%;border:1px solid transparent}
+.speciality-card:hover{transform:translateY(-6px);box-shadow:0 10px 24px rgba(22,128,119,.18);border-color:var(--primary)}
+.speciality-card i{font-size:42px;color:var(--primary);margin-bottom:14px;transition:color .3s}
+.speciality-card:hover i{color:var(--accent)}
+.speciality-card h5{font-size:15px;font-weight:600;margin:0;color:var(--dark);min-height:36px}
+
+/* ===== LOOKING EXPERT ===== */
+.looking-expert{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff}
+.looking-expert h2{color:#fff;margin-bottom:6px;font-size:30px}
+.looking-expert .lead{margin:0;color:rgba(255,255,255,.92)}
+.looking-expert .btn{background:#fff;color:var(--primary);border-color:#fff;font-weight:700}
+.looking-expert .btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* ===== DOCTORS ===== */
+.doctors-section{background:#fff}
+.doctor-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.07);transition:all .3s;height:100%;border:1px solid #eef2f5}
+.doctor-card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(22,128,119,.2)}
+.doctor-card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#f1f5f9}
+.doctor-info{padding:16px 12px;text-align:center}
+.doctor-info h3{font-size:15px;margin:0 0 6px;color:var(--dark);font-weight:700}
+.doctor-info p{margin:0;color:var(--muted);font-size:13px;font-weight:500;line-height:1.4}
+
+/* ===== DOCTORS CAROUSEL ===== */
+.doctors-carousel{padding:10px 50px 60px}
+.doctors-carousel .carousel-item{transition:transform .6s ease-in-out}
+.doctors-carousel .carousel-control-prev,.doctors-carousel .carousel-control-next{width:42px;height:42px;background:var(--primary);border-radius:50%;top:50%;margin-top:-21px;opacity:1;transition:background .25s}
+.doctors-carousel .carousel-control-prev{left:0}
+.doctors-carousel .carousel-control-next{right:0}
+.doctors-carousel .carousel-control-prev:hover,.doctors-carousel .carousel-control-next:hover{background:var(--accent)}
+.doctors-carousel .carousel-control-prev-icon,.doctors-carousel .carousel-control-next-icon{width:18px;height:18px}
+.doctors-indicators{position:absolute;bottom:0;left:0;right:0;margin:0;padding:0}
+.doctors-indicators [data-bs-target]{width:12px;height:12px;border-radius:50%;background:#cfd8e0;border:none;opacity:1;margin:0 5px}
+.doctors-indicators .active{background:var(--primary);transform:scale(1.2)}
+@media (max-width:767px){
+  .doctors-carousel{padding:10px 0 60px}
+  .doctors-carousel .carousel-control-prev,.doctors-carousel .carousel-control-next{width:34px;height:34px;margin-top:-17px}
+  .doctors-carousel .carousel-control-prev{left:-4px}
+  .doctors-carousel .carousel-control-next{right:-4px}
+}
+
+/* ===== CTA STRIP ===== */
+.cta-strip{background:var(--primary);color:#fff;padding:38px 0}
+.cta-strip .cta-sub{color:rgba(255,255,255,.85);font-weight:500;font-size:14px;text-transform:uppercase;letter-spacing:1px}
+.cta-strip .cta-title{color:#fff;font-size:28px;font-weight:700;margin:0;text-transform:capitalize}
+.cta-strip .btn{color:var(--primary);font-weight:700;padding:14px 28px}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-section{background:var(--bg-soft)}
+.testimonial-card{background:#fff;padding:34px 32px;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.06);text-align:center;position:relative;margin:14px 4px}
+.testimonial-card .quote-icon{position:absolute;top:18px;left:24px;font-size:28px;color:rgba(22,128,119,.18)}
+.testimonial-card p{font-size:16px;color:#444;font-style:italic;line-height:1.7;margin-bottom:18px}
+.testimonial-card h3{color:var(--primary);font-size:18px;margin:0;font-weight:700}
+.testimonials-section .carousel-control-prev,.testimonials-section .carousel-control-next{width:40px;height:40px;background:var(--primary);border-radius:50%;top:50%;margin-top:-20px;opacity:1}
+.testimonials-section .carousel-control-prev{left:-10px}
+.testimonials-section .carousel-control-next{right:-10px}
+.testimonials-section .carousel-control-prev-icon,.testimonials-section .carousel-control-next-icon{width:18px;height:18px}
+
+/* ===== APPOINTMENT ===== */
+.appointment-section{background:linear-gradient(135deg,var(--dark) 0%,var(--primary) 100%);position:relative}
+.appointment-info p,.appointment-info li{color:rgba(255,255,255,.92)}
+.appointment-info i{color:var(--accent)}
+.appointment-form .form-control,.appointment-form .form-select{padding:12px 14px;border:1px solid #e3e9ee;font-size:14px}
+.appointment-form .form-control:focus,.appointment-form .form-select:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(22,128,119,.12)}
+
+/* ===== INFRASTRUCTURE ===== */
+.infra-card{margin:0;position:relative;overflow:hidden;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.08)}
+.infra-card img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s}
+.infra-card:hover img{transform:scale(1.08)}
+.infra-card figcaption{position:absolute;bottom:0;left:0;right:0;padding:10px 14px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font-weight:600;font-size:14px}
+
+/* ===== GALLERY STRIP ===== */
+.gallery-strip img{aspect-ratio:1/1;object-fit:cover;transition:transform .3s}
+.gallery-strip img:hover{transform:scale(1.04)}
+.btn-outline-primary{border-color:var(--primary);color:var(--primary);font-weight:600;padding:10px 22px}
+.btn-outline-primary:hover{background:var(--primary);border-color:var(--primary);color:#fff}
+
+/* ===== FOOTER ===== */
+.site-footer{background:var(--dark);color:#cdd6df}
+.footer-main h3{color:#fff;font-size:18px;font-weight:700;margin-bottom:18px;position:relative;padding-bottom:10px}
+.footer-main h3::after{content:"";position:absolute;bottom:0;left:0;width:40px;height:2px;background:var(--accent)}
+.footer-logo{max-height:60px;width:auto}
+.footer-list{list-style:none;margin:0;padding:0}
+.footer-list li{padding:6px 0;font-size:14px}
+.footer-list li a{color:#cdd6df;transition:color .2s,padding .2s;display:inline-block}
+.footer-list li a:hover{color:var(--accent);padding-left:5px}
+.footer-list li i{color:var(--accent);margin-right:8px;width:16px;text-align:center}
+.social-icons a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:50%;color:#fff;margin-right:8px;transition:all .25s}
+.social-icons a:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+.footer-bottom{background:rgba(0,0,0,.25);padding:18px 0;font-size:13px;color:#cdd6df}
+.footer-bottom a{color:#fff}
+.footer-bottom a:hover{color:var(--accent)}
+
+/* ===== FLOATING ===== */
+.float-call,.float-wa{position:fixed;right:18px;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:999;animation:pulse 1.6s infinite}
+.float-call{bottom:88px;background:var(--primary)}
+.float-wa{bottom:24px;background:#25d366}
+.float-call:hover,.float-wa:hover{color:#fff;transform:scale(1.08)}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(22,128,119,.5)}50%{box-shadow:0 0 0 12px rgba(22,128,119,0)}}
+.float-wa{animation-name:pulseWa}
+@keyframes pulseWa{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}50%{box-shadow:0 0 0 12px rgba(37,211,102,0)}}
+
+/* ===== RESPONSIVE TWEAKS ===== */
+@media (max-width:991px){
+  .section-title,.section-h1,.cta-strip .cta-title,.looking-expert h2{font-size:24px}
+  .hero-slider .carousel-item img{max-height:380px}
+  .top-bar-info a{margin-right:10px}
+}
+@media (max-width:767px){
+  .doctor-info h3{font-size:13px}
+  .doctor-info p{font-size:12px}
+  .testimonial-card{padding:24px 18px}
+  .speciality-card{padding:22px 12px}
+  .speciality-card i{font-size:34px}
+  .speciality-card h5{font-size:13px;min-height:auto}
+  .ticker-content li{font-size:13px}
+  .news-ticker .ticker-controls{display:none}
+  .float-call,.float-wa{width:46px;height:46px;font-size:18px}
+}
+@media (max-width:575px){
+  .section-title,.section-h1{font-size:20px}
+  .hero-slider .carousel-item img{max-height:280px}
+  .header-info{display:none!important}
+}
