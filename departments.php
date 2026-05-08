@@ -10,7 +10,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Departments</p>
+    <p class="breadcrumbs"><a href="/index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Departments</p>
     <h1>Our Medical Departments</h1>
     <p>Comprehensive healthcare services under one roof with expert specialists</p>
   </div>
@@ -229,7 +229,7 @@
         <p class="text-white opacity-75 mb-0">Book an appointment with our expert doctors today</p>
       </div>
       <div class="col-md-4 text-md-end mt-3 mt-md-0">
-        <a href="index#appointment" class="btn btn-light btn-lg"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+        <a href="/index#appointment" class="btn btn-light btn-lg"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
       </div>
     </div>
   </div>

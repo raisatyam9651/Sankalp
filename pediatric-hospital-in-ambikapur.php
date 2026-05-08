@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge"><i class="fas fa-child me-2 text-warning"></i>Compassionate Child Healthcare</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Pediatrics</li>
           </ol>
         </nav>
@@ -52,7 +52,7 @@
         <p class="lead mb-4">Sankalp Hospital is the trusted destination for <strong>Pediatrics and Neonatal care in Ambikapur</strong>, offering a child-friendly environment and expert medical attention.</p>
         <p>Our pediatrics department is led by experienced child specialists who are dedicated to the physical, emotional, and social health of children from birth through adolescence. We are equipped with a state-of-the-art Neonatal Intensive Care Unit (NICU) to handle premature births and critical newborns, along with comprehensive immunization and growth monitoring services.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
           <a href="/doctors/dr-ankit-gupta" class="btn btn-outline-primary"><i class="fas fa-user-md me-2"></i>Meet Our Pediatrician</a>
         </div>
       </div>

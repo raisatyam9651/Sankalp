@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge"><i class="fas fa-procedures me-2 text-warning"></i>Advanced Minimally Invasive Care</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Laparoscopic Surgery</li>
           </ol>
         </nav>
@@ -52,7 +52,7 @@
         <p class="lead mb-4">Sankalp Hospital is the premier destination for <strong>laparoscopic surgery in Ambikapur</strong>, offering world-class surgical facilities for complex abdominal and general conditions.</p>
         <p>Our department is led by experienced surgeons who specialize in minimally invasive techniques, ensuring that patients undergo procedures with smaller incisions, significantly less pain, and a much faster return to their daily lives. We are equipped with advanced modular operation theaters and high-definition laparoscopic camera systems to provide the highest standard of surgical care in Northern Chhattisgarh.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Schedule Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Schedule Consultation</a>
           <a href="/doctors/dr-nilesh-goyal" class="btn btn-outline-primary"><i class="fas fa-user-md me-2"></i>Meet Our Surgeon</a>
         </div>
       </div>

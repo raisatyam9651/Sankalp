@@ -10,7 +10,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> About Us</p>
+    <p class="breadcrumbs"><a href="/index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> About Us</p>
     <h1>About Sankalp Hospital</h1>
     <p>Bringing world-class healthcare to Ambikapur and surrounding regions since 2008</p>
   </div>
@@ -172,7 +172,7 @@
               <li class="mb-3 d-flex align-items-start"><i class="fas fa-envelope text-primary me-3 mt-1"></i><div><strong>Email</strong><br>info.sankalpslms@gmail.com</div></li>
               <li class="mb-3 d-flex align-items-start"><i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i><div><strong>Address</strong><br>Near Distt. Hospital, Manipur, Ambikapur, CG 497001</div></li>
             </ul>
-            <a href="index#appointment" class="btn btn-primary w-100 mt-2"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+            <a href="/index#appointment" class="btn btn-primary w-100 mt-2"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
           </div>
         </div>
         <div class="card border-0 shadow-sm" style="background:var(--primary)">

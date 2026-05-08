@@ -10,7 +10,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Health Blog</p>
+    <p class="breadcrumbs"><a href="/index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Health Blog</p>
     <h1>Health Tips &amp; Articles</h1>
     <p>Expert health advice and medical information from our experienced doctors</p>
   </div>
@@ -150,7 +150,7 @@
         <div class="sidebar-widget" style="background:var(--primary)">
           <h4 class="text-white border-bottom-0">Need Doctor Consultation?</h4>
           <p class="text-white opacity-75 mb-4">Book an appointment with our expert doctors for personalized health advice.</p>
-          <a href="index#appointment" class="btn btn-light w-100"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+          <a href="/index#appointment" class="btn btn-light w-100"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
         </div>
       </div>
     </div>

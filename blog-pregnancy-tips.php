@@ -13,7 +13,7 @@
 <!-- BLOG HERO -->
 <section class="blog-hero text-center">
   <div class="container">
-    <p class="blog-meta"><a href="index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="blogs" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Pregnancy Care</p>
+    <p class="blog-meta"><a href="/index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="/blogs" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Pregnancy Care</p>
     <div class="blog-img-large"><i class="fas fa-baby"></i></div>
     <h1>Essential Tips for a Healthy Pregnancy</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> January 15, 2024 &nbsp;&nbsp; <i class="far fa-clock"></i> 8 min read &nbsp;&nbsp; <i class="far fa-user"></i> Dr. Lata Goyal</p>
@@ -147,7 +147,7 @@
     <div class="text-center mt-5 p-4 rounded" style="background:var(--bg-soft)">
       <h4>Need Pregnancy Consultation?</h4>
       <p class="text-muted mb-4">Our experienced gynecologists are here to guide you through every step of your pregnancy journey.</p>
-      <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+      <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
     </div>
   </div>
 </div>

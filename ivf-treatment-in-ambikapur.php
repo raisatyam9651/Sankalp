@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge"><i class="fas fa-award me-2 text-warning"></i>#1 Fertility Center in Surguja District</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">IVF Treatment</li>
           </ol>
         </nav>
@@ -52,7 +52,7 @@
         <p class="lead mb-4">Sankalp Hospital is recognized as the leading destination for <strong>IVF treatment in Ambikapur</strong>. We combine medical excellence with emotional support to help you achieve your dream of parenthood.</p>
         <p>As the first dedicated IVF center in Surguja district, Chhattisgarh, we have pioneered assisted reproductive technologies (ART) in the region. Our center is equipped with a state-of-the-art embryology lab, providing world-class facilities for IUI, IVF, and ICSI.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
           <a href="tel:+919584889068" class="btn btn-outline-primary"><i class="fas fa-phone-alt me-2"></i>Call Us</a>
         </div>
       </div>

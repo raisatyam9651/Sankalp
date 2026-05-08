@@ -11,7 +11,7 @@
 <section class="page-hero">
   <div class="container">
     <span class="ivf-hero-badge"><i class="fas fa-award me-2"></i>First Test Tube Baby Center in Surguja</span>
-    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> IVF & Fertility</p>
+    <p class="breadcrumbs"><a href="/index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> IVF & Fertility</p>
     <h1>Assisted Fertility (IVF/ICSI/IUI)</h1>
     <p>Advanced fertility treatments with high success rates. Your dream of parenthood is our priority.</p>
   </div>
@@ -26,7 +26,7 @@
         <p class="lead mb-4">At Sankalp Hospital, we understand the emotional journey of couples facing infertility. Our state-of-the-art fertility center offers comprehensive treatments with compassion and expertise.</p>
         <p>As the first IVF center in Surguja district, we have helped hundreds of couples achieve their dream of having a baby. Our team of experienced fertility specialists uses the latest techniques and technologies to maximize your chances of success.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
           <a href="tel:+919584889068" class="btn btn-outline-primary"><i class="fas fa-phone-alt me-2"></i>Call Us</a>
         </div>
       </div>
@@ -69,7 +69,7 @@
           <h3>IVF (In-Vitro Fertilization)</h3>
           <p>The most advanced fertility treatment where eggs are fertilized with sperm in our laboratory. The resulting embryo is then transferred to the uterus.</p>
           <div class="price">Starting ₹1,50,000</div>
-          <a href="index#appointment" class="btn btn-outline-primary w-100">Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-outline-primary w-100">Book Consultation</a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -78,7 +78,7 @@
           <h3>ICSI (Intra-Cytoplasmic Sperm Injection)</h3>
           <p>A specialized technique where a single sperm is directly injected into an egg. Ideal for male factor infertility or previous IVF failures.</p>
           <div class="price">Starting ₹1,80,000</div>
-          <a href="index#appointment" class="btn btn-primary w-100">Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary w-100">Book Consultation</a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -87,7 +87,7 @@
           <h3>IUI (Intra-Uterine Insemination)</h3>
           <p>A less invasive procedure where specially prepared sperm is placed directly into the uterus around the time of ovulation.</p>
           <div class="price">Starting ₹25,000</div>
-          <a href="index#appointment" class="btn btn-outline-primary w-100">Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-outline-primary w-100">Book Consultation</a>
         </div>
       </div>
     </div>
@@ -237,7 +237,7 @@
         <p class="text-white opacity-75 mb-0">Our fertility experts are here to guide you through every step. Book a free consultation today.</p>
       </div>
       <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-        <a href="index#appointment" class="btn btn-light btn-lg me-2"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+        <a href="/index#appointment" class="btn btn-light btn-lg me-2"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
         <a href="tel:+919584889068" class="btn btn-outline-light btn-lg"><i class="fas fa-phone-alt me-2"></i>Call Now</a>
       </div>
     </div>

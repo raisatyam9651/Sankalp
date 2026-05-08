@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge"><i class="fas fa-bone me-2 text-warning"></i>#1 Orthopedic Center in Surguja</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Orthopedics</li>
           </ol>
         </nav>
@@ -52,7 +52,7 @@
         <p class="lead mb-4">Sankalp Hospital stands as the premier <strong>orthopedic hospital in Ambikapur</strong>, offering world-class treatment for complex fractures, joint replacements, and sports injuries.</p>
         <p>Our orthopedic department is led by experienced surgeons who specialize in minimally invasive techniques, ensuring faster recovery and better outcomes. We are equipped with advanced modular operation theaters and digital imaging facilities to provide the highest standard of bone and joint care in Northern Chhattisgarh.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
           <a href="tel:+919584889068" class="btn btn-outline-primary"><i class="fas fa-phone-alt me-2"></i>Contact Specialist</a>
         </div>
       </div>

@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge"><i class="fas fa-tint me-2 text-warning"></i>Expert Kidney & Urinary Care</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Urology</li>
           </ol>
         </nav>
@@ -52,7 +52,7 @@
         <p class="lead mb-4">Sankalp Hospital is recognized as the premier <strong>urology hospital in Ambikapur</strong>, offering advanced diagnostic and treatment facilities for all urinary and kidney-related conditions.</p>
         <p>Our urology department specializes in minimally invasive procedures for kidney stones and prostate issues. With modern equipment and a patient-centric approach, we provide effective solutions for urinary tract infections (UTI), bladder problems, and male reproductive health in Northern Chhattisgarh.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
           <a href="tel:+919584889068" class="btn btn-outline-primary"><i class="fas fa-phone-alt me-2"></i>Speak with Expert</a>
         </div>
       </div>

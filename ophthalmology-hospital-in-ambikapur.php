@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge"><i class="fas fa-eye me-2 text-warning"></i>World-Class Vision Care</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Ophthalmology</li>
           </ol>
         </nav>
@@ -52,7 +52,7 @@
         <p class="lead mb-4">Sankalp Hospital is widely regarded as the <strong>best eye hospital in Ambikapur</strong>, led by the region's most experienced ophthalmologists.</p>
         <p>Our department is equipped with cutting-edge diagnostic tools and high-precision surgical microscopes to provide the highest standard of ocular care. We specialize in micro-incision cataract surgery (MICS), premium IOL implants, and laser-assisted treatments for various retinal and corneal diseases, serving patients from across Northern Chhattisgarh.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
           <a href="/doctors/dr-sanjay-goyal" class="btn btn-outline-primary"><i class="fas fa-user-md me-2"></i>Meet Dr. Sanjay Goyal</a>
         </div>
       </div>

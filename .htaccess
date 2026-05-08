@@ -31,6 +31,9 @@ Redirect 301 /departments/chemotherapy/ /chemotherapy-hospital-in-ambikapur
 Redirect 301 /departments/anesthesia/ /anesthesia-services-in-ambikapur
 Redirect 301 /departments/oral-surgery/ /maxillofacial-surgery-hospital-in-ambikapur
 
+Redirect 301 /departments.php /departments
+Redirect 301 /contact.php /contact
+
 # Redirect old doctor pages to clean URLs
 Redirect 301 /doctors/dr-lata-goyal/ /doctors/dr-lata-goyal
 Redirect 301 /doctors/dr-tanay-goyal/ /doctors/dr-tanay-goyal

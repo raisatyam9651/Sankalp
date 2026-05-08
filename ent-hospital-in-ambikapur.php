@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge"><i class="fas fa-stethoscope me-2 text-warning"></i>Leading ENT Care in Surguja District</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">ENT Treatment</li>
           </ol>
         </nav>
@@ -52,7 +52,7 @@
         <p class="lead mb-4">Sankalp Hospital is recognized as the premier destination for <strong>ENT treatment in Ambikapur</strong>. Our Otolaryngology department provides expert care for a wide range of ear, nose, and throat conditions.</p>
         <p>Our ENT department is equipped with modern diagnostic tools including video endoscopy, audiometry, and specialized surgical instruments for minimally invasive procedures. We treat everything from common tonsillitis and ear infections to complex sinus surgeries and hearing restoration.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
           <a href="tel:+919584889068" class="btn btn-outline-primary"><i class="fas fa-phone-alt me-2"></i>Call Us</a>
         </div>
       </div>

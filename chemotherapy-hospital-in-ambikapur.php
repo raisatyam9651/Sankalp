@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge"><i class="fas fa-ribbon me-2 text-warning"></i>Compassionate Cancer Care</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Chemotherapy & Oncology</li>
           </ol>
         </nav>
@@ -52,7 +52,7 @@
         <p class="lead mb-4">Sankalp Hospital is the trusted choice for <strong>cancer care and chemotherapy in Ambikapur</strong>, offering specialized treatment plans for various types of cancer.</p>
         <p>Our oncology department is dedicated to providing high-quality chemotherapy sessions in a comfortable daycare setting. Led by experienced oncologists and onco-surgeons, we provide comprehensive management for breast, gynecological, gastrointestinal, and other cancers. We combine medical expertise with emotional support to help patients and their families navigate the challenging journey of cancer treatment in Northern Chhattisgarh.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Consultation</a>
           <a href="tel:+919584889068" class="btn btn-outline-primary"><i class="fas fa-phone-alt me-2"></i>Speak with Specialist</a>
         </div>
       </div>

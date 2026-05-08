@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge bg-danger text-white border-0"><i class="fas fa-ambulance me-2"></i>24/7 Critical Response Team</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Emergency Services</li>
           </ol>
         </nav>

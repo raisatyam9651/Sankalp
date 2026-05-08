@@ -16,7 +16,7 @@
         <span class="ivf-hero-badge"><i class="fas fa-tint me-2 text-warning"></i>Life-Saving Renal Support</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index">Home</a></li>
+            <li class="breadcrumb-item"><a href="/index">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Dialysis</li>
           </ol>
         </nav>
@@ -52,7 +52,7 @@
         <p class="lead mb-4">Sankalp Hospital is the leading <strong>dialysis center in Ambikapur</strong>, dedicated to improving the quality of life for patients with kidney disorders.</p>
         <p>Our dialysis unit is equipped with modern, high-efficiency dialysis machines and is staffed by experienced technicians and nursing professionals. We follow stringent sterilization protocols to ensure the highest level of patient safety. Whether you require routine hemodialysis or emergency renal support, our team is committed to providing compassionate and professional care in Northern Chhattisgarh.</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Schedule Consultation</a>
+          <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Schedule Consultation</a>
           <a href="tel:+919584889068" class="btn btn-outline-primary"><i class="fas fa-phone-alt me-2"></i>Inquiry for Slots</a>
         </div>
       </div>

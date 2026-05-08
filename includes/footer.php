@@ -28,11 +28,12 @@
         <div class="col-md-6 col-lg-3">
           <h3>Quick Links</h3>
           <ul class="footer-list">
-            <li><a href="ivf-treatment-in-ambikapur">IVF / ICSI / IUI</a></li>
-            <li><a href="departments">Critical Pregnancy Care</a></li>
-            <li><a href="departments#ophthalmology">Cataract Surgery</a></li>
-            <li><a href="departments#ophthalmology">Diabetic Retinopathy</a></li>
-            <li><a href="departments#emergency">Emergency and Trauma Services</a></li>
+            <li><a href="/ivf-treatment-in-ambikapur">IVF / ICSI / IUI</a></li>
+            <li><a href="/departments">Critical Pregnancy Care</a></li>
+            <li><a href="/departments#ophthalmology">Cataract Surgery</a></li>
+            <li><a href="/departments#ophthalmology">Diabetic Retinopathy</a></li>
+            <li><a href="/departments#emergency">Emergency and Trauma Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-3">
