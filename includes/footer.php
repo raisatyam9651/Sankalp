@@ -11,23 +11,28 @@
         <div class="col-md-6 col-lg-2">
           <h3>Departments</h3>
           <ul class="footer-list">
-            <li><a href="departments.php#ophthalmology">Ophthalmology</a></li>
-            <li><a href="ivf-treatment-in-ambikapur.php">Assisted Fertility</a></li>
-            <li><a href="departments.php#gynecology">Obstetrics &amp; Gynecology</a></li>
-            <li><a href="departments.php#surgery">General &amp; Laparoscopic Surgery</a></li>
-            <li><a href="departments.php#orthopaedics">Orthopaedics</a></li>
-            <li><a href="departments.php#pediatrics">Pediatrics</a></li>
+            <li><a href="/ophthalmology-hospital-in-ambikapur">Ophthalmology</a></li>
+            <li><a href="/gynecology-hospital-in-ambikapur">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="/laparoscopic-surgery-hospital-in-ambikapur">General &amp; Laparoscopic Surgery</a></li>
+            <li><a href="/urology-hospital-in-ambikapur">Urology</a></li>
+            <li><a href="/orthopedic-hospital-in-ambikapur">Orthopaedics</a></li>
+            <li><a href="/pediatric-hospital-in-ambikapur">Pediatrics</a></li>
+            <li><a href="/dialysis-center-in-ambikapur">Dialysis</a></li>
+            <li><a href="/emergency-hospital-in-ambikapur">Emergency &amp; Trauma</a></li>
+            <li><a href="/chemotherapy-hospital-in-ambikapur">Chemotherapy &amp; Oncology</a></li>
+            <li><a href="/anesthesia-services-in-ambikapur">Anesthesia &amp; Pain Care</a></li>
+            <li><a href="/maxillofacial-surgery-hospital-in-ambikapur">Oral &amp; Maxillofacial</a></li>
             <li><a href="/blog/">Blogs</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-3">
           <h3>Quick Links</h3>
           <ul class="footer-list">
-            <li><a href="ivf-treatment-in-ambikapur.php">IVF / ICSI / IUI</a></li>
-            <li><a href="departments.php">Critical Pregnancy Care</a></li>
-            <li><a href="departments.php#ophthalmology">Cataract Surgery</a></li>
-            <li><a href="departments.php#ophthalmology">Diabetic Retinopathy</a></li>
-            <li><a href="departments.php#emergency">Emergency and Trauma Services</a></li>
+            <li><a href="ivf-treatment-in-ambikapur">IVF / ICSI / IUI</a></li>
+            <li><a href="departments">Critical Pregnancy Care</a></li>
+            <li><a href="departments#ophthalmology">Cataract Surgery</a></li>
+            <li><a href="departments#ophthalmology">Diabetic Retinopathy</a></li>
+            <li><a href="departments#emergency">Emergency and Trauma Services</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-3">
@@ -49,7 +54,7 @@
   <div class="footer-bottom">
     <div class="container">
       <div class="d-md-flex justify-content-between align-items-center text-center">
-        <p class="mb-0">© Copyright <span id="year"></span> All Rights Reserved <a href="/index.php"><strong>Sankalp Hospital</strong></a></p>
+        <p class="mb-0">© Copyright <span id="year"></span> All Rights Reserved <a href="/index"><strong>Sankalp Hospital</strong></a></p>
         <p class="mb-0">Designed by <a href="https://brandingpioneers.com/" target="_blank"><strong>Brandingpioneers</strong></a></p>
       </div>
     </div>

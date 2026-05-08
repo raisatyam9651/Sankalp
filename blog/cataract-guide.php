@@ -7,7 +7,7 @@ $blog_readtime = "7 min read";
 $blog_author = "Dr. Sanjay Goyal";
 $blog_author_desc = "MBBS, MS (Ophthalmology) - Senior Eye Specialist, Sankalp Hospital";
 $blog_image = "https://images.unsplash.com/photo-1557844352-761f2565b576?w=900&h=450&fit=crop";
-$blog_content = '
+$blog_content = <<<'HTML'
 <p class="lead">Cataracts are one of the most common vision problems affecting millions of people worldwide. Understanding this condition can help you recognize symptoms early and seek appropriate treatment.</p>
 
 <blockquote>"Cataracts are not a disease but a natural aging process of the eye lens. With modern surgical techniques, restoring clear vision is now safer and more effective than ever."</blockquote>
@@ -74,7 +74,7 @@ $blog_content = '
 </table>
 
 <div class="alert alert-warning">
-<strong>Important:</strong> Follow your ophthalmologist\'s instructions carefully. Use eye drops as prescribed and attend all follow-up appointments for optimal results.
+<strong>Important:</strong> Follow your ophthalmologist's instructions carefully. Use eye drops as prescribed and attend all follow-up appointments for optimal results.
 </div>
 
 <h2>Prevention Tips</h2>
@@ -87,7 +87,7 @@ $blog_content = '
 </ul>
 
 <p>If you're experiencing vision changes, consult our eye care specialists at Sankalp Hospital for a comprehensive eye examination and personalized treatment plan.</p>
-';
+HTML;
 
 $related_posts = [
     ['title' => '5 Simple Steps to Keep Your Heart Healthy', 'url' => 'heart-health.php', 'date' => 'Jan 5, 2024'],

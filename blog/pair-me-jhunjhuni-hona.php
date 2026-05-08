@@ -2,15 +2,14 @@
 <html lang="hi">
 <head>
   <title>पैर में झनझनाहट होना | Sankalp Hospital</title>
-  <meta name="description" content="पैर में झनझनाहट (Pair me Jhunjhuni hona) के कारण, लक्षण और उपचार। जानें इस समस्या के बारे में विस्तार से।">
+  <meta name="description" content="पैर में झनझनाहट (Pair me Jhunjhuni hona) के कारण, लक्षण, निदान, उपचार और घरेलू उपाय। जानें इस समस्या के बारे में विस्तार से।">
   <?php include '../includes/header-code.php'; ?>
   <style>
     .blog-hero { background: linear-gradient(135deg, #1e8449 0%, #27ae60 100%); color: #fff; padding: 80px 0 60px; text-align: center; }
     .blog-hero p.breadcrumbs { color: rgba(255,255,255,0.85); font-size: 14px; margin-bottom: 10px; }
     .blog-hero p.breadcrumbs a { color: #fff; }
     .blog-hero h1 { color: #fff; font-size: 2.2rem; font-weight: 700; margin: 15px 0; }
-    .blog-img-large { width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; background: rgba(255,255,255,0.15); }
-    .blog-img-large i { font-size: 50px; color: #fff; }
+    .blog-img-large { width: 100%; max-width: 800px; height: 400px; object-fit: cover; display: block; margin: 0 auto 20px; border-radius: 12px; }
     .blog-content { max-width: 800px; margin: 0 auto; padding: 50px 15px; }
     .blog-content h2 { color: var(--dark); font-size: 1.5rem; margin: 30px 0 15px; font-weight: 700; }
     .blog-content h3 { color: var(--dark); font-size: 1.2rem; margin: 25px 0 12px; font-weight: 600; }
@@ -19,20 +18,11 @@
     .blog-content li { margin-bottom: 8px; line-height: 1.7; }
     .blog-content blockquote { background: var(--bg-soft); border-left: 4px solid var(--primary); padding: 20px 25px; margin: 25px 0; font-style: italic; border-radius: 0 8px 8px 0; }
     .blog-content .table { margin: 20px 0; }
-    .blog-content .alert { padding: 15px 20px; border-radius: 8px; margin: 20px 0; }
-    .blog-content .alert-warning { background: #fff3cd; border: 1px solid #ffc107; color: #856404; }
-    .blog-content .alert-danger { background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
-    .author-box { display: flex; align-items: center; gap: 20px; background: var(--bg-soft); padding: 25px; border-radius: 12px; margin: 40px 0; }
-    .author-avatar { width: 70px; height: 70px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-    .author-avatar i { font-size: 30px; color: #fff; }
-    .author-info h5 { margin: 0 0 5px; color: var(--dark); font-weight: 700; }
-    .author-info p { margin: 0; color: #666; font-size: 14px; line-height: 1.6; }
-    .share-box { background: var(--bg-soft); padding: 25px; border-radius: 12px; margin: 30px 0; text-align: center; }
-    .share-box h4 { margin: 0 0 15px; font-weight: 600; }
-    .share-buttons { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-    .share-btn { padding: 10px 20px; border-radius: 25px; color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; }
-    .share-btn.facebook { background: #3b5998; }
-    .share-btn.whatsapp { background: #25d366; }
+    .blog-content .faq-item { background: #f8f9fa; border-radius: 10px; padding: 20px; margin: 15px 0; }
+    .blog-content .faq-item h4 { color: var(--primary); margin: 0 0 10px; font-weight: 600; }
+    .blog-content .faq-item p { margin: 0; color: #555; }
+    .blog-content .tip-box { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 4px solid #4caf50; padding: 20px; border-radius: 0 10px 10px 0; margin: 20px 0; }
+    .blog-content .warning-box { background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; padding: 20px; border-radius: 0 10px 10px 0; margin: 20px 0; }
     .blog-meta { font-size: 13px; color: rgba(255,255,255,0.8); }
     .blog-meta i { margin-right: 3px; }
   </style>
@@ -43,117 +33,327 @@
 <!-- BLOG HERO -->
 <section class="blog-hero text-center">
   <div class="container">
-    <p class="blog-meta"><a href="../index.php" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index.php" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Neurology</p>
-    <div class="blog-img-large"><i class="fas fa-brain"></i></div>
+    <p class="blog-meta"><a href="/index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="/blog/" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Neurology</p>
+    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&h=600&fit=crop" alt="पैर में झनझनाहट" class="blog-img-large">
     <h1>पैर में झनझनाहट (Jhunjhuni) होना</h1>
-    <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 5 min read &nbsp;&nbsp; <i class="far fa-user"></i> Dr. Ankit Sharma</p>
+    <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 10 min read &nbsp;&nbsp; <i class="fas fa-brain"></i> Neurology</p>
   </div>
 </section>
 
 <!-- BLOG CONTENT -->
 <div class="container">
   <div class="blog-content">
-    <p class="lead">क्या आपको भी पैर में झनझनाहट महसूस होती है? यह एक आम समस्या है जो कई कारणों से हो सकती है। इस लेख में हम जानेंगे कि पैर में झनझनाहट क्यों होती है और इसका इलाज कैसे किया जा सकता है।</p>
+    <p class="lead">क्या आपको भी पैर में झनझनाहट महसूस होती है? यह एक आम समस्या है जो कई कारणों से हो सकती है - कुछ सामान्य और कुछ गंभीर। इस लेख में हम विस्तार से जानेंगे कि पैर में झनझनाहट क्यों होती है, इसके लक्षण, निदान और उपचार के बारे में।</p>
 
-    <blockquote>"पैर में झनझनाहट या सुन्नपन अक्सर तंत्रिका तंत्र की समस्या का संकेत हो सकता है। इसे नजरअंदाज नहीं करना चाहिए।"</blockquote>
+    <p>पैर में झनझनाहट या सुन्नपन को मेडिकल भाषा में "पैरास्थीसिया" (Paresthesia) कहते हैं। यह अनुभव अक्सर "सुइयां चुभना" या "झनझनाहट" जैसा होता है। कई बार यह अनुभव बहुत कम समय के लिए होता है, लेकिन अगर यह लगातार बना रहे तो यह किसी गंभीर समस्या का संकेत हो सकता है।</p>
+
+    <blockquote>"पैर में झनझनाहट या सुन्नपन अक्सर तंत्रिका तंत्र की समस्या का संकेत हो सकता है। इसे नजरअंदाज नहीं करना चाहिए और समय पर जांच करानी चाहिए।"</blockquote>
+
+    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop" alt="नर्व सिस्टम" class="blog-img-large" style="height:300px;margin:30px 0">
+
+    <h2>पैर में झनझनाहट क्या है?</h2>
+    <p>झनझनाहट एक संवेदी लक्षण है जब तंत्रिकाओं पर दबाव पड़ता है या वे क्षतिग्रस्त हो जाती हैं। इससे संकेतों का प्रवाह बाधित होता है और मस्तिष्क को असामान्य संकेत मिलते हैं, जिससे झनझनाहट, सुन्नपन, या जलन जैसा अनुभव होता है।</p>
+
+    <p>झनझनाहट दो प्रकार की होती है:</p>
+    <ul>
+      <li><strong>अस्थायी झनझनाहट:</strong> यह आमतौर पर किसी नस पर अधिक देर दबाव पड़ने से होती है और जल्दी ठीक हो जाती है</li>
+      <li><strong>स्थायी झनझनाहट:</strong> यह तंत्रिका क्षति या किसी चिकित्सा स्थिति का संकेत हो सकती है</li>
+    </ul>
 
     <h2>पैर में झनझनाहट के कारण</h2>
+    <p>पैर में झनझनाहट के कई कारण हो सकते हैं। आइए विस्तार से जानें:</p>
 
     <h3>1. नसों पर दबाव (Nerve Compression)</h3>
-    <p>जब किसी नस पर अधिक देर तक दबाव पड़ता है, तो रक्त का प्रवाह कम हो जाता है और झनझनाहट होने लगती है। यह आमतौर पर:</p>
+    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=400&fit=crop" alt="नर्व प्रेशर" class="blog-img-large" style="height:250px;margin:20px 0">
+    <p>जब किसी नस पर अधिक देर तक दबाव पड़ता है, तो रक्त का प्रवाह कम हो जाता है और झनझनाहट होने लगती है। यह आमतौर पर इन स्थितियों में होती है:</p>
     <ul>
       <li>पैर को लंबे समय तक दबाकर बैठने से</li>
-      <li>सीने में करकर सोने से</li>
+      <li>सीने में करकर सोने से (क्रॉस-लेग स्लीपिंग)</li>
       <li>बहुत कसकर जूते पहनने से</li>
+      <li>लंबे समय तक साइकिल चलाने से</li>
+      <li>टॉयलेट पर बैठे रहने से</li>
     </ul>
 
     <h3>2. विटामिन बी12 की कमी</h3>
-    <p>विटामिन बी12 तंत्रिका तंत्र के स्वस्थ रहने के लिए जरूरी है। इसकी कमी से:</p>
+    <p>विटामिन बी12 तंत्रिका तंत्र के स्वस्थ रहने के लिए अत्यंत जरूरी है। यह मिएलिन शीथ (myelin sheath) के निर्माण में मदद करता है जो तंत्रिकाओं की रक्षा करता है। इसकी कमी से:</p>
     <ul>
       <li>पैरों में सुन्नपन और झनझनाहट</li>
-      <li>कमजोरी</li>
+      <li>मांसपेशियों में कमजोरी</li>
       <li>संतुलन में कठिनाई</li>
+      <li>याददाश्त की समस्या</li>
+      <li>थकान और कमजोरी</li>
     </ul>
 
-    <h3>3. मधुमेह (Diabetes)</h3>
-    <p>मधुमेह से ग्रसित रोगियों में नसों को नुकसान (डायबिटिक न्यूरोपैथी) हो सकता है, जिससे पैरों में झनझनाहट होती है।</p>
+    <div class="tip-box">
+      <h4>विटामिन बी12 के स्रोत:</h4>
+      <p>मांस, मछली, अंडे, दूध, पनीर, और सब्जी के रूप में बी12 मिलता है। शाकाहारियों को विशेष ध्यान देना चाहिए।</p>
+    </div>
+
+    <h3>3. मधुमेह (Diabetes) और डायबिटिक न्यूरोपैथी</h3>
+    <p>मधुमेह से ग्रसित रोगियों में नसों को नुकसान (डायबिटिक न्यूरोपैथी) हो सकता है। लंबे समय तक ब्लड शुगर का अधिक रहने से छोटी नसें क्षतिग्रस्त हो जाती हैं।</p>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>मधुमेह प्रकार</th>
+          <th>न्यूरोपैथी का प्रकार</th>
+          <th>लक्षण</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>टाइप 1 डायबिटीज</td>
+          <td>परिधीय न्यूरोपैथी</td>
+          <td>पैरों में झनझनाहट, सुन्नपन</td>
+        </tr>
+        <tr>
+          <td>टाइप 2 डायबिटीज</td>
+          <td>ऑटोनोमिक न्यूरोपैथी</td>
+          <td>पाचन संबंधी समस्याएं</td>
+        </tr>
+        <tr>
+          <td>दीर्घकालिक मधुमेह</td>
+          <td>फोकल न्यूरोपैथी</td>
+          <td>एक विशेष क्षेत्र में दर्द</td>
+        </tr>
+      </tbody>
+    </table>
 
     <h3>4. परिधीय न्यूरोपैथी (Peripheral Neuropathy)</h3>
-    <p>यह एक ऐसी स्थिति है जहां शरीर की परिधीय नसें क्षतिग्रस्त हो जाती हैं, जिससे:</p>
+    <p>यह एक ऐसी स्थिति है जहां शरीर की परिधीय नसें (वे नसें जो मस्तिष्क और रीढ़ की हड्डी से दूर हैं) क्षतिग्रस्त हो जाती हैं। इससे:</p>
     <ul>
       <li>पैरों में झनझनाहट, जलन</li>
-      <li>सुन्नपन</li>
-      <li>दर्द</li>
+      <li>सुन्नपन (अक्सर जूते जैसा पहने होने का भ्रम)</li>
+      <li>दर्द (कई बार तेज दर्द)</li>
+      <li>मांसपेशियों में कमजोरी</li>
+      <li>संतुलन में समस्या</li>
     </ul>
 
-    <h3>5. विटामिन की कमी</h3>
+    <h3>5. विटामिन की अन्य कमियां</h3>
     <p>B1, B6, B12, और E विटामिन की कमी से तंत्रिका संबंधी समस्याएं हो सकती हैं।</p>
 
-    <h3>6. शराब का अधिक सेवन</h3>
-    <p>अधिक शराब पीने से भी नसों को नुकसान पहुंच सकता है, जिससे झनझनाहट होती है।</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>विटामिन</th>
+          <th>कमी के लक्षण</th>
+          <th>स्रोत</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>विटामिन बी1</td>
+          <td>बेरी-बेरी, मांसपेशी कमजोरी</td>
+          <td>सीविंग, मटर, बीन्स</td>
+        </tr>
+        <tr>
+          <td>विटामिन बी6</td>
+          <td>सुन्नपन, थकान</td>
+          <td>केला, एवोकैडो, सोयाबीन</td>
+        </tr>
+        <tr>
+          <td>विटामिन बी12</td>
+          <td>झनझनाहट, सुन्नपन, थकान</td>
+          <td>मांस, मछली, अंडे, दूध</td>
+        </tr>
+        <tr>
+          <td>विटामिन E</td>
+          <td>संतुलन में कठिनाई</td>
+          <td>बादाम, सूरजमुखी के बीज</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h2>कब डॉक्टर से मिलना चाहिए?</h2>
-    <p>इन स्थितियों में तुरंत डॉक्टर से संपर्क करें:</p>
+    <h3>6. शराब का अधिक सेवन</h3>
+    <p>अधिक शराब पीने से भी नसों को नुकसान पहुंच सकता है। इसे "अल्कोहलिक न्यूरोपैथी" कहते हैं। शराब:</p>
     <ul>
-      <li>अगर झनझनाहट लगातार बनी हुई है</li>
-      <li>अगर पैरों में कमजोरी भी है</li>
-      <li>अगर चलने में कठिनाई हो रही है</li>
-      <li>अगर दर्द बढ़ रहा है</li>
-      <li>अगर पैरों में घाव हो गए हैं</li>
+      <li>विटामिन बी12 के अवशोषण में बाधा डालती है</li>
+      <li>सीधे तंत्रिका कोशिकाओं को नुकसान पहुंचाती है</li>
+      <li>पोषण की कमी का कारण बनती है</li>
     </ul>
+
+    <h3>7. गठिया और रीढ़ की हड्डी की समस्याएं</h3>
+    <p>रीढ़ की हड्डी में गठिया, डिस्क प्रोलैप्स, या स्पॉन्डिलोसिस से भी नसों पर दबाव पड़ सकता है।</p>
+
+    <h3>8. किडनी की बीमारी</h3>
+    <p>किडनी ठीक से काम न करने पर शरीर में विषाक्त पदार्थ जमा होते हैं जो नसों को नुकसान पहुंचा सकते हैं।</p>
+
+    <h3>9. थायरॉयड की समस्याएं</h3>
+    <p>हाइपोथायरायडिज्म (कम थायरॉयड हार्मोन) से भी पैरों में झनझनाहट हो सकती है।</p>
+
+    <h3>10. कुछ दवाइयों के साइड इफेक्ट</h3>
+    <p>कुछ दवाइयां पैरों में झनझनाहट कर सकती हैं:</p>
+    <ul>
+      <li>कैम्सिस्टैट (कीमोथेरेपी)</li>
+      <li>हाइड्रालाजाइन (रक्तचाप की दवा)</li>
+      <li>आइसोनियाज़िड (टीबी की दवा)</li>
+      <li>मेट्रोनिडाज़ोल (एंटीबायोटिक)</li>
+      <li>फ्लूओरोक्विनोलोन (एंटीबायोटिक)</li>
+    </ul>
+
+    <h2>लक्षण कब गंभीर मानने चाहिए?</h2>
+    <div class="warning-box">
+      <h4>तुरंत डॉक्टर से मिलें अगर:</h4>
+      <ul>
+        <li>झनझनाहट लगातार बनी हुई है या बढ़ रही है</li>
+        <li>पैरों में कमजोरी भी है</li>
+        <li>चलने में कठिनाई हो रही है</li>
+        <li>दर्द बढ़ रहा है</li>
+        <li>पैरों में घाव हो गए हैं जो भर नहीं रहे</li>
+        <li>मूत्र या मल त्याग में समस्या हो</li>
+        <li>सुन्नपन धीरे-धीरे ऊपर की ओर बढ़ रहा है</li>
+      </ul>
+    </div>
+
+    <h2>निदान (Diagnosis)</h2>
+    <p>डॉक्टर कई टेस्ट करके झनझनाहट का कारण पता करते हैं:</p>
+
+    <h3>1. शारीरिक परीक्षण</h3>
+    <ul>
+      <li>तंत्रिका कार्य का परीक्षण</li>
+      <li>मांसपेशियों की ताकत की जांच</li>
+      <li>प्रतिक्रिया समय की जांच</li>
+      <li>संतुलन परीक्षण</li>
+    </ul>
+
+    <h3>2. रक्त परीक्षण</h3>
+    <ul>
+      <li>ब्लड शुगर (HbA1c)</li>
+      <li>विटामिन बी12 स्तर</li>
+      <li>थायरॉयड फंक्शन टेस्ट</li>
+      <li>किडनी फंक्शन टेस्ट</li>
+      <li>लिवर फंक्शन टेस्ट</li>
+    </ul>
+
+    <h3>3. नर्व कंडक्शन स्टडी (NCS)</h3>
+    <p>यह टेस्ट बताता है कि तंत्रिकाएं कितनी तेजी से संकेत भेजती हैं।</p>
+
+    <h3>4. इलेक्ट्रोमायोग्राफी (EMG)</h3>
+    <p>यह टेस्ट मांसपेशियों की गतिविधि मापता है और बताता है कि समस्या नसों से है या मांसपेशियों से।</p>
+
+    <h3>5. MRI</h3>
+    <p>रीढ़ की हड्डी की समस्याओं के लिए MRI की जा सकती है।</p>
 
     <h2>इलाज और उपचार</h2>
+    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=400&fit=crop" alt="फिजियोथेरेपी" class="blog-img-large" style="height:250px;margin:20px 0">
 
-    <h3>दवाई</h3>
-    <ul>
-      <li>विटामिन बी12 सप्लीमेंट</li>
-      <li>न्यूरोपैथी की दवाइयां</li>
-      <li>दर्द निवारक गैपेबेंटिन या प्रेगैबालिन</li>
-    </ul>
+    <h3>दवाइयां</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>दवा</th>
+          <th>उपयोग</th>
+          <th>साइड इफेक्ट</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>विटामिन बी12 सप्लीमेंट</td>
+          <td>बी12 की कमी पूरी करने के लिए</td>
+          <td>आमतौर पर सुरक्षित</td>
+        </tr>
+        <tr>
+          <td>गैपेबेंटिन/प्रेगैबालिन</td>
+          <td>न्यूरोपैथिक दर्द के लिए</td>
+          <td>नींद, चक्कर</td>
+        </tr>
+        <tr>
+          <td>ट्राइसाइक्लिक एंटीडिप्रेसेंट्स</td>
+          <td>दर्द कम करने के लिए</td>
+          <td>सुखी मुंह, नींद</td>
+        </tr>
+        <tr>
+          <td>दर्द की क्रीम/पैच</td>
+          <td>स्थानीय राहत के लिए</td>
+          <td>त्वचा में जलन</td>
+        </tr>
+      </tbody>
+    </table>
 
     <h3>जीवनशैली में बदलाव</h3>
     <ul>
-      <li>नियमित व्यायाम करें</li>
-      <li>पैरों की एक्सरसाइज करें</li>
-      <li>जूते आरामदायक पहनें</li>
-      <li>लंबे समय तक एक ही स्थिति में न बैठें</li>
-      <li>धूम्रपान छोड़ें</li>
+      <li><strong>नियमित व्यायाम करें:</strong> चलना, तैरना, योगा</li>
+      <li><strong>पैरों की एक्सरसाइज करें:</strong> एड़ी घुमाने और उंगलियां हिलाने के व्यायाम</li>
+      <li><strong>आरामदायक जूते पहनें:</strong> तंग जूते न पहनें</li>
+      <li><strong>लंबे समय तक एक ही स्थिति में न बैठें:</strong> हर 1-2 घंटे में उठकर चलें</li>
+      <li><strong>धूम्रपान छोड़ें:</strong> यह रक्त वाहिकाओं को नुकसान पहुंचाता है</li>
+      <li><strong>शराब कम करें:</strong> या पूरी तरह छोड़ें</li>
+    </ul>
+
+    <h3>फिजियोथेरेपी</h3>
+    <p>कुछ मामलों में फिजियोथेरेपी मददगार हो सकती है। इसमें:</p>
+    <ul>
+      <li>एक्सरसाइज थेरेपी</li>
+      <li>इलेक्ट्रिकल स्टिमुलेशन</li>
+      <li>मालिश थेरेपी</li>
+      <li>बैलेंस ट्रेनिंग</li>
     </ul>
 
     <h2>घरेलू उपाय</h2>
     <ul>
-      <li>पैरों को गर्म पानी में भिगोएं</li>
-      <li>पैरों की मालिश करें</li>
-      <li>विटामिन बी12 से भरपूर भोजन खाएं (दूध, अंडे, मछली)</li>
-      <li>नियमित वॉक करें</li>
+      <li><strong>गर्म पानी से सेंक:</strong> पैरों को गर्म (बहुत गर्म नहीं) पानी में 15-20 मिनट भिगोएं</li>
+      <li><strong>पैरों की मालिश:</strong> हल्के से तेल से मालिश करें</li>
+      <li><strong>विटामिन बी12 से भरपूर भोजन:</strong> दूध, अंडे, मछली, चीज़</li>
+      <li><strong>नियमित वॉक करें:</strong> दिन में कम से कम 30 मिनट</li>
+      <li><strong>पैरों को उंचा रखें:</strong> बैठते या सोते समय</li>
+      <li><strong>ठंडे पानी से कुछ देर के लिए सेक करें:</strong> सूजन होने पर</li>
     </ul>
 
-    <h2>निष्कर्ष</h2>
-    <p>पैर में झनझनाहट एक गंभीर समस्या हो सकती है अगर इसे अनदेखा किया जाए। समय पर जांच और उचित इलाज से आप इस समस्या से छुटकारा पा सकते हैं। Sankalp Hospital में हमारे विशेषज्ञ डॉक्टर आपकी मदद के लिए उपलब्ध हैं।</p>
-
-    <!-- Author Box -->
-    <div class="author-box">
-      <div class="author-avatar"><i class="fas fa-user-md"></i></div>
-      <div class="author-info">
-        <h5>Dr. Ankit Sharma</h5>
-        <p>DM Neurology<br>Senior Neurologist, Sankalp Hospital<br>10+ years of experience</p>
-      </div>
+    <div class="tip-box">
+      <h4>रोकथाम के उपाय:</h4>
+      <p>पैरों में झनझनाहट से बचने के लिए: संतुलित आहार लें, नियमित व्यायाम करें, क्रॉस-लेग बैठने से बचें, और अगर मधुमेह है तो ब्लड शुगर नियंत्रित रखें।</p>
     </div>
 
-    <!-- Share -->
-    <div class="share-box">
-      <h4>इस लेख को साझा करें</h4>
-      <div class="share-buttons">
-        <a href="#" class="share-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-        <a href="#" class="share-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      </div>
+    <h2>अक्सर पूछे जाने वाले प्रश्न (FAQ)</h2>
+
+    <div class="faq-item">
+      <h4>Q: पैर में झनझनाहट होने पर क्या करना चाहिए?</h4>
+      <p>A: सबसे पहले, पैरों को हिलाएं और स्थिति बदलें। अगर झनझनाहट 5-10 मिनट में ठीक हो जाए तो यह सामान्य है। लेकिन अगर यह बार-बार होती है या लगातार बनी रहती है, तो डॉक्टर से मिलें।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Q: क्या पैर की झनझनाहट गंभीर हो सकती है?</h4>
+      <p>A: ज्यादातर मामलों में झनझनाहट गंभीर नहीं होती। लेकिन अगर यह लगातार है, बढ़ रही है, या अन्य लक्षण (कमजोरी, दर्द) के साथ है, तो इसे गंभीरता से लेना चाहिए और डॉक्टर से जांच करानी चाहिए।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Q: विटामिन बी12 की शॉट कितने दिनों में असर दिखाती है?</h4>
+      <p>A: B12 शॉट का असर व्यक्ति पर निर्भर करता है। कुछ लोगों को 2-3 सप्ताह में सुधार दिख सकता है, जबकि कुछ को 3-6 महीने लग सकते हैं। नियमित जांच और दवा सेवन जरूरी है।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Q: क्या तनाव से पैरों में झनझनाहट हो सकती है?</h4>
+      <p>A: हाँ, तनाव से रक्त वाहिकाएं संकुचित हो सकती हैं जिससे झनझनाहट हो सकती है। तनाव प्रबंधन तकनीकें जैसे योगा, ध्यान, और गहरी सांस लेना मदद कर सकते हैं।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Q: क्या मैं ड्राइविंग कर सकता हूं अगर पैरों में झनझनाहट है?</h4>
+      <p>A: अगर झनझनाहट के कारण पैरों में सुन्नपन है तो ड्राइविंग करना खतरनाक हो सकता है। पैरों की सुन्नपन गैस पेडल को महसूस करने में बाधा डालती है। डॉक्टर से सलाह लेकर ही ड्राइविंग शुरू करें।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Q: पैर की झनझनाहट किस उम्र में ज्यादा होती है?</h4>
+      <p>A: झनझनाहट किसी भी उम्र में हो सकती है, लेकिन बुजुर्गों में यह अधिक आम है क्योंकि उम्र के साथ नसों की क्षमता कम होती है। हालांकि, मधुमेह या अन्य बीमारियों के कारण यह कम उम्र में भी हो सकती है।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Q: क्या मालिश से झनझनाहट ठीक हो सकती है?</h4>
+      <p>A: मालिश से कुछ मामलों में अस्थायी राहत मिल सकती है, खासकर अगर झनझनाहट मांसपेशियों के तनाव या दबाव से है। लेकिन अगर झनझनाहट तंत्रिका क्षति से है तो मालिश से पूरा इलाज नहीं होगा - डॉक्टरी इलाज जरूरी है।</p>
+    </div>
+
+    <h2>निष्कर्ष</h2>
+    <p>पैर में झनझनाहट एक गंभीर समस्या हो सकती है अगर इसे अनदेखा किया जाए। समय पर जांच और उचित इलाज से अधिकतर मामलों में ठीक होना या प्रबंधन संभव है। अगर आपको यह समस्या है, तो बिना देरी के किसी न्यूरोलॉजिस्ट या जनरल फिजिशियन से मिलें।</p>
+
+    <div class="warning-box">
+      <h4>याद रखें:</h4>
+      <p>आत्म-निदान या आत्म-उपचार से बचें। हर मामला अलग होता है और सही निदान के लिए विशेषज्ञ की जरूरत होती है। समय पर इलाज से बेहतर परिणाम मिलते हैं।</p>
     </div>
 
     <!-- CTA -->
     <div class="text-center mt-5 p-4 rounded" style="background:var(--bg-soft)">
       <h4>पैर की समस्या है?</h4>
-      <p class="text-muted mb-4">हमारे अनुभवी डॉक्टर आपकी मदद के लिए उपलब्ध हैं।</p>
-      <a href="../index.php#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>अपॉइंटमेंट बुक करें</a>
+      <p class="text-muted mb-4">हमारे विशेषज्ञ डॉक्टर आपकी मदद के लिए उपलब्ध हैं। अपॉइंटमेंट बुक करें।</p>
+      <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>अपॉइंटमेंट बुक करें</a>
     </div>
   </div>
 </div>

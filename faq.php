@@ -10,7 +10,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index.php">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> About <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> FAQ</p>
+    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> About <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> FAQ</p>
     <h1>Frequently Asked Questions</h1>
     <p>Find answers to common questions about our hospital services and treatments</p>
   </div>

@@ -219,15 +219,13 @@
   <div class="container">
     <p class="blog-category-tag"><?php echo isset($blog_category) ? $blog_category : 'Health Tips'; ?></p>
     <p class="blog-meta">
-      <a href="/index.php">Home</a>
+      <a href="/index">Home</a>
       <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i>
       <a href="/blog/">Health Blog</a>
       <span>|</span>
       <i class="far fa-calendar"></i> <?php echo isset($blog_date) ? $blog_date : ''; ?>
       <span>|</span>
       <i class="far fa-clock"></i> <?php echo isset($blog_readtime) ? $blog_readtime : '5 min read'; ?>
-      <span>|</span>
-      <i class="far fa-user"></i> <?php echo isset($blog_author) ? $blog_author : ''; ?>
     </p>
     <h1><?php echo isset($blog_title) ? $blog_title : ''; ?></h1>
     <?php if (isset($blog_image) && $blog_image): ?>
@@ -240,15 +238,6 @@
 <div class="container">
   <div class="blog-content">
     <?php echo isset($blog_content) ? $blog_content : ''; ?>
-
-    <!-- Author Box -->
-    <div class="author-box">
-      <div class="author-avatar"><i class="fas fa-user-md"></i></div>
-      <div class="author-info">
-        <h5><?php echo isset($blog_author) ? $blog_author : 'Sankalp Hospital'; ?></h5>
-        <p><?php echo isset($blog_author_desc) ? $blog_author_desc : 'Medical Expert at Sankalp Hospital'; ?></p>
-      </div>
-    </div>
 
     <!-- Share -->
     <div class="share-box">
@@ -289,7 +278,7 @@
     <div class="text-center mt-5 p-4 rounded" style="background:var(--bg-soft)">
       <h4>Need Medical Consultation?</h4>
       <p class="text-muted mb-4">Our experienced doctors at Sankalp Hospital are here to provide you with personalized healthcare guidance.</p>
-      <a href="/index.php#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+      <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
     </div>
   </div>
 </div>

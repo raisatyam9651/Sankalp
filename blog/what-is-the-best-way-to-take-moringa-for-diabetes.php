@@ -36,7 +36,7 @@
 <!-- BLOG HERO -->
 <section class="blog-hero text-center">
   <div class="container">
-    <p class="blog-meta"><a href="/index.php" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="/blog/" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Nutrition & Diabetes</p>
+    <p class="blog-meta"><a href="/index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="/blog/" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Nutrition & Diabetes</p>
     <img src="https://images.unsplash.com/photo-1613138512670-f13df2c0ce5e?w=1200&h=600&fit=crop" alt="Moringa for Diabetes" class="blog-img-large">
     <h1>What is the Best Way to Take Moringa for Diabetes?</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 10 min read &nbsp;&nbsp; <i class="fas fa-leaf"></i> Nutrition & Health</p>
@@ -389,7 +389,7 @@
     <div class="text-center mt-5 p-4 rounded" style="background:var(--bg-soft)">
       <h4>Need Diabetes Consultation?</h4>
       <p class="text-muted mb-4">Our experienced diabetologists and physicians are here to help you manage your diabetes effectively with personalized care plans. Book an appointment today.</p>
-      <a href="/index.php#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+      <a href="/index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
     </div>
   </div>
 </div>

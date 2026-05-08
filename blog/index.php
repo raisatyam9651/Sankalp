@@ -31,7 +31,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="/index.php">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Health Blog</p>
+    <p class="breadcrumbs"><a href="/index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Health Blog</p>
     <h1>Health Tips & Articles</h1>
     <p>Expert health advice and medical information from our experienced doctors</p>
   </div>
@@ -47,9 +47,9 @@
           <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=600&h=400&fit=crop" alt="Moringa for Diabetes" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Nutrition & Diabetes</span>
-            <h3><a href="what-is-the-best-way-to-take-moringa-for-diabetes.php">What is the Best Way to Take Moringa for Diabetes?</a></h3>
+            <h3><a href="what-is-the-best-way-to-take-moringa-for-diabetes">What is the Best Way to Take Moringa for Diabetes?</a></h3>
             <p>Discover how Moringa can help manage blood sugar levels naturally. Expert guidance on dosage, timing, and preparation.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Sanjay Goyal</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -58,9 +58,9 @@
           <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop" alt="ACL Surgery Recovery" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Orthopedics</span>
-            <h3><a href="will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts.php">Will Your Knee Feel 100% Normal After ACL Surgery?</a></h3>
+            <h3><a href="will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts">Will Your Knee Feel 100% Normal After ACL Surgery?</a></h3>
             <p>Expert guide on ACL surgery recovery expectations, timeline, and realistic outcomes after reconstruction.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Tanay Goyal</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -69,9 +69,9 @@
           <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=600&h=400&fit=crop" alt="Homeopathic Remedy for Headache" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Homeopathy</span>
-            <h3><a href="homeopathic-remedy-for-headache-natural-relief-guide.php">Homeopathic Remedy for Headache: Natural Relief</a></h3>
+            <h3><a href="homeopathic-remedy-for-headache-natural-relief-guide">Homeopathic Remedy for Headache: Natural Relief</a></h3>
             <p>Discover effective homeopathic remedies for different types of headaches. Expert guidance on natural relief.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Ankit Sharma</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -81,9 +81,9 @@
           <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop" alt="Pair Me Jhunjhuni" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Neurology</span>
-            <h3><a href="pair-me-jhunjhuni-hona.php">पैर में झनझनाहट (Jhunjhuni) होना</a></h3>
+            <h3><a href="pair-me-jhunjhuni-hona">पैर में झनझनाहट (Jhunjhuni) होना</a></h3>
             <p>पैर में झनझनाहट के कारण, लक्षण और उपचार। जानें इस समस्या के बारे में विस्तार से।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Ankit Sharma</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -92,9 +92,9 @@
           <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=400&fit=crop" alt="Gas Se Peeth Dard" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Gastrology</span>
-            <h3><a href="gas-se-peeth-dard-kyun-hota-hai.php">गैस से पीठ दर्द क्यों होता है?</a></h3>
+            <h3><a href="gas-se-peeth-dard-kyun-hota-hai">गैस से पीठ दर्द क्यों होता है?</a></h3>
             <p>गैस से पीठ दर्द के कारण, लक्षण और उपाय। जानें कैसे पेट की गैस पीठ पर दर्द कर सकती है।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Sanjay Goyal</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -103,9 +103,9 @@
           <img src="https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?w=600&h=400&fit=crop" alt="Pair Me Khujli" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Skin Care</span>
-            <h3><a href="pair-me-khujli-hona.php">पैर में खुजली होना (Khujli)</a></h3>
+            <h3><a href="pair-me-khujli-hona">पैर में खुजली होना (Khujli)</a></h3>
             <p>पैर में खुजली के कारण, घरेलू उपाय और इलाज। जानें इस समस्या के बारे में।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Lata Goyal</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -115,9 +115,9 @@
           <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop" alt="Lungs Me Dard" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Pulmonology</span>
-            <h3><a href="lungs-me-dard-hona.php">फेफड़ों में दर्द (Lungs Me Dard)</a></h3>
+            <h3><a href="lungs-me-dard-hona">फेफड़ों में दर्द (Lungs Me Dard)</a></h3>
             <p>फेफड़ों में दर्द के कारण, लक्षण और इलाज। जानें कब इस समस्या को गंभीर मानना चाहिए।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Shailesh Gupta</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -126,9 +126,9 @@
           <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop" alt="Pair Me Jalan" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">General Medicine</span>
-            <h3><a href="pair-me-jalan.php">पैरों में जलन (Jalan)</a></h3>
+            <h3><a href="pair-me-jalan">पैरों में जलन (Jalan)</a></h3>
             <p>पैरों में जलन के कारण, इलाज और घरेलू उपाय। जानें क्यों होती है और क्या करें।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Sanjay Goyal</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -137,9 +137,9 @@
           <img src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?w=600&h=400&fit=crop" alt="BP High" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Hypertension</span>
-            <h3><a href="bp-high-hone-par-kya-kare.php">BP High होने पर क्या करें?</a></h3>
+            <h3><a href="bp-high-hone-par-kya-kare">BP High होने पर क्या करें?</a></h3>
             <p>उच्च रक्तचाप (BP High) होने पर क्या करें, क्या खाएं, क्या न खाएं। लक्षण और उपाय।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Shailesh Gupta</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -152,9 +152,9 @@
           <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=600&h=400&fit=crop" alt="HIV Symptoms in Women" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Infectious Diseases</span>
-            <h3><a href="hiv-symptoms-in-women.php">HIV Symptoms in Women: What You Need to Know</a></h3>
+            <h3><a href="hiv-symptoms-in-women">HIV Symptoms in Women: What You Need to Know</a></h3>
             <p>Early signs, stages, and what to do if you think you may be infected. Expert guidance on HIV awareness.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Ankit Sharma</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -163,9 +163,9 @@
           <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=400&fit=crop" alt="Pair Me Sujan" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">General Medicine</span>
-            <h3><a href="pair-me-sujan.php">पैरों में सूजन (Sujan)</a></h3>
+            <h3><a href="pair-me-sujan">पैरों में सूजन (Sujan)</a></h3>
             <p>पैरों में सूजन के कारण, लक्षण और इलाज। जानें कब डॉक्टर से मिलना चाहिए।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp; <i class="far fa-user"></i> Dr. Sanjay Goyal</div>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
           </div>
         </div>
       </div>
@@ -173,7 +173,7 @@
 
     <!-- View All Button -->
     <div class="text-center mt-5">
-      <a href="/index.php" class="btn btn-outline-primary"><i class="fas fa-home me-2"></i>Back to Home</a>
+      <a href="/index" class="btn btn-outline-primary"><i class="fas fa-home me-2"></i>Back to Home</a>
     </div>
   </div>
 </section>

@@ -192,93 +192,113 @@
           <div class="carousel-item active">
             <div class="row g-4">
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/sanjay-goyal.jpg" alt="Dr. Sanjay Goyal">
-                  <div class="doctor-info">
-                    <h3>Dr. Sanjay Goyal</h3>
-                    <p>MS Ophthalmology</p>
+                <a href="/doctors/dr-sanjay-goyal" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/sanjay-goyal.jpg" alt="Dr. Sanjay Goyal">
+                    <div class="doctor-info">
+                      <h3>Dr. Sanjay Goyal</h3>
+                      <p>MS Ophthalmology</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/lata-goyal.jpg" alt="Dr. Lata Goyal">
-                  <div class="doctor-info">
-                    <h3>Dr. Lata Goyal</h3>
-                    <p>MS Obstetrics and Gynaecology</p>
+                <a href="/doctors/dr-lata-goyal" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/lata-goyal.jpg" alt="Dr. Lata Goyal">
+                    <div class="doctor-info">
+                      <h3>Dr. Lata Goyal</h3>
+                      <p>MS Obstetrics and Gynaecology</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/akshaya-goyal.jpg" alt="Dr. Akshaya Goyal">
-                  <div class="doctor-info">
-                    <h3>Dr. Akshaya Goyal</h3>
-                    <p>MS (Ophthalmology)</p>
+                <a href="/doctors/dr-akshaya-goyal" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/akshaya-goyal.jpg" alt="Dr. Akshaya Goyal">
+                    <div class="doctor-info">
+                      <h3>Dr. Akshaya Goyal</h3>
+                      <p>MS (Ophthalmology)</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/nilesh-goyal.jpg" alt="Dr. Nilesh Goyal">
-                  <div class="doctor-info">
-                    <h3>Dr. Nilesh Goyal</h3>
-                    <p>MS General and Laparoscopic Surgery</p>
+                <a href="/doctors/dr-nilesh-goyal" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/nilesh-goyal.jpg" alt="Dr. Nilesh Goyal">
+                    <div class="doctor-info">
+                      <h3>Dr. Nilesh Goyal</h3>
+                      <p>MS General and Laparoscopic Surgery</p>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row g-4">
-              <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/ankit-gupta.jpg" alt="Dr. Ankit Gupta">
-                  <div class="doctor-info">
-                    <h3>Dr. Ankit Gupta</h3>
-                    <p>Senior Consultant Pediatrician</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/tanay-goyal.jpg" alt="Dr. Tanay Goyal">
-                  <div class="doctor-info">
-                    <h3>Dr. Tanay Goyal</h3>
-                    <p>Dept. of Orthopaedics</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/shailesh-gupta.jpg" alt="Dr. Shailesh Gupta">
-                  <div class="doctor-info">
-                    <h3>Dr. Shailesh Gupta</h3>
-                    <p>Physician</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/ankita-goyal.jpg" alt="Dr. Ankita Bansal Goyal">
-                  <div class="doctor-info">
-                    <h3>Dr. Ankita Bansal Goyal</h3>
-                    <p>MD (PGIMER CHD)</p>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="row g-4">
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/rimsha-sahu.jpg" alt="Dr. Rimsha Lakesh Sahu">
-                  <div class="doctor-info">
-                    <h3>Dr. Rimsha Lakesh Sahu</h3>
-                    <p>Nutritionist</p>
+                <a href="/doctors/dr-ankit-gupta" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/ankit-gupta.jpg" alt="Dr. Ankit Gupta">
+                    <div class="doctor-info">
+                      <h3>Dr. Ankit Gupta</h3>
+                      <p>Senior Consultant Pediatrician</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/chandra-dhawde.jpg"
-                    alt="Dr. Chandra Mukesh Dhawde">
-                  <div class="doctor-info">
-                    <h3>Dr. Chandra Mukesh Dhawde</h3>
-                    <p>Neurosurgeon</p>
+                <a href="/doctors/dr-tanay-goyal" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/tanay-goyal.jpg" alt="Dr. Tanay Goyal">
+                    <div class="doctor-info">
+                      <h3>Dr. Tanay Goyal</h3>
+                      <p>Dept. of Orthopaedics</p>
+                    </div>
                   </div>
-                </div>
+                </a>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <a href="/doctors/dr-shailesh-gupta" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/shailesh-gupta.jpg" alt="Dr. Shailesh Gupta">
+                    <div class="doctor-info">
+                      <h3>Dr. Shailesh Gupta</h3>
+                      <p>Physician</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <a href="/doctors/dr-ankita-bansal-goyal" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/ankita-goyal.jpg" alt="Dr. Ankita Bansal Goyal">
+                    <div class="doctor-info">
+                      <h3>Dr. Ankita Bansal Goyal</h3>
+                      <p>MD (PGIMER CHD)</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-6 col-md-6 col-lg-3">
+                <a href="/doctors/dr-rimsha-lakesh-sahu" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/rimsha-sahu.jpg" alt="Dr. Rimsha Lakesh Sahu">
+                    <div class="doctor-info">
+                      <h3>Dr. Rimsha Lakesh Sahu</h3>
+                      <p>Nutritionist</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <a href="/doctors/dr-chandra-mukesh-dhawde" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/chandra-dhawde.jpg"
+                      alt="Dr. Chandra Mukesh Dhawde">
+                    <div class="doctor-info">
+                      <h3>Dr. Chandra Mukesh Dhawde</h3>
+                      <p>Neurosurgeon</p>
+                    </div>
+                  </div>
+                </a>
               </div>
               <div class="col-6 col-md-6 col-lg-3">
                 <div class="doctor-card"><img src="assets/img/doctors/yuvan.jpg" alt="Dr. Yuvan Prasannaa">
@@ -289,12 +309,14 @@
                 </div>
               </div>
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/usha-armo.jpg" alt="Dr. Usha Armo">
-                  <div class="doctor-info">
-                    <h3>Dr. Usha Armo</h3>
-                    <p>Senior Consultant</p>
+                <a href="/doctors/dr-usha-armo" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/usha-armo.jpg" alt="Dr. Usha Armo">
+                    <div class="doctor-info">
+                      <h3>Dr. Usha Armo</h3>
+                      <p>Senior Consultant</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -325,24 +347,28 @@
                 </div>
               </div>
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/megha-goyal.jpg" alt="Dr. Megha Goyal">
-                  <div class="doctor-info">
-                    <h3>Dr. Megha Goyal</h3>
-                    <p>Neonatologist and Child Specialist</p>
+                <a href="/doctors/dr-megha-goyal" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/megha-goyal.jpg" alt="Dr. Megha Goyal">
+                    <div class="doctor-info">
+                      <h3>Dr. Megha Goyal</h3>
+                      <p>Neonatologist and Child Specialist</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="row g-4">
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/ankit-sharma.jpg" alt="Dr. Ankit Sharma">
-                  <div class="doctor-info">
-                    <h3>Dr. Ankit Sharma</h3>
-                    <p>Psychiatrist</p>
+                <a href="/doctors/dr-ankit-sharma" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/ankit-sharma.jpg" alt="Dr. Ankit Sharma">
+                    <div class="doctor-info">
+                      <h3>Dr. Ankit Sharma</h3>
+                      <p>Psychiatrist</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="col-6 col-md-6 col-lg-3">
                 <div class="doctor-card"><img src="assets/img/doctors/nagaraj-naik.jpg" alt="Dr. Nagaraj G Naik">
@@ -361,12 +387,14 @@
                 </div>
               </div>
               <div class="col-6 col-md-6 col-lg-3">
-                <div class="doctor-card"><img src="assets/img/doctors/suneedh-gupta.jpg" alt="Dr. Suneedh Gupta">
-                  <div class="doctor-info">
-                    <h3>Dr. Suneedh Gupta</h3>
-                    <p>Oral &amp; Maxillofacial Surgeon</p>
+                <a href="/doctors/dr-suneedh-gupta" class="doctor-link">
+                  <div class="doctor-card"><img src="assets/img/doctors/suneedh-gupta.jpg" alt="Dr. Suneedh Gupta">
+                    <div class="doctor-info">
+                      <h3>Dr. Suneedh Gupta</h3>
+                      <p>Oral &amp; Maxillofacial Surgeon</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>

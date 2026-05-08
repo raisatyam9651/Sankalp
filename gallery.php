@@ -10,7 +10,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index.php">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Gallery</p>
+    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Gallery</p>
     <h1>Hospital Gallery</h1>
     <p>Take a virtual tour of our world-class facilities and infrastructure</p>
   </div>
@@ -192,7 +192,7 @@
       </div>
     </div>
     <div class="text-center mt-4">
-      <a href="video-gallery.php" class="btn btn-primary"><i class="fab fa-youtube me-2"></i>View All Videos</a>
+      <a href="video-gallery" class="btn btn-primary"><i class="fab fa-youtube me-2"></i>View All Videos</a>
     </div>
   </div>
 </section>

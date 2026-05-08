@@ -7,7 +7,7 @@ $blog_readtime = "6 min read";
 $blog_author = "Dr. Lata Goyal";
 $blog_author_desc = "MBBS, DGO - Senior Gynecologist, Sankalp Hospital";
 $blog_image = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=900&h=450&fit=crop";
-$blog_content = '
+$blog_content = <<<'HTML'
 <p class="lead">A healthy pregnancy begins with informed choices. From the moment you discover you're expecting, every decision you make contributes to your baby's development and your own well-being.</p>
 
 <blockquote>"Taking care of yourself is the first step toward taking care of your baby. Every nutritious meal, every gentle walk, every moment of peace contributes to a healthier pregnancy."</blockquote>
@@ -70,7 +70,7 @@ $blog_content = '
 </ul>
 
 <p>Every pregnancy is unique. Always consult with your healthcare provider for personalized guidance tailored to your specific needs and medical history.</p>
-';
+HTML;
 
 $related_posts = [
     ['title' => 'Understanding Common Health Checkups', 'url' => 'health-checkups.php', 'date' => 'Dec 10, 2023'],

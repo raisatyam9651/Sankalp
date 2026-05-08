@@ -7,7 +7,7 @@ $blog_readtime = "8 min read";
 $blog_author = "Dr. Ankit Gupta";
 $blog_author_desc = "MBBS, DCH - Pediatrician, Sankalp Hospital";
 $blog_image = "https://images.unsplash.com/photo-1632053002928-1919605ee6f7?w=900&h=450&fit=crop";
-$blog_content = '
+$blog_content = <<<'HTML'
 <p class="lead">Vaccinations are one of the most important ways to protect your child from serious diseases. Understanding the immunization schedule helps ensure your little one receives timely protection.</p>
 
 <blockquote>"Vaccines are a gift of modern medicine that protect children from diseases that once caused widespread illness, disability, and death. Following the recommended schedule gives your child the best protection."</blockquote>
@@ -77,7 +77,7 @@ $blog_content = '
 </ul>
 
 <p>Keeping your child up-to-date with vaccinations is one of the best ways to protect their health. Visit Sankalp Hospital's pediatric department for comprehensive child healthcare and vaccination services.</p>
-';
+HTML;
 
 $related_posts = [
     ['title' => 'Essential Tips for a Healthy Pregnancy', 'url' => 'pregnancy-tips.php', 'date' => 'Jan 15, 2024'],

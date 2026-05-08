@@ -10,7 +10,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index.php">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> About <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Myths & Facts</p>
+    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> About <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Myths & Facts</p>
     <h1>Health Myths vs Facts</h1>
     <p>Separating medical facts from fiction for better health decisions</p>
   </div>
@@ -239,7 +239,7 @@
   <div class="container text-center">
     <h3 class="mb-3">Have more questions?</h3>
     <p class="text-muted mb-4">Our doctors are happy to clarify any health concerns you may have.</p>
-    <a href="index.html#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book a Consultation</a>
+    <a href="index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>Book a Consultation</a>
   </div>
 </section>
 

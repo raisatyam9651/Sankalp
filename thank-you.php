@@ -13,7 +13,7 @@
 <!-- THANK YOU HERO -->
 <section class="thankyou-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index.php">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Thank You</p>
+    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Thank You</p>
     <h1>Thank You!</h1>
   </div>
 </section>
@@ -47,8 +47,8 @@
           </div>
 
           <div class="ty-actions">
-            <a href="index.php" class="btn btn-primary"><i class="fas fa-home me-2"></i>Back to Home</a>
-            <a href="index.html#doctors" class="btn btn-outline-primary"><i class="fas fa-user-md me-2"></i>Meet Our Doctors</a>
+            <a href="index" class="btn btn-primary"><i class="fas fa-home me-2"></i>Back to Home</a>
+            <a href="index#doctors" class="btn btn-outline-primary"><i class="fas fa-user-md me-2"></i>Meet Our Doctors</a>
             <a href="tel:+919584889068" class="btn btn-outline-primary"><i class="fas fa-phone-alt me-2"></i>Call Us Now</a>
           </div>
 

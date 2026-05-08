@@ -21,7 +21,7 @@
   <div class="container">
     <div class="row align-items-center g-3">
       <div class="col-lg-3 col-6">
-        <a href="/index.php" class="brand"><img src="/assets/img/logo.png" alt="Sankalp Hospital" class="brand-logo"></a>
+        <a href="/index" class="brand"><img src="/assets/img/logo.png" alt="Sankalp Hospital" class="brand-logo"></a>
       </div>
       <div class="col-lg-9 col-6 d-flex justify-content-end align-items-center gap-3">
         <div class="header-info d-none d-xl-flex align-items-center">
@@ -31,7 +31,7 @@
             <p>+91 9584 889068</p>
           </div>
         </div>
-        <a href="index.php#appointment" class="btn btn-primary d-none d-md-inline-flex"><i class="far fa-calendar"></i> &nbsp;BOOK AN APPOINTMENT</a>
+        <a href="index#appointment" class="btn btn-primary d-none d-md-inline-flex"><i class="far fa-calendar"></i> &nbsp;BOOK AN APPOINTMENT</a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
           <i class="fas fa-bars"></i>
         </button>
@@ -42,50 +42,67 @@
   <nav class="main-nav d-none d-lg-block">
     <div class="container">
       <ul class="nav-menu">
-        <li><a href="/index.php">Home</a></li>
-        <li class="has-sub"><a href="about.php">About <i class="fas fa-chevron-down"></i></a>
+        <li><a href="/index">Home</a></li>
+        <li class="has-sub"><a href="about">About <i class="fas fa-chevron-down"></i></a>
           <ul class="sub-menu">
-            <li><a href="about.php#vision">Vision Mission</a></li>
-            <li><a href="about.php#director">Director's Message</a></li>
-            <li><a href="about.php#achievements">Achievements</a></li>
-            <li><a href="about.php#care">Patients Care</a></li>
-            <li><a href="departments.php">Services &amp; Facilities</a></li>
-            <li><a href="faq.php">FAQ's</a></li>
-            <li><a href="myths-facts.php">Myths &amp; Facts</a></li>
-            <li><a href="ivf-treatment-in-ambikapur.php">IUI – IVF – ICSI</a></li>
-            <li><a href="glossary.php">Glossary Of Terms</a></li>
+            <li><a href="about#vision">Vision Mission</a></li>
+            <li><a href="about#director">Director's Message</a></li>
+            <li><a href="about#achievements">Achievements</a></li>
+            <li><a href="about#care">Patients Care</a></li>
+            <li><a href="departments">Services &amp; Facilities</a></li>
+            <li><a href="faq">FAQ's</a></li>
+            <li><a href="myths-facts">Myths &amp; Facts</a></li>
+            <li><a href="ivf-treatment-in-ambikapur">IUI – IVF – ICSI</a></li>
+            <li><a href="glossary">Glossary Of Terms</a></li>
           </ul>
         </li>
-        <li class="has-sub"><a href="departments.php">Departments <i class="fas fa-chevron-down"></i></a>
+        <li class="has-sub"><a href="departments">Departments <i class="fas fa-chevron-down"></i></a>
           <ul class="sub-menu sub-menu-wide">
-            <li><a href="departments.php#ent">ENT</a></li>
-            <li><a href="departments.php#urology">Urology</a></li>
-            <li><a href="departments.php#ophthalmology">Ophthalmology</a></li>
-            <li><a href="departments.php#psychiatry">Psychiatry</a></li>
-            <li><a href="departments.php#pediatrics">Pediatrics</a></li>
-            <li><a href="departments.php#dialysis">Dialysis</a></li>
-            <li><a href="departments.php#gynecology">Obstetrics &amp; Gynecology</a></li>
-            <li><a href="departments.php#orthopaedics">Orthopaedics Surgery</a></li>
-            <li><a href="ivf-treatment-in-ambikapur.php">Assisted Fertility (IVF/ICSI/IUI)</a></li>
-            <li><a href="departments.php#surgery">General &amp; Laparoscopic Surgery</a></li>
-            <li><a href="departments.php#emergency">Emergency And Trauma Services</a></li>
-            <li><a href="departments.php#chemotherapy">Chemotherapy Services</a></li>
-            <li><a href="departments.php#anesthesia">Department of Anesthesia</a></li>
-            <li><a href="departments.php#onco">Onco Surgery</a></li>
-            <li><a href="departments.php#oral">Oral and Maxillofacial Surgery</a></li>
+            <li><a href="/ent-hospital-in-ambikapur">ENT</a></li>
+            <li><a href="/urology-hospital-in-ambikapur">Urology</a></li>
+            <li><a href="/ophthalmology-hospital-in-ambikapur">Ophthalmology</a></li>
+            <li><a href="departments#psychiatry">Psychiatry</a></li>
+            <li><a href="/pediatric-hospital-in-ambikapur">Pediatrics</a></li>
+            <li><a href="/dialysis-center-in-ambikapur">Dialysis</a></li>
+            <li><a href="/gynecology-hospital-in-ambikapur">Obstetrics &amp; Gynecology</a></li>
+            <li><a href="/orthopedic-hospital-in-ambikapur">Orthopaedics Surgery</a></li>
+            <li><a href="ivf-treatment-in-ambikapur">Assisted Fertility (IVF/ICSI/IUI)</a></li>
+            <li><a href="/laparoscopic-surgery-hospital-in-ambikapur">General &amp; Laparoscopic Surgery</a></li>
+            <li><a href="/emergency-hospital-in-ambikapur">Emergency And Trauma Services</a></li>
+            <li><a href="/chemotherapy-hospital-in-ambikapur">Chemotherapy & Oncology</a></li>
+            <li><a href="/anesthesia-services-in-ambikapur">Department of Anesthesia</a></li>
+            <li><a href="/chemotherapy-hospital-in-ambikapur">Onco Surgery</a></li>
+            <li><a href="/maxillofacial-surgery-hospital-in-ambikapur">Oral and Maxillofacial Surgery</a></li>
           </ul>
         </li>
-        <li><a href="index.php#doctors">Our Experts</a></li>
-        <li class="has-sub"><a href="gallery.php">Gallery <i class="fas fa-chevron-down"></i></a>
+        <li class="has-sub"><a href="index#doctors">Our Experts <i class="fas fa-chevron-down"></i></a>
           <ul class="sub-menu">
-            <li><a href="gallery.php">Image Gallery</a></li>
-            <li><a href="video-gallery.php">Video Gallery</a></li>
+            <li><a href="/doctors/dr-lata-goyal">Dr. Lata Goyal</a></li>
+            <li><a href="/doctors/dr-tanay-goyal">Dr. Tanay Goyal</a></li>
+            <li><a href="/doctors/dr-ankita-bansal-goyal">Dr. Ankita Bansal Goyal</a></li>
+            <li><a href="/doctors/dr-usha-armo">Dr. Usha Armo</a></li>
+            <li><a href="/doctors/dr-ankit-gupta">Dr. Ankit Gupta</a></li>
+            <li><a href="/doctors/dr-nilesh-goyal">Dr. Nilesh Goyal</a></li>
+            <li><a href="/doctors/dr-akshaya-goyal">Dr. Akshaya Goyal</a></li>
+            <li><a href="/doctors/dr-shailesh-gupta">Dr. Shailesh Gupta</a></li>
+            <li><a href="/doctors/dr-ankit-sharma">Dr. Ankit Sharma</a></li>
+            <li><a href="/doctors/dr-chandra-mukesh-dhawde">Dr. Chandra Mukesh Dhawde</a></li>
+            <li><a href="/doctors/dr-megha-goyal">Dr. Megha Goyal</a></li>
+            <li><a href="/doctors/dr-suneedh-gupta">Dr. Suneedh Gupta</a></li>
+            <li><a href="/doctors/dr-rimsha-lakesh-sahu">Dr. Rimsha Lakesh Sahu</a></li>
+            <li><a href="/doctors/dr-sanjay-goyal">Dr. Sanjay Goyal</a></li>
           </ul>
         </li>
-        <li><a href="empanelments.php">Empanelments</a></li>
-        <li><a href="media.php">Media</a></li>
+        <li class="has-sub"><a href="gallery">Gallery <i class="fas fa-chevron-down"></i></a>
+          <ul class="sub-menu">
+            <li><a href="gallery">Image Gallery</a></li>
+            <li><a href="video-gallery">Video Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="empanelments">Empanelments</a></li>
+        <li><a href="media">Media</a></li>
         <li><a href="/blog/">Blog</a></li>
-        <li><a href="index.php#contact">Contact Us</a></li>
+        <li><a href="index#contact">Contact Us</a></li>
       </ul>
     </div>
   </nav>
@@ -99,16 +116,16 @@
   </div>
   <div class="offcanvas-body">
     <ul class="mobile-menu">
-      <li><a href="index.php">Home</a></li>
-      <li><a href="about.php">About</a></li>
-      <li><a href="departments.php">Departments</a></li>
-      <li><a href="index.php#doctors">Our Experts</a></li>
-      <li><a href="gallery.php">Gallery</a></li>
-      <li><a href="empanelments.php">Empanelments</a></li>
-      <li><a href="media.php">Media</a></li>
+      <li><a href="index">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="departments">Departments</a></li>
+      <li><a href="index#doctors">Our Experts</a></li>
+      <li><a href="gallery">Gallery</a></li>
+      <li><a href="empanelments">Empanelments</a></li>
+      <li><a href="media">Media</a></li>
       <li><a href="blog/">Blog</a></li>
-      <li><a href="index.php#contact">Contact Us</a></li>
+      <li><a href="index#contact">Contact Us</a></li>
     </ul>
-    <a href="index.php#appointment" class="btn btn-primary w-100 mt-3" data-bs-dismiss="offcanvas">Book An Appointment</a>
+    <a href="index#appointment" class="btn btn-primary w-100 mt-3" data-bs-dismiss="offcanvas">Book An Appointment</a>
   </div>
 </div>

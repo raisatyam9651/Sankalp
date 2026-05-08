@@ -7,7 +7,7 @@ $blog_readtime = "5 min read";
 $blog_author = "Dr. Ankit Sharma";
 $blog_author_desc = "MBBS, MD (Psychiatry) - Psychiatrist, Sankalp Hospital";
 $blog_image = "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=900&h=450&fit=crop";
-$blog_content = '
+$blog_content = <<<'HTML'
 <p class="lead">In today's fast-paced world, stress has become a constant companion for many. While some stress can be motivating, chronic stress takes a toll on both your mental and physical health. Learning to manage stress effectively is essential for overall well-being.</p>
 
 <blockquote>"You cannot always control what happens to you, but you can control how you respond. Building healthy coping mechanisms today creates resilience for tomorrow's challenges."</blockquote>
@@ -114,7 +114,7 @@ $blog_content = '
 </ul>
 
 <p>Managing stress is an ongoing process. If stress is significantly impacting your life, consider reaching out to our mental health professionals at Sankalp Hospital for support and guidance.</p>
-';
+HTML;
 
 $related_posts = [
     ['title' => '5 Simple Steps to Keep Your Heart Healthy', 'url' => 'heart-health.php', 'date' => 'Jan 5, 2024'],

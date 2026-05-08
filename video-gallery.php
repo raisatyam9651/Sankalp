@@ -10,7 +10,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index.php">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Gallery <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Video Gallery</p>
+    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Gallery <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Video Gallery</p>
     <h1>Video Gallery</h1>
     <p>Watch hospital tours, patient stories, doctor interviews, and health tips</p>
   </div>
@@ -19,177 +19,91 @@
 <!-- VIDEO GALLERY -->
 <section class="py-5">
   <div class="container">
-    <div class="category-tabs">
-      <button class="category-tab active">All Videos</button>
-      <button class="category-tab">Hospital Tours</button>
-      <button class="category-tab">Patient Stories</button>
-      <button class="category-tab">Doctor Interviews</button>
-      <button class="category-tab">Health Tips</button>
+    <div class="text-center mb-5">
+      <p class="section-subtitle">Latest from our channel</p>
+      <h2 class="section-title">Videos & Health Tips</h2>
+      <span class="section-divider"></span>
     </div>
 
     <div class="video-grid">
-      <!-- Hospital Tour -->
-      <div class="video-card">
-        <div class="video-thumbnail" onclick="playVideo(this)">
-          <div class="placeholder"><i class="fas fa-hospital"></i></div>
-          <div class="play-btn"><i class="fas fa-play"></i></div>
-        </div>
-        <div class="video-info">
-          <span class="video-category">Hospital Tour</span>
-          <h4>Virtual Tour of Sankalp Hospital</h4>
-          <p>Take a complete tour of our state-of-the-art facilities, operation theaters, and patient rooms.</p>
-          <div class="video-meta">
-            <span><i class="far fa-clock"></i> 8:45</span>
-            <span><i class="far fa-eye"></i> 12.5K views</span>
-          </div>
-        </div>
-      </div>
+      <?php
+      $channel_id = 'UCe52v8hXg8x2L7N1TqK-J5g';
+      $rss_url = "https://www.youtube.com/feeds/videos.xml?channel_id=$channel_id";
+      
+      // Fetch and parse RSS feed
+      $xml = @simplexml_load_file($rss_url);
+      
+      if ($xml && isset($xml->entry)) {
+          $count = 0;
+          foreach ($xml->entry as $entry) {
+              if ($count >= 9) break;
+              
+              // Extract video ID from entry ID (yt:video:VIDEO_ID) or link
+              $video_id = '';
+              foreach ($entry->link as $link) {
+                  if ($link['rel'] == 'alternate') {
+                      parse_str(parse_url($link['href'], PHP_URL_QUERY), $url_params);
+                      $video_id = $url_params['v'] ?? '';
+                      break;
+                  }
+              }
+              
+              if (!$video_id) {
+                  $video_id = str_replace('yt:video:', '', (string)$entry->id);
+              }
 
-      <!-- Patient Stories -->
-      <div class="video-card">
-        <div class="video-thumbnail" onclick="playVideo(this)">
-          <div class="placeholder"><i class="fas fa-heart"></i></div>
-          <div class="play-btn"><i class="fas fa-play"></i></div>
-        </div>
-        <div class="video-info">
-          <span class="video-category">Patient Stories</span>
-          <h4>First Test Tube Baby of Surguja</h4>
-          <p>Celebrating the joy of new parenthood with the first IVF baby born at Sankalp Hospital.</p>
-          <div class="video-meta">
-            <span><i class="far fa-clock"></i> 5:30</span>
-            <span><i class="far fa-eye"></i> 25K views</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Doctor Interview -->
-      <div class="video-card">
-        <div class="video-thumbnail" onclick="playVideo(this)">
-          <div class="placeholder"><i class="fas fa-user-md"></i></div>
-          <div class="play-btn"><i class="fas fa-play"></i></div>
-        </div>
-        <div class="video-info">
-          <span class="video-category">Doctor Interviews</span>
-          <h4>Understanding IVF with Dr. Lata Goyal</h4>
-          <p>Our fertility specialist explains the IVF process, success rates, and what to expect.</p>
-          <div class="video-meta">
-            <span><i class="far fa-clock"></i> 12:15</span>
-            <span><i class="far fa-eye"></i> 8.2K views</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Health Tips -->
-      <div class="video-card">
-        <div class="video-thumbnail" onclick="playVideo(this)">
-          <div class="placeholder"><i class="fas fa-eye"></i></div>
-          <div class="play-btn"><i class="fas fa-play"></i></div>
-        </div>
-        <div class="video-info">
-          <span class="video-category">Health Tips</span>
-          <h4>Cataract Surgery: What to Expect</h4>
-          <p>Dr. Sanjay Goyal explains modern cataract surgery techniques and recovery.</p>
-          <div class="video-meta">
-            <span><i class="far fa-clock"></i> 7:50</span>
-            <span><i class="far fa-eye"></i> 5.4K views</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Patient Stories -->
-      <div class="video-card">
-        <div class="video-thumbnail" onclick="playVideo(this)">
-          <div class="placeholder"><i class="fas fa-smile"></i></div>
-          <div class="play-btn"><i class="fas fa-play"></i></div>
-        </div>
-        <div class="video-info">
-          <span class="video-category">Patient Stories</span>
-          <h4>Happy Patient Testimonials</h4>
-          <p>Hear from our patients about their experience with treatment and care at Sankalp Hospital.</p>
-          <div class="video-meta">
-            <span><i class="far fa-clock"></i> 6:20</span>
-            <span><i class="far fa-eye"></i> 15K views</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hospital Tour -->
-      <div class="video-card">
-        <div class="video-thumbnail" onclick="playVideo(this)">
-          <div class="placeholder"><i class="fas fa-procedures"></i></div>
-          <div class="play-btn"><i class="fas fa-play"></i></div>
-        </div>
-        <div class="video-info">
-          <span class="video-category">Hospital Tour</span>
-          <h4>Our New IVF Laboratory</h4>
-          <p>A look inside our advanced embryology lab where miracles of life begin.</p>
-          <div class="video-meta">
-            <span><i class="far fa-clock"></i> 4:30</span>
-            <span><i class="far fa-eye"></i> 7.8K views</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Doctor Interview -->
-      <div class="video-card">
-        <div class="video-thumbnail" onclick="playVideo(this)">
-          <div class="placeholder"><i class="fas fa-baby"></i></div>
-          <div class="play-btn"><i class="fas fa-play"></i></div>
-        </div>
-        <div class="video-info">
-          <span class="video-category">Doctor Interviews</span>
-          <h4>Pregnancy Care with Dr. Vijaya Singh</h4>
-          <p>Expert advice on prenatal care, nutrition, and what to expect during pregnancy.</p>
-          <div class="video-meta">
-            <span><i class="far fa-clock"></i> 15:00</span>
-            <span><i class="far fa-eye"></i> 9.1K views</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Health Tips -->
-      <div class="video-card">
-        <div class="video-thumbnail" onclick="playVideo(this)">
-          <div class="placeholder"><i class="fas fa-heartbeat"></i></div>
-          <div class="play-btn"><i class="fas fa-play"></i></div>
-        </div>
-        <div class="video-info">
-          <span class="video-category">Health Tips</span>
-          <h4>Emergency Care: When to Rush to Hospital</h4>
-          <p>Learn about medical emergencies that require immediate attention and our 24/7 services.</p>
-          <div class="video-meta">
-            <span><i class="far fa-clock"></i> 9:45</span>
-            <span><i class="far fa-eye"></i> 11.2K views</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Doctor Interview -->
-      <div class="video-card">
-        <div class="video-thumbnail" onclick="playVideo(this)">
-          <div class="placeholder"><i class="fas fa-bone"></i></div>
-          <div class="play-btn"><i class="fas fa-play"></i></div>
-        </div>
-        <div class="video-info">
-          <span class="video-category">Doctor Interviews</span>
-          <h4>Joint Replacement Surgery Guide</h4>
-          <p>Dr. Tanay Goyal explains knee and hip replacement options and recovery expectations.</p>
-          <div class="video-meta">
-            <span><i class="far fa-clock"></i> 11:30</span>
-            <span><i class="far fa-eye"></i> 6.5K views</span>
-          </div>
-        </div>
-      </div>
+              $title = (string)$entry->title;
+              $published = date('M d, Y', strtotime((string)$entry->published));
+              $thumbnail = "https://img.youtube.com/vi/$video_id/maxresdefault.jpg";
+              
+              // Use mqdefault as fallback if maxresdefault doesn't exist (handled by CSS background-size: cover)
+              ?>
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <a href="https://www.youtube.com/watch?v=<?php echo $video_id; ?>" target="_blank" class="play-link">
+                    <img src="<?php echo $thumbnail; ?>" alt="<?php echo $title; ?>" class="img-fluid" onerror="this.src='https://img.youtube.com/vi/<?php echo $video_id; ?>/mqdefault.jpg'">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
+                  </a>
+                </div>
+                <div class="video-info">
+                  <span class="video-category">YouTube Video</span>
+                  <h4><a href="https://www.youtube.com/watch?v=<?php echo $video_id; ?>" target="_blank"><?php echo $title; ?></a></h4>
+                  <div class="video-meta">
+                    <span><i class="far fa-calendar-alt"></i> <?php echo $published; ?></span>
+                    <a href="https://www.youtube.com/watch?v=<?php echo $video_id; ?>" target="_blank" class="watch-link">Watch Video <i class="fas fa-external-link-alt ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+              <?php
+              $count++;
+          }
+      } else {
+          echo '<div class="col-12 text-center"><p class="text-muted">Unable to load videos at the moment. Please visit our YouTube channel directly.</p></div>';
+      }
+      ?>
     </div>
 
     <!-- Load More -->
     <div class="text-center mt-5">
-      <a href="https://www.youtube.com/channel/UCWGjgpakHsg7z4qMbXBSK_w" target="_blank" class="btn btn-primary btn-lg">
-        <i class="fab fa-youtube me-2"></i>Subscribe on YouTube
+      <a href="https://www.youtube.com/@sankalphospitalambikapur" target="_blank" class="btn btn-primary btn-lg px-5 shadow">
+        <i class="fab fa-youtube me-2"></i>Watch more videos on YouTube
       </a>
     </div>
   </div>
 </section>
 
+<style>
+.video-thumbnail { position: relative; overflow: hidden; border-radius: 12px; background: #000; height: 200px; }
+.video-thumbnail img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+.video-thumbnail:hover img { transform: scale(1.05); opacity: 0.8; }
+.play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: rgba(var(--primary-rgb), 0.9); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; transition: all 0.3s; pointer-events: none; }
+.video-thumbnail:hover .play-btn { background: var(--accent); transform: translate(-50%, -50%) scale(1.1); }
+.video-card h4 { font-size: 16px; font-weight: 600; line-height: 1.4; margin: 15px 0 10px; height: 45px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.video-card h4 a { color: var(--dark); transition: color 0.2s; }
+.video-card h4 a:hover { color: var(--primary); }
+.video-meta { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #777; }
+.watch-link { color: var(--primary); font-weight: 600; text-decoration: none; }
+.watch-link:hover { text-decoration: underline; }
+</style>
 
 <?php include 'includes/footer.php'; ?>

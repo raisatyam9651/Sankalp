@@ -537,3 +537,8 @@ img{max-width:100%;height:auto}
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(22, 128, 119, 0.1);
 }
+
+/* ===== DOCTOR LINKS ===== */
+.doctor-link { text-decoration: none; color: inherit; display: block; height: 100%; }
+.doctor-link:hover .doctor-card { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(22,128,119,0.2); transition: all 0.3s ease; }
+.doctor-link:hover h3 { color: var(--primary); transition: color 0.3s; }

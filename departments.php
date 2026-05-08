@@ -10,7 +10,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index.php">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Departments</p>
+    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Departments</p>
     <h1>Our Medical Departments</h1>
     <p>Comprehensive healthcare services under one roof with expert specialists</p>
   </div>
@@ -25,7 +25,7 @@
           <i class="fas fa-eye"></i>
           <h3>Ophthalmology</h3>
           <p>Advanced eye care services including cataract surgery, LASIK, diabetic retinopathy treatment, and glaucoma management using latest technology.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/ophthalmology-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -33,7 +33,7 @@
           <i class="fas fa-baby"></i>
           <h3>Obstetrics &amp; Gynecology</h3>
           <p>Complete women's health services from prenatal care to high-risk pregnancy management, normal and C-section deliveries, and gynecological surgeries.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/gynecology-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -41,7 +41,7 @@
           <i class="fas fa-bone"></i>
           <h3>Orthopaedics Surgery</h3>
           <p>Expert orthopedic care for fractures, joint replacements, sports injuries, spine treatments, and minimally invasive arthroscopic surgeries.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/orthopedic-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -49,7 +49,7 @@
           <i class="fas fa-child"></i>
           <h3>Pediatrics</h3>
           <p>Dedicated child healthcare including neonatal care, vaccination services, treatment of childhood diseases, and specialized pediatric consultations.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/pediatric-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -57,7 +57,7 @@
           <i class="fas fa-procedures"></i>
           <h3>General &amp; Laparoscopic Surgery</h3>
           <p>Advanced laparoscopic surgeries including gallbladder removal, hernia repair, appendectomy, and colorectal procedures with minimal recovery time.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/laparoscopic-surgery-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -65,7 +65,7 @@
           <i class="fas fa-tint"></i>
           <h3>Urology</h3>
           <p>Comprehensive urology services including kidney stone treatment, prostate care, urinary tract infections, and advanced surgical procedures.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/urology-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -73,7 +73,7 @@
           <i class="fas fa-brain"></i>
           <h3>Psychiatry</h3>
           <p>Mental health services for depression, anxiety, bipolar disorder, and other psychiatric conditions with compassionate and confidential care.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/doctors/dr-ankit-sharma" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -81,7 +81,7 @@
           <i class="fas fa-deaf"></i>
           <h3>ENT (Ear, Nose, Throat)</h3>
           <p>Complete ENT care including ear surgeries, sinus treatment, throat consultations, hearing tests, and head & neck surgeries.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/ent-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -89,7 +89,7 @@
           <i class="fas fa-ambulance"></i>
           <h3>Emergency &amp; Trauma Services</h3>
           <p>24/7 emergency care with fully equipped trauma center, ambulance services, and immediate life-saving interventions for all emergencies.</p>
-          <a href="tel:+919584889068" class="dept-link">Call Emergency <i class="fas fa-phone"></i></a>
+          <a href="/emergency-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -97,7 +97,7 @@
           <i class="fas fa-tint"></i>
           <h3>Dialysis</h3>
           <p>State-of-the-art dialysis center with modern dialysis machines, experienced technicians, and comfortable environment for renal care patients.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/dialysis-center-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -105,7 +105,7 @@
           <i class="fas fa-syringe"></i>
           <h3>Department of Anesthesia</h3>
           <p>Expert anesthesiology services for all surgical procedures including general anesthesia, spinal anesthesia, and pain management.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/anesthesia-services-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -113,15 +113,15 @@
           <i class="fas fa-ribbon"></i>
           <h3>Onco Surgery</h3>
           <p>Cancer surgery services including tumor removal, breast cancer surgery, and coordination with chemotherapy for comprehensive cancer care.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/chemotherapy-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="dept-card" id="chemotherapy">
           <i class="fas fa-flask"></i>
           <h3>Chemotherapy Services</h3>
-          <p>Modern chemotherapy unit with experienced oncologists providing chemotherapy sessions in a comfortable and supportive environment.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <p>Specialized chemotherapy daycare unit with trained oncology nurses and expert management of various cancer types in a compassionate environment.</p>
+          <a href="/chemotherapy-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -129,7 +129,7 @@
           <i class="fas fa-tooth"></i>
           <h3>Oral &amp; Maxillofacial Surgery</h3>
           <p>Surgical treatments for oral diseases, wisdom tooth extraction, jaw surgeries, and facial trauma reconstruction by experienced surgeons.</p>
-          <a href="index.html#doctors" class="dept-link">Consult Doctors <i class="fas fa-arrow-right"></i></a>
+          <a href="/maxillofacial-surgery-hospital-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
@@ -137,7 +137,7 @@
           <i class="fas fa-dna"></i>
           <h3>Assisted Fertility (IVF/ICSI/IUI)</h3>
           <p>Complete infertility solutions including IVF, ICSI, IUI, and other assisted reproductive technologies with high success rates.</p>
-          <a href="ivf.php" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          <a href="/ivf-treatment-in-ambikapur" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -229,7 +229,7 @@
         <p class="text-white opacity-75 mb-0">Book an appointment with our expert doctors today</p>
       </div>
       <div class="col-md-4 text-md-end mt-3 mt-md-0">
-        <a href="index.html#appointment" class="btn btn-light btn-lg"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
+        <a href="index#appointment" class="btn btn-light btn-lg"><i class="fas fa-calendar-check me-2"></i>Book Appointment</a>
       </div>
     </div>
   </div>

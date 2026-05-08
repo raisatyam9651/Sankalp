@@ -9,8 +9,8 @@
     .blog-hero p.breadcrumbs { color: rgba(255,255,255,0.85); font-size: 14px; margin-bottom: 10px; }
     .blog-hero p.breadcrumbs a { color: #fff; }
     .blog-hero h1 { color: #fff; font-size: 2.2rem; font-weight: 700; margin: 15px 0; }
-    .blog-img-large { width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; background: rgba(255,255,255,0.15); }
-    .blog-img-large i { font-size: 50px; color: #fff; }
+    .blog-hero-img { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 20px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; }
+    .blog-hero-img img { width: 100%; height: 100%; object-fit: cover; }
     .blog-content { max-width: 800px; margin: 0 auto; padding: 50px 15px; }
     .blog-content h2 { color: var(--dark); font-size: 1.5rem; margin: 30px 0 15px; font-weight: 700; }
     .blog-content h3 { color: var(--dark); font-size: 1.2rem; margin: 25px 0 12px; font-weight: 600; }
@@ -18,14 +18,30 @@
     .blog-content ul, .blog-content ol { margin-bottom: 15px; padding-left: 25px; }
     .blog-content li { margin-bottom: 8px; line-height: 1.7; }
     .blog-content blockquote { background: var(--bg-soft); border-left: 4px solid var(--primary); padding: 20px 25px; margin: 25px 0; font-style: italic; border-radius: 0 8px 8px 0; }
-    .blog-content .alert-warning { background: #fff3cd; border: 1px solid #ffc107; color: #856404; padding: 15px 20px; border-radius: 8px; margin: 20px 0; }
-    .author-box { display: flex; align-items: center; gap: 20px; background: var(--bg-soft); padding: 25px; border-radius: 12px; margin: 40px 0; }
-    .author-avatar { width: 70px; height: 70px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-    .author-avatar i { font-size: 30px; color: #fff; }
-    .author-info h5 { margin: 0 0 5px; color: var(--dark); font-weight: 700; }
-    .author-info p { margin: 0; color: #666; font-size: 14px; line-height: 1.6; }
+    .blog-content table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+    .blog-content table th { background: var(--primary); color: #fff; padding: 14px 18px; text-align: left; font-weight: 600; }
+    .blog-content table td { padding: 12px 18px; border-bottom: 1px solid #eee; color: #444; }
+    .blog-content table tr:last-child td { border-bottom: none; }
+    .blog-content table tr:hover td { background: #f8f9fa; }
+    .faq-item { background: #fff; border-radius: 10px; padding: 20px 25px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); border-left: 4px solid var(--primary); }
+    .faq-item h4 { color: var(--primary); margin: 0 0 10px; font-size: 1rem; font-weight: 700; }
+    .faq-item h4::before { content: "Q. "; font-weight: 700; }
+    .faq-item p { margin: 0; color: #555; line-height: 1.7; }
+    .tip-box { background: linear-gradient(135deg, #d4edeb 0%, #e8f5f3 100%); border: 2px solid var(--primary); border-radius: 10px; padding: 20px 25px; margin: 25px 0; }
+    .tip-box h4 { color: var(--primary); margin: 0 0 10px; font-size: 1rem; font-weight: 700; }
+    .tip-box h4::before { content: "💡 "; }
+    .tip-box p { margin: 0; color: #333; line-height: 1.7; }
+    .warning-box { background: #fff3cd; border: 2px solid #ffc107; border-radius: 10px; padding: 20px 25px; margin: 25px 0; }
+    .warning-box h4 { color: #856404; margin: 0 0 10px; font-size: 1rem; font-weight: 700; }
+    .warning-box h4::before { content: "⚠️ "; }
+    .warning-box p { margin: 0; color: #664d03; line-height: 1.7; }
+    .blog-content img { max-width: 100%; height: auto; border-radius: 10px; margin: 20px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
     .blog-meta { font-size: 13px; color: rgba(255,255,255,0.8); }
     .blog-meta i { margin-right: 3px; }
+    .blog-image-text { display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin: 20px 0; }
+    .blog-image-text .text-content { flex: 1; min-width: 280px; }
+    .blog-image-text .img-content { flex: 0 0 300px; }
+    @media (max-width: 768px) { .blog-image-text .img-content { flex: 1 1 100%; } }
   </style>
 </head>
 <body>
@@ -34,84 +50,246 @@
 <!-- BLOG HERO -->
 <section class="blog-hero text-center">
   <div class="container">
-    <p class="blog-meta"><a href="../index.php" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index.php" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> General Medicine</p>
-    <div class="blog-img-large"><i class="fas fa-shoe-prints"></i></div>
+    <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> General Medicine</p>
+    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&h=300&fit=crop" alt="Swollen Feet"></div>
     <h1>पैरों में सूजन (Sujan)</h1>
-    <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 6 min read &nbsp;&nbsp; <i class="far fa-user"></i> Dr. Sanjay Goyal</p>
+    <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 8 min read</p>
   </div>
 </section>
 
 <!-- BLOG CONTENT -->
 <div class="container">
   <div class="blog-content">
-    <p class="lead">पैरों में सूजन (Edema) एक आम समस्या है जो कई कारणों से हो सकती है। कई बार यह हल्की होती है, लेकिन कभी-कभी यह किसी गंभीर स्वास्थ्य समस्या का संकेत हो सकती है।</p>
+    <p class="lead">पैरों में सूजन (Edema) एक आम समस्या है जो कई कारणों से हो सकती है। कई बार यह हल्की और अस्थायी होती है, जैसे लंबे समय तक खड़े रहने से, लेकिन कभी-कभी यह किसी गंभीर स्वास्थ्य समस्या का संकेत भी हो सकती है जिस पर तुरंत ध्यान देने की आवश्यकता होती है। समस्या की गंभीरता समझना और सही समय पर चिकित्सा लेना जरूरी है।</p>
 
     <blockquote>"पैरों की सूजन अक्सर शरीर में तरल पदार्थ जमा होने का संकेत है। कई बार यह सामान्य होती है, लेकिन कभी-कभी दिल, किडनी, या लिवर की समस्या का लक्षण भी हो सकती है।"</blockquote>
 
-    <h2>पैरों में सूजन के कारण</h2>
-    <h3>1. लंबे समय तक खड़े या बैठे रहना</h3>
-    <p>ज्यादा देर तक खड़े या बैठे रहने से पैरों में खून जमा हो जाता है।</p>
-
-    <h3>2. गर्मी</h3>
-    <p>गर्मियों में गर्मी से भी पैरों में सूजन हो सकती है।</p>
-
-    <h3>3. नमक का अधिक सेवन</h3>
-    <p>ज्यादा नमक खाने से शरीर में पानी जमा होता है।</p>
-
-    <h3>4. मधुमेह (Diabetes)</h3>
-    <p>मधुमेह से पैरों में सूजन हो सकती है। यह कभी-कभी संक्रमण का संकेत भी हो सकता है।</p>
-
-    <h3>5. दिल की समस्या (Heart Failure)</h3>
-    <p>दिल कमजोर होने पर खून ठीक से पंप नहीं होता और पैरों में जमा हो जाता है।</p>
-
-    <h3>6. किडनी की समस्या</h3>
-    <p>किडनी ठीक से काम न करने पर पानी और नमक शरीर में जमा हो जाता है।</p>
-
-    <h2>घरेलू उपाय</h2>
-    <ul>
-      <li><strong>पैरों को उंचा रखें:</strong> सोते समय पैरों के नीचे तकिया रखें</li>
-      <li><strong>व्यायाम करें:</strong> पैरों की हल्की एक्सरसाइज से खून का प्रवाह बेहतर होता है</li>
-      <li><strong>नमक कम करें:</strong> कम नमक खाएं</li>
-      <li><strong>कम्प्रेशन स्टॉकिंग पहनें:</strong> मेडिकल स्टॉकिंग पहनने से सूजन कम हो सकती है</li>
-    </ul>
-
-    <h2>कब डॉक्टर से मिलना चाहिए?</h2>
-    <div class="alert-warning">
-      <strong>तुरंत जाएं अगर:</strong>
-      <ul>
-        <li>एक पैर में अचानक बहुत सूजन हो</li>
-        <li>सूजे हुए पैर में दर्द और लालिमा हो</li>
-        <li>सांस फूले</li>
-        <li>छाती में दर्द हो</li>
-        <li>बुखार हो</li>
-      </ul>
+    <div class="blog-image-text">
+      <div class="text-content">
+        <h2>पैरों में सूजन क्या है?</h2>
+        <p>सूजन या एडिमा तब होती है जब शरीर के ऊतकों में अतिरिक्त तरल पदार्थ जमा हो जाता है। पैरों में यह सूजन विशेष रूप से आम होती है क्योंकि गुरुत्वाकर्षण के कारण तरल पदार्थ नीचे एकत्रित होता है। सूजन एक पैर में या दोनों पैरों में हो सकती है, और यह हल्की से गंभीर तक हो सकती है।</p>
+        <p>सूजन को समझने के लिए यह जानना जरूरी है कि शरीर में रक्त और लिम्फ वेसल्स तरल पदार्थ को संतुलित करते हैं। जब इस संतुलन में कुछ समस्या आती है, तो तरल पदार्थ ऊतकों में जमा होने लगता है, जिससे सूजन होती है।</p>
+      </div>
+      <div class="img-content">
+        <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=400&h=300&fit=crop" alt="Foot care">
+      </div>
     </div>
 
-    <h2>रोकथाम</h2>
+    <h2>पैरों में सूजन के कारण</h2>
+    <p>पैरों में सूजन कई कारणों से हो सकती है। आइए विस्तार से जानें:</p>
+
+    <h3>1. लंबे समय तक खड़े या बैठे रहना</h3>
+    <p>ज्यादा देर तक खड़े या बैठे रहने से पैरों में खून जमा हो जाता है। यह विशेष रूप से उन लोगों में आम है जिन्हें लंबे समय तक बैठकर काम करना पड़ता है, जैसे ड्राइवर, ऑफिस वर्कर, या ट्रैवलर्स। शारीरिक गतिविधि की कमी से पैरों की मांसपेशियां कमजोर होती हैं और खून का प्रवाह सुस्त हो जाता है।</p>
+    <p><strong>लक्षण:</strong> शाम के समय पैरों में भारीपन, जूतों का तंग लगना, टखनों में सूजन।</p>
+
+    <h3>2. गर्भावस्था</h3>
+    <p>गर्भवती महिलाओं में पैरों में सूजन आम है। बच्चे के बढ़ने से गर्भाशय नसों पर दबाव डालता है, जिससे पैरों में खून का प्रवाह कम होता है। इसके अलावा, शरीर में अतिरिक्त पानी और नमक जमा होता है।</p>
+    <p><strong>लक्षण:</strong> गर्भावस्था के अंतिम महीनों में अधिक सूजन, हाथों और चेहरे में भी सूजन।</p>
+
+    <h3>3. मधुमेह (Diabetes)</h3>
+    <p>मधुमेह से पैरों में सूजन हो सकती है। उच्च रक्त शर्करा से छोटी नसें प्रभावित होती हैं, जिससे तरल पदार्थ ऊतकों में जमा होता है। इसके अलावा, मधुमेह में संक्रमण का खतरा भी बढ़ जाता है जो सूजन का कारण बन सकता है।</p>
+    <p><strong>लक्षण:</strong> पैरों में सूजन के साथ सुन्नपन, घाव जो धीरे से ठीक होते हैं।</p>
+
+    <h3>4. दिल की समस्या (Heart Failure)</h3>
+    <p>दिल कमजोर होने पर खून ठीक से पंप नहीं होता और पैरों में जमा हो जाता है। यह एक गंभीर स्थिति है जिसके लिए तुरंत चिकित्सा ध्यान की आवश्यकता होती है। हृदय विफलता में पैरों की सूजन के अलावा सांस फूलना और थकान भी होती है।</p>
+    <p><strong>लक्षण:</strong> दोनों पैरों में सूजन, सांस फूलना (विशेषकर लेटने पर), थकान, वजन बढ़ना।</p>
+
+    <h3>5. किडनी की समस्या</h3>
+    <p>किडनी ठीक से काम न करने पर पानी और नमक शरीर में जमा हो जाता है। किडनी मल और पसीने के साथ अतिरिक्त पानी नहीं निकाल पाती, जिससे सूजन होती है। ग्लोमेरुलोनेफ्राइटिस या नेफ्रोटिक सिंड्रोम जैसी समस्याएं इसके कारण हो सकती हैं।</p>
+    <p><strong>लक्षण:</strong> पैरों और चेहरे में सूजन, पेशाब में बदलाव, थकान।</p>
+
+    <h3>6. लिवर की समस्या (Liver Disease)</h3>
+    <p>लिवर सिरोसिस में खून का प्रवाह लिवर से होकर नहीं गुजर पाता, जिससे पैरों में सूजन होती है। लिवर एल्बुमिन प्रोटीन बनाता है जो खून में तरल पदार्थ को रोकता है। जब लिवर कम एल्बुमिन बनाता है, तो तरल पदार्थ ऊतकों में जाकर सूजन करता है।</p>
+    <p><strong>लक्षण:</strong> पैरों में सूजन के साथ पेट में पानी (एसाइटिस), आंखों और त्वचा में पीलापन।</p>
+
+    <h3>7. लिम्फेडिमा</h3>
+    <p>लिम्फ सिस्टम बाधित होने पर भी सूजन होती है। कैंसर के इलाज, संक्रमण, या जन्मजात समस्याओं से लिम्फ नोड्स क्षतिग्रस्त हो सकते हैं। इससे तरल पदार्थ ठीक से नहीं निकल पाता और पैरों में जमा हो जाता है।</p>
+    <p><strong>लक्षण:</strong> एक पैर में सूजन, त्वचा का मोटा और कठोर होना, भारीपन।</p>
+
+    <h3>8. दवाइयों के साइड इफेक्ट</h3>
+    <p>कुछ दवाइयां पैरों में सूजन का कारण बन सकती हैं। स्टेरॉइड्स, कुछ ब्लड प्रेशर दवाइयां, एंटी-इंफ्लेमेटरी दवाइयां, और हार्मोनल दवाइयां इसमें शामिल हैं।</p>
+
+    <h3>9. पोषण संबंधी समस्याएं</h3>
+    <p>प्रोटीन की कमी से भी सूजन हो सकती है। जब शरीर में पर्याप्त प्रोटीन नहीं होता, तो खून में एल्बुमिन का स्तर गिर जाता है, जिससे तरल पदार्थ ऊतकों में जाने लगता है।</p>
+
+    <h3>10. संक्रमण</h3>
+    <p>पैरों में संक्रमण से भी सूजन हो सकती है। सेल्युलाइटिस (त्वचा का बैक्टीरियल इंफेक्शन) एक आम कारण है। गंभीर मामलों में सूजन के साथ लालिमा, गर्मी, और दर्द भी होता है।</p>
+
+    <h2>सूजन के प्रकार</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>सूजन का प्रकार</th>
+          <th>कारण</th>
+          <th>लक्षण</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>गुरुत्वाकर्षण एडिमा</td>
+          <td>लंबे समय खड़े/बैठे रहना</td>
+          <td>शाम को अधिक, रात को कम</td>
+        </tr>
+        <tr>
+          <td>हृदय संबंधी एडिमा</td>
+          <td>दिल की कमजोरी</td>
+          <td>दोनों पैर, सांस फूलना</td>
+        </tr>
+        <tr>
+          <td>गुर्दे संबंधी एडिमा</td>
+          <td>किडनी की बीमारी</td>
+          <td>पैर और चेहरे में सूजन</td>
+        </tr>
+        <tr>
+          <td>यकृत संबंधी एडिमा</td>
+          <td>लिवर सिरोसिस</td>
+          <td>पैर और पेट में पानी</td>
+        </tr>
+        <tr>
+          <td>लिम्फेडिमा</td>
+          <td>लिम्फ सिस्टम क्षति</td>
+          <td>एक पैर, त्वचा मोटी</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>घरेलू उपाय</h2>
+    <div class="tip-box">
+      <h4>सूजन कम करने के तुरंत उपाय:</h4>
+      <p>पैरों को उंचा रखें - सोते समय पैरों के नीचे तकिया रखें। ठंडे पानी में पैर भिगोएं। हल्की मालिश करें। नमक कम करें। पानी पिएं - यह अजीब लग सकता है लेकिन शरीर को हाइड्रेट रखने से सूजन कम होती है।</p>
+    </div>
+
+    <h3>1. पैरों को उंचा रखें</h3>
+    <p>सोते समय या आराम करते समय पैरों के नीचे तकिया या गद्दा रखें। पैरों को हृदय स्तर से ऊपर रखें। यह शारीरिक गुरुत्वाकर्षण के विपरीत तरल पदार्थ को वापस ऊपर जाने में मदद करता है। दिन में कई बार, 20-30 मिनट के लिए ऐसे रहें।</p>
+
+    <h3>2. व्यायाम करें</h3>
+    <p>पैरों की हल्की एक्सरसाइज से खून का प्रवाह बेहतर होता है। पैरों की उंगलियों को हिलाने के अभ्यास करें। पैरों को गोल-गोल घुमाएं। रोज़ाना 30 मिनट पैदल चलें। तैरना भी उत्कृष्ट व्यायाम है।</p>
+
+    <h3>3. नमक कम करें</h3>
+    <p>ज्यादा नमक शरीर में पानी जमा करता है। दिन में 5 ग्राम से कम नमक खाएं। चिप्स, नमकीन snacks, और प्रोसेस्ड फूड से बचें। खाने में नमक की जगह मसाले और जड़ी-बूटियां उपयोग करें।</p>
+
+    <h3>4. कम्प्रेशन स्टॉकिंग पहनें</h3>
+    <p>मेडिकल कम्प्रेशन स्टॉकिंग पहनने से सूजन कम हो सकती है। ये स्टॉकिंग पैरों पर दबाव डालती हैं जो तरल पदार्थ को ऊपर जाने में मदद करता है। इन्हें सुबह पहनें, जब पैर कम सूजे हुए हों।</p>
+
+    <h3>5. मालिश</h3>
+    <p>हल्की मालिश से खून का प्रवाह बेहतर होता है और लिम्फ ड्रेनेज में मदद मिलती है। नीचे से ऊपर की ओर मालिश करें। गर्म तेल (नारियल तेल या सरसों का तेल) उपयोग करें।</p>
+
+    <h2>रोकथाम के उपाय</h2>
+    <div class="blog-image-text">
+      <div class="text-content">
+        <p>पैरों में सूजन को रोकने के लिए इन उपायों को अपनाएं:</p>
+        <ul>
+          <li><strong>नियमित व्यायाम करें:</strong> रोज़ाना 30 मिनट पैदल चलना या तैरना</li>
+          <li><strong>नमक कम खाएं:</strong> दिन में 5 ग्राम से कम</li>
+          <li><strong>लंबे समय न बैठे रहें:</strong> हर 1-2 घंटे में उठकर चलें</li>
+          <li><strong>वजन नियंत्रित रखें:</strong> मोटापा सूजन बढ़ाता है</li>
+          <li><strong>आरामदायक जूते पहनें:</strong> तंग जूते न पहनें</li>
+          <li><strong>पानी पिएं:</strong> दिन में 8-10 गिलास</li>
+          </ul>
+      </div>
+      <div class="img-content">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Exercise">
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>करें</th>
+          <th>न करें</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>पैरों को उंचा रखें</td>
+          <td>लंबे समय खड़े/बैठे न रहें</td>
+        </tr>
+        <tr>
+          <td>नियमित व्यायाम</td>
+          <td>ज्यादा नमक न खाएं</td>
+        </tr>
+        <tr>
+          <td>कम्प्रेशन स्टॉकिंग</td>
+          <td>तंग जूते न पहनें</td>
+        </tr>
+        <tr>
+          <td>पर्याप्त पानी पिएं</td>
+          <td>शराब न पिएं</td>
+        </tr>
+        <tr>
+          <td>हल्की मालिश</td>
+          <td>गर्म पानी से नहाने से बचें</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>कब डॉक्टर से मिलना चाहिए?</h2>
+    <div class="warning-box">
+      <h4>तुरंत चिकित्सा ध्यान की आवश्यकता:</h4>
+      <p>एक पैर में अचानक बहुत सूजन हो। सूजे हुए पैर में दर्द और लालिमा हो। सांस फूले हुए हो और लेटने में भी दिक्कत हो। छाती में दर्द हो। बुखार हो। वजन अचानक बहुत बढ़ गया हो। मूत्र कम हो गया हो। चेहरे में भी सूजन हो।</p>
+    </div>
+
+    <h3>डॉक्टर क्या करेंगे?</h3>
+    <p>डॉक्टर निम्नलिखित जांच कर सकते हैं:</p>
     <ul>
-      <li>रोजाना व्यायाम करें</li>
-      <li>नमक कम खाएं</li>
-      <li>लंबे समय न बैठे रहें</li>
-      <li>वजन नियंत्रित रखें</li>
-      <li>जूते आरामदायक पहनें</li>
+      <li><strong>शारीरिक परीक्षण:</strong> सूजन की गंभीरता और स्थान की जांच</li>
+      <li><strong>ब्लड टेस्ट:</strong> किडनी, लिवर, और हृदय की जांच</li>
+      <li><strong>इलेक्ट्रोकार्डियोग्राम (ECG):</strong> हृदय की जांच</li>
+      <li><strong>अल्ट्रासाउंड:</strong> पैरों की नसों और अंगों की जांच</li>
+      <li><strong>एक्स-रे:</strong> छाती की जांच (सांस फूलने पर)</li>
     </ul>
 
-    <!-- Author Box -->
-    <div class="author-box">
-      <div class="author-avatar"><i class="fas fa-user-md"></i></div>
-      <div class="author-info">
-        <h5>Dr. Sanjay Goyal</h5>
-        <p>MBBS, MD (General Medicine)<br>Senior Physician, Sankalp Hospital<br>12+ years of experience</p>
-      </div>
+    <h2>अक्सर पूछे जाने वाले प्रश्न (FAQs)</h2>
+
+    <div class="faq-item">
+      <h4>पैरों में सूजन क्यों होती है?</h4>
+      <p>पैरों में सूजन कई कारणों से हो सकती है - लंबे समय खड़े या बैठे रहना, गर्भावस्था, मधुमेह, दिल या किडनी की समस्या, दवाइयों के साइड इफेक्ट, या लिम्फ सिस्टम की समस्या। सही कारण जानने के लिए चिकित्सा जांच जरूरी है।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>पैरों की सूजन कितनी जल्दी ठीक होती है?</h4>
+      <p>यह कारण पर निर्भर करता है। गुरुत्वाकर्षण से होने वाली सूजन कुछ घंटों में ठीक हो सकती है (पैर उंचा रखने पर)। दवाइयों के कारण होने वाली सूजन दवा बदलने पर कम हो सकती है। हृदय या किडनी की समस्या में इलाज के साथ हफ्तों या महीनों में सुधार हो सकता है।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>क्या रात को पैरों में सूजन बढ़ती है?</h4>
+      <p>हां, रात को पैरों में सूजन बढ़ सकती है क्योंकि आप लेटे होते हैं और गुरुत्वाकर्षण तरल पदार्थ को पैरों की ओर खींचता है। सुबह उठने पर सूजन कम हो सकती है। हालांकि, कुछ समस्याओं में रात को भी सूजन रह सकती है।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>क्या मधुमेह में पैरों की सूजन गंभीर है?</h4>
+      <p>हां, मधुमेह में पैरों की सूजन गंभीर हो सकती है क्योंकि यह संक्रमण का संकेत हो सकता है। मधुमेह में छोटी चोटें भी गंभीर हो सकती हैं। यदि सूजन के साथ लालिमा, गर्मी, या दर्द है, तो तुरंत डॉक्टर से मिलें।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>क्या गर्भावस्था में पैरों की सूजन सामान्य है?</h4>
+      <p>हां, गर्भावस्था में पैरों की सूजन आम है और अधिकांश मामलों में सामान्य है। हालांकि, अचानक या अत्यधिक सूजन, चेहरे या हाथों में सूजन, या सांस फूलना गंभीर हो सकता है (प्री-एक्लेम्प्सिया का संकेत)। ऐसे में तुरंत डॉक्टर से मिलें।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>क्या व्यायाम से पैरों की सूजन कम हो सकती है?</h4>
+      <p>हां, नियमित व्यायाम से पैरों की सूजन कम हो सकती है। व्यायाम से पैरों की मांसपेशियां मजबूत होती हैं और खून का प्रवाह बेहतर होता है। पैदल चलना, तैरना, और पैरों की मालिश मददगार हैं। लेकिन यदि सूजन गंभीर है, तो पहले डॉक्टर से सलाह लें।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>पैरों की सूजन का इलाज क्या है?</h4>
+      <p>इलाज कारण पर निर्भर करता है। दिल की समस्या के लिए दवाइयां, किडनी की समस्या के लिए मूत्रवर्धक दवाइयां, लिम्फेडिमा के लिए कम्प्रेशन थेरेपी और मालिश दी जा सकती है। गंभीर मामलों में सर्जरी भी आवश्यक हो सकती है।</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>क्या पैरों की सूजन बढ़ने से बचाव हो सकता है?</h4>
+      <p>हां, कुछ उपायों से पैरों की सूजन को रोका जा सकता है - लंबे समय न खड़े रहें, नियमित व्यायाम करें, नमक कम खाएं, वजन नियंत्रित रखें, कम्प्रेशन स्टॉकिंग पहनें, और पैरों को उंचा रखें।</p>
     </div>
 
     <!-- CTA -->
     <div class="text-center mt-5 p-4 rounded" style="background:var(--bg-soft)">
       <h4>पैरों में सूजन है?</h4>
-      <p class="text-muted mb-4">हमारे डॉक्टर आपकी जांच कर सकते हैं।</p>
-      <a href="../index.php#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>अपॉइंटमेंट बुक करें</a>
+      <p class="text-muted mb-4">विशेषज्ञ चिकित्सक से परामर्श लें।</p>
+      <a href="../index#appointment" class="btn btn-primary"><i class="fas fa-calendar-check me-2"></i>अपॉइंटमेंट बुक करें</a>
     </div>
   </div>
 </div>
 
 <?php include '../includes/footer.php'; ?>
+</body>
+</html>

@@ -10,7 +10,7 @@
 <!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumbs"><a href="index.php">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Empanelments</p>
+    <p class="breadcrumbs"><a href="index">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:11px"></i> Empanelments</p>
     <h1>Insurance &amp; TPA Partners</h1>
     <p>Cashless treatment facilities with our insurance and Third Party Administrator partners</p>
   </div>
@@ -195,7 +195,7 @@
           <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i> Dedicated support staff</li>
           <li class="list-group-item d-flex align-items-center"><i class="fas fa-check-circle text-success me-3"></i> Help with policy queries</li>
         </ul>
-        <a href="index.html#appointment" class="btn btn-primary mt-4"><i class="fas fa-calendar-check me-2"></i>Book an Appointment</a>
+        <a href="index#appointment" class="btn btn-primary mt-4"><i class="fas fa-calendar-check me-2"></i>Book an Appointment</a>
       </div>
     </div>
   </div>
