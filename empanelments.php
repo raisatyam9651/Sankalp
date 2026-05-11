@@ -3,11 +3,7 @@
 <head>
   <title>Empanelments | Sankalp Hospital - Insurance & TPA Partners</title>
   <meta name="description" content="Sankalp Hospital empanelments - list of insurance companies, TPA partners, and corporate affiliations for cashless treatments.">
-  <link rel="icon" href="assets/img/logo.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <?php include 'includes/header-code.php'; ?>
   <style>
     .page-hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;padding:80px 0 100px;text-align:center;position:relative;overflow:hidden}
     .page-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(255,255,255,.08) 0,transparent 30%),radial-gradient(circle at 80% 70%,rgba(255,255,255,.06) 0,transparent 30%);pointer-events:none}
