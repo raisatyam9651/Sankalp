@@ -34,21 +34,7 @@ Redirect 301 /departments/oral-surgery/ /maxillofacial-surgery-hospital-in-ambik
 Redirect 301 /departments.php /departments
 Redirect 301 /contact.php /contact
 
-# Redirect old doctor pages to clean URLs
-Redirect 301 /doctors/dr-lata-goyal/ /doctors/dr-lata-goyal
-Redirect 301 /doctors/dr-tanay-goyal/ /doctors/dr-tanay-goyal
-Redirect 301 /doctors/dr-ankita-bansal-goyal/ /doctors/dr-ankita-bansal-goyal
-Redirect 301 /doctors/dr-ankit-sharma/ /doctors/dr-ankit-sharma
-Redirect 301 /doctors/dr-ankit-gupta/ /doctors/dr-ankit-gupta
-Redirect 301 /doctors/dr-usha-armo/ /doctors/dr-usha-armo
-Redirect 301 /doctors/dr-akshaya-goyal/ /doctors/dr-akshaya-goyal
-Redirect 301 /doctors/dr-megha-goyal/ /doctors/dr-megha-goyal
-Redirect 301 /doctors/dr-shailesh-gupta/ /doctors/dr-shailesh-gupta
-Redirect 301 /doctors/dr-nilesh-goyal/ /doctors/dr-nilesh-goyal
-Redirect 301 /doctors/dr-rimsha-lakesh-sahu/ /doctors/dr-rimsha-lakesh-sahu
-Redirect 301 /doctors/dr-chandra-mukesh-dhawde/ /doctors/dr-chandra-mukesh-dhawde
-Redirect 301 /doctors/dr-suneedh-gupta/ /doctors/dr-suneedh-gupta
-Redirect 301 /doctors/dr-sanjay-goyal/ /doctors/dr-sanjay-goyal
+# Doctor page clean URLs - handled by mod_rewrite below (no conflicting Redirect needed)
 
 # External redirect to remove .php extension
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
