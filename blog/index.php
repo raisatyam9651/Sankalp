@@ -169,6 +169,216 @@
           </div>
         </div>
       </div>
+      <!-- NEWLY ADDED BLOGS -->
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/blog/back-exercises.png" alt="Back Exercises for Women" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Orthopedics</span>
+            <h3><a href="back-exercises-for-women-with-back-pain-safe-stretches-for-relief">Back Exercises for Women: Safe Stretches</a></h3>
+            <p>Relieve back pain with these safe and effective stretches and exercises for women.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-icon-bg"><i class="fas fa-microscope"></i></div>
+          <div class="blog-body">
+            <span class="blog-category">Urology</span>
+            <h3><a href="kidney-stone-symptoms-in-men">Kidney Stone Symptoms in Men</a></h3>
+            <p>Common symptoms, causes, and treatment options for kidney stones in men.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%)"><i class="fas fa-venus-mars" style="color:#d81b60"></i></div>
+          <div class="blog-body">
+            <span class="blog-category">Fertility</span>
+            <h3><a href="causes-symptoms-and-treatment-of-ivf">Causes, Symptoms, and Treatment of IVF</a></h3>
+            <p>A comprehensive guide to understanding IVF treatment and the path to parenthood.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)"><i class="fas fa-stethoscope" style="color:#1976d2"></i></div>
+          <div class="blog-body">
+            <span class="blog-category">Orthopedics</span>
+            <h3><a href="cervical-pain-symptoms-in-hindi">सर्वाइकल पेन के लक्षण और कारण</a></h3>
+            <p>गर्दन दर्द (सर्वाइकल पेन) के लक्षण, कारण और बचाव के सही तरीके।</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/blog/hiv-symptoms.png" alt="HIV Symptoms Hindi" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Infectious Diseases</span>
+            <h3><a href="hiv-symptoms-in-women-in-hindi">महिलाओं में एचआईवी के लक्षण</a></h3>
+            <p>महिलाओं में एचआईवी के शुरुआती लक्षण, कारण और जागरूकता की जानकारी।</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/blog/acl-surgery.png" alt="Knee Replacement" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Orthopedics</span>
+            <h3><a href="how-long-does-a-knee-replacement-surgery-take-procedure-duration-recovery-guide">Knee Replacement: Procedure & Recovery</a></h3>
+            <p>A complete guide on knee replacement surgery duration and recovery timeline.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/blog/swollen-feet.png" alt="Knee Swelling" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Orthopedics</span>
+            <h3><a href="how-to-reduce-knee-swelling-fast-proven-remedies">How to Reduce Knee Swelling Fast</a></h3>
+            <p>Proven home remedies and medical treatments to reduce knee swelling effectively.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/blog/pregnancy-care.png" alt="Hypothyroidism" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Endocrinology</span>
+            <h3><a href="hypothyroidism-symptoms-in-women">Hypothyroidism Symptoms in Women</a></h3>
+            <p>Common signs, symptoms, and causes of hypothyroidism in women.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/blog/back-exercises.png" alt="Winter Joint Pain" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Orthopedics</span>
+            <h3><a href="joint-pain-in-winter-causes-home-remedies-when-to-see-an-orthopedic-doctor">Joint Pain in Winter: Causes & Remedies</a></h3>
+            <p>Discover why joint pain increases in winter and how to find relief.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%)"><i class="fas fa-procedures" style="color:#00796b"></i></div>
+          <div class="blog-body">
+            <span class="blog-category">Nephrology</span>
+            <h3><a href="kidney-failure-symptoms-in-women-early-signs-and-risk-factors">Kidney Failure Symptoms in Women</a></h3>
+            <p>Early signs, symptoms, and risk factors of kidney failure in women.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%)"><i class="fas fa-baby" style="color:#d81b60"></i></div>
+          <div class="blog-body">
+            <span class="blog-category">Pregnancy Care</span>
+            <h3><a href="pregnancy-ke-pehle-week-ke-symptoms">गर्भावस्था के पहले सप्ताह के लक्षण</a></h3>
+            <p>प्रेग्नेंसी के पहले सप्ताह के शुरुआती लक्षण और सावधानियों की जानकारी।</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/infrastructure/LAPAROSCOPIC-SURGERY.jpg" alt="Laparoscopy" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Technology</span>
+            <h3><a href="sankalp-hospital-ambikapur-having-advaned-laproscopy-machine">Advanced Laparoscopy at Sankalp Hospital</a></h3>
+            <p>Minimally invasive surgeries with our state-of-the-art laparoscopy machine.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/infrastructure/ICU.jpg" alt="Smart ICU" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Critical Care</span>
+            <h3><a href="sankalp-hospital-ambikapur-smart-icu-and-trauma-centre-treatment-for-and-fracture-and-recovered">Smart ICU & Trauma Centre</a></h3>
+            <p>Advanced emergency care and rapid recovery at our specialized trauma centre.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/infrastructure/PATHOLOGY-LAB.jpg" alt="Health Packages" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Wellness</span>
+            <h3><a href="sankalp-hospital-health-care-packages">Health Care Packages in Ambikapur</a></h3>
+            <p>Affordable and comprehensive health checkup packages for every age.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <img src="/assets/img/blog/pregnancy-care.png" alt="Hormonal Imbalance" class="blog-card-img">
+          <div class="blog-body">
+            <span class="blog-category">Women's Health</span>
+            <h3><a href="symptoms-of-hormonal-imbalance-in-women">Hormonal Imbalance in Women</a></h3>
+            <p>Common symptoms, causes, and effects of hormonal imbalance in women.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%)"><i class="fas fa-dna" style="color:#7b1fa2"></i></div>
+          <div class="blog-body">
+            <span class="blog-category">Endocrinology</span>
+            <h3><a href="thyroid-symptoms-in-women">Thyroid Symptoms in Women</a></h3>
+            <p>Understanding the signs of thyroid dysfunction and when to see a specialist.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%)"><i class="fas fa-running" style="color:#0288d1"></i></div>
+          <div class="blog-body">
+            <span class="blog-category">Sports Medicine</span>
+            <h3><a href="why-do-my-knees-hurt-when-i-run-prevention-tips">Why Do My Knees Hurt When I Run?</a></h3>
+            <p>Expert tips on preventing and managing knee pain for runners.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%)"><i class="fas fa-female" style="color:#f57c00"></i></div>
+          <div class="blog-body">
+            <span class="blog-category">Women's Health</span>
+            <h3><a href="why-women-feel-pain-during-intercourse-causes-and-when-to-consult-a-doctor">Pain During Intercourse in Women</a></h3>
+            <p>Understanding the physical and emotional causes of painful intercourse.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="blog-card">
+          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #fbe9e7 0%, #ffccbc 100%)"><i class="fas fa-heartbeat" style="color:#d84315"></i></div>
+          <div class="blog-body">
+            <span class="blog-category">Women's Health</span>
+            <h3><a href="symptoms-of-cancer-in-women-early-warning-signs-you-should-not-ignore">Early Warning Signs of Cancer in Women</a></h3>
+            <p>Critical signs of cancer that every woman should know and monitor.</p>
+            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- View All Button -->
