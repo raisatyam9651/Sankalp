@@ -55,7 +55,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Pulmonology</p>
-    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=300&h=300&fit=crop" alt="Lungs Pain"></div>
+    <div class="blog-hero-img"><img src="/assets/img/blog/lungs-pain.png" alt="Lungs Pain"></div>
     <h1>फेफड़ों में दर्द (Lungs Me Dard)</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 8 min read</p>
   </div>

@@ -55,7 +55,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Hypertension</p>
-    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?w=300&h=300&fit=crop" alt="High Blood Pressure"></div>
+    <div class="blog-hero-img"><img src="/assets/img/blog/heart-health.png" alt="High Blood Pressure"></div>
     <h1>BP High होने पर क्या करें?</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 9 min read</p>
   </div>

@@ -6,7 +6,7 @@ $blog_date = "January 5, 2024";
 $blog_readtime = "5 min read";
 $blog_author = "Dr. Shailesh Gupta";
 $blog_author_desc = "MBBS, MD, DM (Cardiology) - Senior Cardiologist, Sankalp Hospital";
-$blog_image = "https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?w=900&h=450&fit=crop";
+$blog_image = "/assets/img/blog/heart-health.png";
 $blog_content = '
 <p class="lead">Heart disease remains the leading cause of death worldwide, but the good news is that up to 80% of heart disease can be prevented through lifestyle changes. Here are five proven steps to keep your heart healthy.</p>
 

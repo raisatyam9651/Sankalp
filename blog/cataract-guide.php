@@ -6,7 +6,7 @@ $blog_date = "January 10, 2024";
 $blog_readtime = "7 min read";
 $blog_author = "Dr. Sanjay Goyal";
 $blog_author_desc = "MBBS, MS (Ophthalmology) - Senior Eye Specialist, Sankalp Hospital";
-$blog_image = "https://images.unsplash.com/photo-1557844352-761f2565b576?w=900&h=450&fit=crop";
+$blog_image = "/assets/img/blog/cataract-surgery.png";
 $blog_content = <<<'HTML'
 <p class="lead">Cataracts are one of the most common vision problems affecting millions of people worldwide. Understanding this condition can help you recognize symptoms early and seek appropriate treatment.</p>
 

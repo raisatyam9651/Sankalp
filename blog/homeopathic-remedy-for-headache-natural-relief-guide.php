@@ -55,7 +55,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Homeopathy</p>
-    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=300&h=300&fit=crop" alt="Natural Headache Relief"></div>
+    <div class="blog-hero-img"><img src="/assets/img/blog/headache.png" alt="Natural Headache Relief"></div>
     <h1>Homeopathic Remedy for Headache: Natural Relief Guide</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 9 min read</p>
   </div>

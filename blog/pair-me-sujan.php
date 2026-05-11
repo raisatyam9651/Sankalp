@@ -51,7 +51,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> General Medicine</p>
-    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&h=300&fit=crop" alt="Swollen Feet"></div>
+    <div class="blog-hero-img"><img src="/assets/img/blog/swollen-feet.png" alt="Swollen Feet"></div>
     <h1>पैरों में सूजन (Sujan)</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 8 min read</p>
   </div>

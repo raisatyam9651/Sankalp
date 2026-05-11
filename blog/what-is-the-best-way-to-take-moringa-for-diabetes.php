@@ -37,7 +37,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="/index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="/blog/" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Nutrition & Diabetes</p>
-    <img src="https://images.unsplash.com/photo-1613138512670-f13df2c0ce5e?w=1200&h=600&fit=crop" alt="Moringa for Diabetes" class="blog-img-large">
+    <img src="/assets/img/blog/moringa-diabetes.png" alt="Moringa for Diabetes" class="blog-img-large">
     <h1>What is the Best Way to Take Moringa for Diabetes?</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 10 min read &nbsp;&nbsp; <i class="fas fa-leaf"></i> Nutrition & Health</p>
   </div>

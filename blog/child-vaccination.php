@@ -6,7 +6,7 @@ $blog_date = "December 28, 2023";
 $blog_readtime = "8 min read";
 $blog_author = "Dr. Ankit Gupta";
 $blog_author_desc = "MBBS, DCH - Pediatrician, Sankalp Hospital";
-$blog_image = "https://images.unsplash.com/photo-1632053002928-1919605ee6f7?w=900&h=450&fit=crop";
+$blog_image = "/assets/img/blog/child-vaccination.png";
 $blog_content = <<<'HTML'
 <p class="lead">Vaccinations are one of the most important ways to protect your child from serious diseases. Understanding the immunization schedule helps ensure your little one receives timely protection.</p>
 

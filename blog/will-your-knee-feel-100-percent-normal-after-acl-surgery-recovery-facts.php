@@ -34,7 +34,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="/index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="/blog/" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Orthopedics</p>
-    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=600&fit=crop" alt="ACL Surgery Recovery" class="blog-img-large">
+    <img src="/assets/img/blog/acl-surgery.png" alt="ACL Surgery Recovery" class="blog-img-large">
     <h1>Will Your Knee Feel 100% Normal After ACL Surgery? Recovery Facts</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 12 min read &nbsp;&nbsp; <i class="fas fa-bone"></i> Sports Medicine</p>
   </div>

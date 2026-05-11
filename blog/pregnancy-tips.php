@@ -6,7 +6,7 @@ $blog_date = "January 15, 2024";
 $blog_readtime = "6 min read";
 $blog_author = "Dr. Lata Goyal";
 $blog_author_desc = "MBBS, DGO - Senior Gynecologist, Sankalp Hospital";
-$blog_image = "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=900&h=450&fit=crop";
+$blog_image = "/assets/img/blog/pregnancy-care.png";
 $blog_content = <<<'HTML'
 <p class="lead">A healthy pregnancy begins with informed choices. From the moment you discover you're expecting, every decision you make contributes to your baby's development and your own well-being.</p>
 

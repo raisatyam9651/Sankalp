@@ -55,7 +55,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Infectious Diseases</p>
-    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=300&h=300&fit=crop" alt="HIV Awareness"></div>
+    <div class="blog-hero-img"><img src="/assets/img/blog/hiv-symptoms.png" alt="HIV Awareness"></div>
     <h1>HIV Symptoms in Women: What You Need to Know</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 9 min read</p>
   </div>

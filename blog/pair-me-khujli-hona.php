@@ -53,7 +53,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Skin Care</p>
-    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?w=300&h=300&fit=crop" alt="Itchy Feet"></div>
+    <div class="blog-hero-img"><img src="/assets/img/blog/itchy-feet.png" alt="Itchy Feet"></div>
     <h1>पैर में खुजली होना (Khujli)</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 7 min read</p>
   </div>

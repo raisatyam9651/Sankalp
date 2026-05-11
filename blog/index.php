@@ -44,7 +44,7 @@
       <!-- Row 1 -->
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=600&h=400&fit=crop" alt="Moringa for Diabetes" class="blog-card-img">
+          <img src="/assets/img/blog/moringa-diabetes.png" alt="Moringa for Diabetes" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Nutrition & Diabetes</span>
             <h3><a href="what-is-the-best-way-to-take-moringa-for-diabetes">What is the Best Way to Take Moringa for Diabetes?</a></h3>
@@ -55,7 +55,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop" alt="ACL Surgery Recovery" class="blog-card-img">
+          <img src="/assets/img/blog/acl-surgery.png" alt="ACL Surgery Recovery" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Orthopedics</span>
             <h3><a href="will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts">Will Your Knee Feel 100% Normal After ACL Surgery?</a></h3>
@@ -66,7 +66,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=600&h=400&fit=crop" alt="Homeopathic Remedy for Headache" class="blog-card-img">
+          <img src="/assets/img/blog/headache.png" alt="Homeopathic Remedy for Headache" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Homeopathy</span>
             <h3><a href="homeopathic-remedy-for-headache-natural-relief-guide">Homeopathic Remedy for Headache: Natural Relief</a></h3>
@@ -78,7 +78,7 @@
       <!-- Row 2 -->
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop" alt="Pair Me Jhunjhuni" class="blog-card-img">
+          <img src="/assets/img/blog/numbness-feet.png" alt="Pair Me Jhunjhuni" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Neurology</span>
             <h3><a href="pair-me-jhunjhuni-hona">पैर में झनझनाहट (Jhunjhuni) होना</a></h3>
@@ -89,7 +89,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=400&fit=crop" alt="Gas Se Peeth Dard" class="blog-card-img">
+          <img src="/assets/img/blog/gas-back-pain.png" alt="Gas Se Peeth Dard" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Gastrology</span>
             <h3><a href="gas-se-peeth-dard-kyun-hota-hai">गैस से पीठ दर्द क्यों होता है?</a></h3>
@@ -100,7 +100,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?w=600&h=400&fit=crop" alt="Pair Me Khujli" class="blog-card-img">
+          <img src="/assets/img/blog/itchy-feet.png" alt="Pair Me Khujli" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Skin Care</span>
             <h3><a href="pair-me-khujli-hona">पैर में खुजली होना (Khujli)</a></h3>
@@ -112,7 +112,7 @@
       <!-- Row 3 -->
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop" alt="Lungs Me Dard" class="blog-card-img">
+          <img src="/assets/img/blog/lungs-pain.png" alt="Lungs Me Dard" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Pulmonology</span>
             <h3><a href="lungs-me-dard-hona">फेफड़ों में दर्द (Lungs Me Dard)</a></h3>
@@ -123,7 +123,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop" alt="Pair Me Jalan" class="blog-card-img">
+          <img src="/assets/img/blog/burning-feet.png" alt="Pair Me Jalan" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">General Medicine</span>
             <h3><a href="pair-me-jalan">पैरों में जलन (Jalan)</a></h3>
@@ -134,7 +134,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?w=600&h=400&fit=crop" alt="BP High" class="blog-card-img">
+          <img src="/assets/img/blog/heart-health.png" alt="BP High" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Hypertension</span>
             <h3><a href="bp-high-hone-par-kya-kare">BP High होने पर क्या करें?</a></h3>
@@ -149,7 +149,7 @@
     <div class="row g-4 justify-content-center mt-4">
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=600&h=400&fit=crop" alt="HIV Symptoms in Women" class="blog-card-img">
+          <img src="/assets/img/blog/hiv-symptoms.png" alt="HIV Symptoms in Women" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">Infectious Diseases</span>
             <h3><a href="hiv-symptoms-in-women">HIV Symptoms in Women: What You Need to Know</a></h3>
@@ -160,7 +160,7 @@
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=400&fit=crop" alt="Pair Me Sujan" class="blog-card-img">
+          <img src="/assets/img/blog/swollen-feet.png" alt="Pair Me Sujan" class="blog-card-img">
           <div class="blog-body">
             <span class="blog-category">General Medicine</span>
             <h3><a href="pair-me-sujan">पैरों में सूजन (Sujan)</a></h3>
