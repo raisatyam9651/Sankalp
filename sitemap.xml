@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
+  <url><loc>https://sankalphospital.com/</loc><priority>1.00</priority></url>
+  <url><loc>https://sankalphospital.com/about</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/departments</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/gallery</loc><priority>0.70</priority></url>
+  <url><loc>https://sankalphospital.com/video-gallery</loc><priority>0.70</priority></url>
+  <url><loc>https://sankalphospital.com/empanelments</loc><priority>0.70</priority></url>
+  <url><loc>https://sankalphospital.com/faq</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/glossary</loc><priority>0.50</priority></url>
+  <url><loc>https://sankalphospital.com/myths-facts</loc><priority>0.50</priority></url>
+  <url><loc>https://sankalphospital.com/media</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/contact</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/blog/</loc><priority>0.80</priority></url>
+
+  <!-- Service Pages -->
+  <url><loc>https://sankalphospital.com/ophthalmology-hospital-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/gynecology-hospital-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/laparoscopic-surgery-hospital-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/urology-hospital-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/orthopedic-hospital-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/pediatric-hospital-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/dialysis-center-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/emergency-hospital-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/chemotherapy-hospital-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/anesthesia-services-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/maxillofacial-surgery-hospital-in-ambikapur</loc><priority>0.90</priority></url>
+  <url><loc>https://sankalphospital.com/ivf-treatment-in-ambikapur</loc><priority>0.90</priority></url>
+
+  <!-- Doctor Profiles -->
+  <url><loc>https://sankalphospital.com/doctors/dr-lata-goyal</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-tanay-goyal</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-ankita-bansal-goyal</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-usha-armo</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-ankit-gupta</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-nilesh-goyal</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-akshaya-goyal</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-shailesh-gupta</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-ankit-sharma</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-chandra-mukesh-dhawde</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-megha-goyal</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-suneedh-gupta</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-rimsha-lakesh-sahu</loc><priority>0.80</priority></url>
+  <url><loc>https://sankalphospital.com/doctors/dr-sanjay-goyal</loc><priority>0.80</priority></url>
+
+  <!-- Blog Posts -->
+  <url><loc>https://sankalphospital.com/blog/pregnancy-tips</loc><priority>0.70</priority></url>
+  <url><loc>https://sankalphospital.com/blog/cataract-guide</loc><priority>0.70</priority></url>
+  <url><loc>https://sankalphospital.com/blog/heart-health</loc><priority>0.70</priority></url>
+  <url><loc>https://sankalphospital.com/blog/child-vaccination</loc><priority>0.70</priority></url>
+  <url><loc>https://sankalphospital.com/blog/joint-pain</loc><priority>0.70</priority></url>
+  <url><loc>https://sankalphospital.com/blog/stress-management</loc><priority>0.70</priority></url>
+  <url><loc>https://sankalphospital.com/blog/pair-me-sujan</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/pair-me-jhunjhuni-hona</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/gas-se-peeth-dard-kyun-hota-hai</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/lungs-me-dard-hona</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/bp-high-hone-par-kya-kare</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/what-is-the-best-way-to-take-moringa-for-diabetes</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/hiv-symptoms-in-women</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/homeopathic-remedy-for-headache-natural-relief-guide</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/pair-me-khujli-hona</loc><priority>0.60</priority></url>
+  <url><loc>https://sankalphospital.com/blog/pair-me-jalan</loc><priority>0.60</priority></url>
+</urlset>

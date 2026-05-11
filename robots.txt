@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap link
+Sitemap: https://sankalphospital.com/sitemap.xml
+
+# Disallow sensitive directories
+Disallow: /includes/
+Disallow: /assets/
+Disallow: /.claude/
+Disallow: /.git/
+Disallow: /update_doctors.php
