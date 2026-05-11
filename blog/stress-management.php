@@ -6,7 +6,7 @@ $blog_date = "December 15, 2023";
 $blog_readtime = "5 min read";
 $blog_author = "Dr. Ankit Sharma";
 $blog_author_desc = "MBBS, MD (Psychiatry) - Psychiatrist, Sankalp Hospital";
-$blog_image = "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=900&h=450&fit=crop";
+$blog_image = "/assets/img/blog/stress-management.png";
 $blog_content = <<<'HTML'
 <p class="lead">In today's fast-paced world, stress has become a constant companion for many. While some stress can be motivating, chronic stress takes a toll on both your mental and physical health. Learning to manage stress effectively is essential for overall well-being.</p>
 
@@ -117,9 +117,9 @@ $blog_content = <<<'HTML'
 HTML;
 
 $related_posts = [
-    ['title' => '5 Simple Steps to Keep Your Heart Healthy', 'url' => 'heart-health.php', 'date' => 'Jan 5, 2024'],
-    ['title' => 'Understanding Common Health Checkups', 'url' => 'health-checkups.php', 'date' => 'Dec 10, 2023'],
-    ['title' => 'Managing Joint Pain', 'url' => 'joint-pain.php', 'date' => 'Dec 20, 2023']
+    ['title' => '5 Simple Steps to Keep Your Heart Healthy', 'url' => 'heart-health', 'date' => 'Jan 5, 2024', 'image' => '/assets/img/blog/heart-health.png'],
+    ['title' => 'Health Care Packages in Ambikapur', 'url' => 'sankalp-hospital-health-care-packages', 'date' => 'Dec 10, 2023', 'image' => '/assets/img/infrastructure/PATHOLOGY-LAB.jpg'],
+    ['title' => 'Managing Joint Pain', 'url' => 'joint-pain', 'date' => 'Dec 20, 2023', 'image' => '/assets/img/blog/acl-surgery.png']
 ];
 
 include 'blog-post.php';

@@ -210,6 +210,56 @@
       .blog-content h2 { font-size: 1.5rem; }
     }
   </style>
+  
+  <?php
+  $schema_date = isset($blog_date) ? date('Y-m-d', strtotime($blog_date)) : date('Y-m-d');
+  ?>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "<?php echo isset($blog_title) ? htmlspecialchars($blog_title) : ''; ?>",
+    "image": "https://sankalphospital.com<?php echo isset($blog_image) ? $blog_image : ''; ?>",
+    "datePublished": "<?php echo $schema_date; ?>",
+    "author": {
+      "@type": "Person",
+      "name": "<?php echo isset($blog_author) ? htmlspecialchars($blog_author) : 'Sankalp Hospital'; ?>"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sankalp Hospital",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sankalphospital.com/assets/img/logo.png"
+      }
+    }
+  }
+  </script>
+  
+  <?php if (isset($blog_faqs) && is_array($blog_faqs) && count($blog_faqs) > 0): ?>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      <?php
+      $faq_schema = [];
+      foreach ($blog_faqs as $faq) {
+          $faq_schema[] = '{
+            "@type": "Question",
+            "name": "' . htmlspecialchars(trim(strip_tags($faq['question']))) . '",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "' . htmlspecialchars(trim(strip_tags($faq['answer']))) . '"
+            }
+          }';
+      }
+      echo implode(",\n      ", $faq_schema);
+      ?>
+    ]
+  }
+  </script>
+  <?php endif; ?>
 </head>
 <body>
 <?php include '../includes/header.php'; ?>
@@ -238,6 +288,28 @@
 <div class="container">
   <div class="blog-content">
     <?php echo isset($blog_content) ? $blog_content : ''; ?>
+
+    <?php if (isset($blog_faqs) && is_array($blog_faqs) && count($blog_faqs) > 0): ?>
+    <div class="blog-faqs mt-5 pt-4" style="border-top: 2px solid #eee;">
+      <h2 style="color: var(--primary); font-size: 1.8rem; font-weight: 700; margin-bottom: 25px;">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <?php foreach ($blog_faqs as $index => $faq): ?>
+        <div class="accordion-item mb-3" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+          <h4 class="accordion-header" id="heading<?php echo $index; ?>">
+            <button class="accordion-button <?php echo $index !== 0 ? 'collapsed' : ''; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $index; ?>" aria-expanded="<?php echo $index === 0 ? 'true' : 'false'; ?>" aria-controls="collapse<?php echo $index; ?>" style="background: var(--bg-soft); font-weight: 600; padding: 15px 20px; font-size: 1.1rem; color: var(--dark);">
+              <?php echo $faq['question']; ?>
+            </button>
+          </h4>
+          <div id="collapse<?php echo $index; ?>" class="accordion-collapse collapse <?php echo $index === 0 ? 'show' : ''; ?>" aria-labelledby="heading<?php echo $index; ?>" data-bs-parent="#faqAccordion">
+            <div class="accordion-body" style="padding: 20px; font-size: 16px; line-height: 1.8; color: #444;">
+              <?php echo $faq['answer']; ?>
+            </div>
+          </div>
+        </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+    <?php endif; ?>
 
     <!-- Share -->
     <div class="share-box">
