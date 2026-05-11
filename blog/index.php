@@ -1,3 +1,386 @@
+<?php
+$blogs = [
+  [
+    'title' => 'What is the Best Way to Take Moringa for Diabetes?',
+    'url' => 'what-is-the-best-way-to-take-moringa-for-diabetes',
+    'img' => '/assets/img/blog/moringa-diabetes.png',
+    'category' => 'Nutrition & Diabetes',
+    'desc' => 'Discover how Moringa can help manage blood sugar levels naturally. Expert guidance on dosage, timing, and preparation.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'Will Your Knee Feel 100% Normal After ACL Surgery?',
+    'url' => 'will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts',
+    'img' => '/assets/img/blog/acl-surgery.png',
+    'category' => 'Orthopedics',
+    'desc' => 'Expert guide on ACL surgery recovery expectations, timeline, and realistic outcomes after reconstruction.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'Homeopathic Remedy for Headache: Natural Relief',
+    'url' => 'homeopathic-remedy-for-headache-natural-relief-guide',
+    'img' => '/assets/img/blog/headache.png',
+    'category' => 'Homeopathy',
+    'desc' => 'Discover effective homeopathic remedies for different types of headaches. Expert guidance on natural relief.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'पैर में झनझनाहट (Jhunjhuni) होना',
+    'url' => 'pair-me-jhunjhuni-hona',
+    'img' => '/assets/img/blog/numbness-feet.png',
+    'category' => 'Neurology',
+    'desc' => 'पैर में झनझनाहट के कारण, लक्षण और उपचार। जानें इस समस्या के बारे में विस्तार से।',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'गैस से पीठ दर्द क्यों होता है?',
+    'url' => 'gas-se-peeth-dard-kyun-hota-hai',
+    'img' => '/assets/img/blog/gas-back-pain.png',
+    'category' => 'Gastrology',
+    'desc' => 'गैस से पीठ दर्द के कारण, लक्षण और उपाय। जानें कैसे पेट की गैस पीठ पर दर्द कर सकती है।',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'पैर में खुजली होना (Khujli)',
+    'url' => 'pair-me-khujli-hona',
+    'img' => '/assets/img/blog/itchy-feet.png',
+    'category' => 'Skin Care',
+    'desc' => 'पैर में खुजली के कारण, घरेलू उपाय और इलाज। जानें इस समस्या के बारे में।',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'फेफड़ों में दर्द (Lungs Me Dard)',
+    'url' => 'lungs-me-dard-hona',
+    'img' => '/assets/img/blog/lungs-pain.png',
+    'category' => 'Pulmonology',
+    'desc' => 'फेफड़ों में दर्द के कारण, लक्षण और इलाज। जानें कब इस समस्या को गंभीर मानना चाहिए।',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'पैरों में जलन (Jalan)',
+    'url' => 'pair-me-jalan',
+    'img' => '/assets/img/blog/burning-feet.png',
+    'category' => 'General Medicine',
+    'desc' => 'पैरों में जलन के कारण, इलाज और घरेलू उपाय। जानें क्यों होती है और क्या करें।',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'BP High होने पर क्या करें?',
+    'url' => 'bp-high-hone-par-kya-kare',
+    'img' => '/assets/img/blog/heart-health.png',
+    'category' => 'Hypertension',
+    'desc' => 'उच्च रक्तचाप (BP High) होने पर क्या करें, क्या खाएं, क्या न खाएं। लक्षण और उपाय।',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'HIV Symptoms in Women: What You Need to Know',
+    'url' => 'hiv-symptoms-in-women',
+    'img' => '/assets/img/blog/hiv-symptoms.png',
+    'category' => 'Infectious Diseases',
+    'desc' => 'Early signs, stages, and what to do if you think you may be infected. Expert guidance on HIV awareness.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'पैरों में सूजन (Sujan)',
+    'url' => 'pair-me-sujan',
+    'img' => '/assets/img/blog/swollen-feet.png',
+    'category' => 'General Medicine',
+    'desc' => 'पैरों में सूजन के कारण, लक्षण और इलाज। जानें कब डॉक्टर से मिलना चाहिए।',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'Back Exercises for Women: Safe Stretches',
+    'url' => 'back-exercises-for-women-with-back-pain-safe-stretches-for-relief',
+    'img' => '/assets/img/blog/back-exercises.png',
+    'category' => 'Orthopedics',
+    'desc' => 'Relieve back pain with these safe and effective stretches and exercises for women.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Kidney Stone Symptoms in Men',
+    'url' => 'kidney-stone-symptoms-in-men',
+    'icon' => 'fas fa-microscope',
+    'category' => 'Urology',
+    'desc' => 'Common symptoms, causes, and treatment options for kidney stones in men.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Kidney Stone Symptoms in Women',
+    'url' => 'kidney-stone-symptoms-in-women',
+    'icon' => 'fas fa-microscope',
+    'category' => 'Urology',
+    'desc' => 'Common signs and symptoms of kidney stones specifically in women.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Causes, Symptoms, and Treatment of IVF',
+    'url' => 'causes-symptoms-and-treatment-of-ivf',
+    'icon' => 'fas fa-venus-mars',
+    'icon_bg' => 'linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%)',
+    'icon_color' => '#d81b60',
+    'category' => 'Fertility',
+    'desc' => 'A comprehensive guide to understanding IVF treatment and the path to parenthood.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'सर्वाइकल पेन के लक्षण और कारण',
+    'url' => 'cervical-pain-symptoms-in-hindi',
+    'icon' => 'fas fa-stethoscope',
+    'icon_bg' => 'linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)',
+    'icon_color' => '#1976d2',
+    'category' => 'Orthopedics',
+    'desc' => 'गर्दन दर्द (सर्वाइकल पेन) के लक्षण, कारण और बचाव के सही तरीके।',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'महिलाओं में एचआईवी के लक्षण',
+    'url' => 'hiv-symptoms-in-women-in-hindi',
+    'img' => '/assets/img/blog/hiv-symptoms.png',
+    'category' => 'Infectious Diseases',
+    'desc' => 'महिलाओं में एचआईवी के शुरुआती लक्षण, कारण और जागरूकता की जानकारी।',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Knee Replacement: Procedure & Recovery',
+    'url' => 'how-long-does-a-knee-replacement-surgery-take-procedure-duration-recovery-guide',
+    'img' => '/assets/img/blog/acl-surgery.png',
+    'category' => 'Orthopedics',
+    'desc' => 'A complete guide on knee replacement surgery duration and recovery timeline.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'How to Reduce Knee Swelling Fast',
+    'url' => 'how-to-reduce-knee-swelling-fast-proven-remedies',
+    'img' => '/assets/img/blog/swollen-feet.png',
+    'category' => 'Orthopedics',
+    'desc' => 'Proven home remedies and medical treatments to reduce knee swelling effectively.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Hypothyroidism Symptoms in Women',
+    'url' => 'hypothyroidism-symptoms-in-women',
+    'img' => '/assets/img/blog/pregnancy-care.png',
+    'category' => 'Endocrinology',
+    'desc' => 'Common signs, symptoms, and causes of hypothyroidism in women.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Joint Pain in Winter: Causes & Remedies',
+    'url' => 'joint-pain-in-winter-causes-home-remedies-when-to-see-an-orthopedic-doctor',
+    'img' => '/assets/img/blog/back-exercises.png',
+    'category' => 'Orthopedics',
+    'desc' => 'Discover why joint pain increases in winter and how to find relief.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Kidney Failure Symptoms in Women',
+    'url' => 'kidney-failure-symptoms-in-women-early-signs-and-risk-factors',
+    'icon' => 'fas fa-procedures',
+    'icon_bg' => 'linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%)',
+    'icon_color' => '#00796b',
+    'category' => 'Nephrology',
+    'desc' => 'Early signs, symptoms, and risk factors of kidney failure in women.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'गर्भावस्था के पहले सप्ताह के लक्षण',
+    'url' => 'pregnancy-ke-pehle-week-ke-symptoms',
+    'icon' => 'fas fa-baby',
+    'icon_bg' => 'linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%)',
+    'icon_color' => '#d81b60',
+    'category' => 'Pregnancy Care',
+    'desc' => 'प्रेग्नेंसी के पहले सप्ताह के शुरुआती लक्षण और सावधानियों की जानकारी।',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Advanced Laparoscopy at Sankalp Hospital',
+    'url' => 'sankalp-hospital-ambikapur-having-advaned-laproscopy-machine',
+    'img' => '/assets/img/infrastructure/LAPAROSCOPIC-SURGERY.jpg',
+    'category' => 'Technology',
+    'desc' => 'Minimally invasive surgeries with our state-of-the-art laparoscopy machine.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Smart ICU & Trauma Centre',
+    'url' => 'sankalp-hospital-ambikapur-smart-icu-and-trauma-centre-treatment-for-and-fracture-and-recovered',
+    'img' => '/assets/img/infrastructure/ICU.jpg',
+    'category' => 'Critical Care',
+    'desc' => 'Advanced emergency care and rapid recovery at our specialized trauma centre.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Health Care Packages in Ambikapur',
+    'url' => 'sankalp-hospital-health-care-packages',
+    'img' => '/assets/img/infrastructure/PATHOLOGY-LAB.jpg',
+    'category' => 'Wellness',
+    'desc' => 'Affordable and comprehensive health checkup packages for every age.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Hormonal Imbalance in Women',
+    'url' => 'symptoms-of-hormonal-imbalance-in-women',
+    'img' => '/assets/img/blog/pregnancy-care.png',
+    'category' => "Women's Health",
+    'desc' => 'Common symptoms, causes, and effects of hormonal imbalance in women.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Thyroid Symptoms in Women',
+    'url' => 'thyroid-symptoms-in-women',
+    'icon' => 'fas fa-dna',
+    'icon_bg' => 'linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%)',
+    'icon_color' => '#7b1fa2',
+    'category' => 'Endocrinology',
+    'desc' => 'Understanding the signs of thyroid dysfunction and when to see a specialist.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Why Do My Knees Hurt When I Run?',
+    'url' => 'why-do-my-knees-hurt-when-i-run-prevention-tips',
+    'icon' => 'fas fa-running',
+    'icon_bg' => 'linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%)',
+    'icon_color' => '#0288d1',
+    'category' => 'Sports Medicine',
+    'desc' => 'Expert tips on preventing and managing knee pain for runners.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Pain During Intercourse in Women',
+    'url' => 'why-women-feel-pain-during-intercourse-causes-and-when-to-consult-a-doctor',
+    'icon' => 'fas fa-female',
+    'icon_bg' => 'linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%)',
+    'icon_color' => '#f57c00',
+    'category' => "Women's Health",
+    'desc' => 'Understanding the physical and emotional causes of painful intercourse.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Early Warning Signs of Cancer in Women',
+    'url' => 'symptoms-of-cancer-in-women-early-warning-signs-you-should-not-ignore',
+    'icon' => 'fas fa-heartbeat',
+    'icon_bg' => 'linear-gradient(135deg, #fbe9e7 0%, #ffccbc 100%)',
+    'icon_color' => '#d84315',
+    'category' => "Women's Health",
+    'desc' => 'Critical signs of cancer that every woman should know and monitor.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Cataract Surgery: A Comprehensive Guide',
+    'url' => 'cataract-guide',
+    'img' => '/assets/img/blog/cataract-surgery.png',
+    'category' => 'Ophthalmology',
+    'desc' => 'Learn about the cataract surgery procedure, preparation, and recovery for clear vision.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'Importance of Child Vaccination',
+    'url' => 'child-vaccination',
+    'img' => '/assets/img/blog/child-vaccination.png',
+    'category' => 'Pediatrics',
+    'desc' => 'Protect your child from serious diseases with a timely vaccination schedule.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'Keeping Your Heart Healthy',
+    'url' => 'heart-health',
+    'img' => '/assets/img/blog/heart-health.png',
+    'category' => 'Cardiology',
+    'desc' => 'Essential tips and lifestyle changes to maintain a healthy heart and prevent disease.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'Understanding Joint Pain',
+    'url' => 'joint-pain',
+    'img' => '/assets/img/blog/acl-surgery.png',
+    'category' => 'Orthopedics',
+    'desc' => 'Causes, symptoms, and effective treatments for various types of joint pain.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'Healthy Pregnancy Tips',
+    'url' => 'pregnancy-tips',
+    'img' => '/assets/img/blog/pregnancy-care.png',
+    'category' => 'Maternity',
+    'desc' => 'Expert advice on nutrition, exercise, and care for a healthy pregnancy journey.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'Effective Stress Management',
+    'url' => 'stress-management',
+    'img' => '/assets/img/blog/heart-health.png',
+    'category' => 'Mental Health',
+    'desc' => 'Practical techniques and tips to manage stress and improve your mental well-being.',
+    'date' => 'May 7, 2026'
+  ],
+  [
+    'title' => 'Left Shoulder Pain in Women: Causes & Care',
+    'url' => 'left-shoulder-pain-in-women-possible-causes-and-treatment-options',
+    'img' => '/assets/img/blog/back-exercises.png',
+    'category' => 'Orthopedics',
+    'desc' => 'Explore the potential causes and relief options for left shoulder pain in women.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Lower Abdominal Pain in Women',
+    'url' => 'lower-abdominal-pain-in-women-common-causes-and-when-to-seek-medical-help',
+    'img' => '/assets/img/blog/pregnancy-care.png',
+    'category' => "Women's Health",
+    'desc' => 'Understanding the common causes of lower abdominal pain and when to consult a doctor.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'PTSD Symptoms in Women',
+    'url' => 'ptsd-symptoms-in-women-emotional-mental-and-physical-warning-signs',
+    'img' => '/assets/img/blog/heart-health.png',
+    'category' => 'Mental Health',
+    'desc' => 'Emotional, mental, and physical warning signs of PTSD in women.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Symptoms of AIDS in Women',
+    'url' => 'symptoms-of-aids-in-women-early-signs-and-health-risks-explained',
+    'img' => '/assets/img/blog/hiv-symptoms.png',
+    'category' => 'Infectious Diseases',
+    'desc' => 'Comprehensive guide to AIDS symptoms and health risks specifically for women.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Thyroid Problems in Women',
+    'url' => 'thyroid-problems-in-women',
+    'img' => '/assets/img/blog/pregnancy-care.png',
+    'category' => 'Endocrinology',
+    'desc' => 'Detailed overview of various thyroid issues and their impact on women.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Thyroid Signs & Causes in Women',
+    'url' => 'thyroid-symptoms-in-women-signs-causes-and-when-to-see-a-doctor',
+    'img' => '/assets/img/blog/pregnancy-care.png',
+    'category' => 'Endocrinology',
+    'desc' => 'Understanding the signs, underlying causes, and when to consult an expert.',
+    'date' => 'May 11, 2026'
+  ],
+  [
+    'title' => 'Knee Pain When Straightening',
+    'url' => 'why-does-my-knee-hurt-when-i-straighten-it-causes-relief',
+    'img' => '/assets/img/blog/acl-surgery.png',
+    'category' => 'Orthopedics',
+    'desc' => 'Causes and relief options for pain felt when fully extending your leg.',
+    'date' => 'May 11, 2026'
+  ]
+];
+
+// Pagination Logic
+$items_per_page = 9;
+$total_items = count($blogs);
+$total_pages = ceil($total_items / $items_per_page);
+$current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+if ($current_page < 1) $current_page = 1;
+if ($current_page > $total_pages) $current_page = $total_pages;
+
+$offset = ($current_page - 1) * $items_per_page;
+$paged_blogs = array_slice($blogs, $offset, $items_per_page);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +406,13 @@
     .page-hero p.breadcrumbs a { color: #fff; }
     .page-hero h1 { color: #fff; font-size: 2.5rem; font-weight: 700; margin-bottom: 10px; }
     .page-hero p { color: rgba(255,255,255,0.9); font-size: 16px; margin: 0; }
+    
+    /* Pagination Styles */
+    .pagination { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 50px; }
+    .pagination a, .pagination span { padding: 8px 16px; border-radius: 8px; border: 1px solid #ddd; color: var(--dark); text-decoration: none; transition: all 0.2s; }
+    .pagination a:hover { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .pagination .active { background: var(--primary); border-color: var(--primary); color: #fff; font-weight: 700; }
+    .pagination .disabled { color: #ccc; pointer-events: none; }
   </style>
 </head>
 <body>
@@ -37,351 +427,57 @@
   </div>
 </section>
 
-<!-- BLOG GRID 3x3 -->
+<!-- BLOG GRID -->
 <section class="py-5">
   <div class="container">
     <div class="row g-4 justify-content-center">
-      <!-- Row 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/moringa-diabetes.png" alt="Moringa for Diabetes" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Nutrition & Diabetes</span>
-            <h3><a href="what-is-the-best-way-to-take-moringa-for-diabetes">What is the Best Way to Take Moringa for Diabetes?</a></h3>
-            <p>Discover how Moringa can help manage blood sugar levels naturally. Expert guidance on dosage, timing, and preparation.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
+      <?php foreach ($paged_blogs as $blog): ?>
+        <div class="col-md-6 col-lg-4">
+          <div class="blog-card">
+            <?php if (isset($blog['img'])): ?>
+              <img src="<?php echo $blog['img']; ?>" alt="<?php echo $blog['title']; ?>" class="blog-card-img">
+            <?php else: ?>
+              <div class="blog-icon-bg" style="<?php echo isset($blog['icon_bg']) ? 'background:'.$blog['icon_bg'] : ''; ?>">
+                <i class="<?php echo $blog['icon']; ?>" style="<?php echo isset($blog['icon_color']) ? 'color:'.$blog['icon_color'] : ''; ?>"></i>
+              </div>
+            <?php endif; ?>
+            <div class="blog-body">
+              <span class="blog-category"><?php echo $blog['category']; ?></span>
+              <h3><a href="<?php echo $blog['url']; ?>"><?php echo $blog['title']; ?></a></h3>
+              <p><?php echo $blog['desc']; ?></p>
+              <div class="blog-meta"><i class="far fa-calendar"></i> <?php echo $blog['date']; ?></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/acl-surgery.png" alt="ACL Surgery Recovery" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Orthopedics</span>
-            <h3><a href="will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts">Will Your Knee Feel 100% Normal After ACL Surgery?</a></h3>
-            <p>Expert guide on ACL surgery recovery expectations, timeline, and realistic outcomes after reconstruction.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/headache.png" alt="Homeopathic Remedy for Headache" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Homeopathy</span>
-            <h3><a href="homeopathic-remedy-for-headache-natural-relief-guide">Homeopathic Remedy for Headache: Natural Relief</a></h3>
-            <p>Discover effective homeopathic remedies for different types of headaches. Expert guidance on natural relief.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
-      <!-- Row 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/numbness-feet.png" alt="Pair Me Jhunjhuni" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Neurology</span>
-            <h3><a href="pair-me-jhunjhuni-hona">पैर में झनझनाहट (Jhunjhuni) होना</a></h3>
-            <p>पैर में झनझनाहट के कारण, लक्षण और उपचार। जानें इस समस्या के बारे में विस्तार से।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/gas-back-pain.png" alt="Gas Se Peeth Dard" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Gastrology</span>
-            <h3><a href="gas-se-peeth-dard-kyun-hota-hai">गैस से पीठ दर्द क्यों होता है?</a></h3>
-            <p>गैस से पीठ दर्द के कारण, लक्षण और उपाय। जानें कैसे पेट की गैस पीठ पर दर्द कर सकती है।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/itchy-feet.png" alt="Pair Me Khujli" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Skin Care</span>
-            <h3><a href="pair-me-khujli-hona">पैर में खुजली होना (Khujli)</a></h3>
-            <p>पैर में खुजली के कारण, घरेलू उपाय और इलाज। जानें इस समस्या के बारे में।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
-      <!-- Row 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/lungs-pain.png" alt="Lungs Me Dard" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Pulmonology</span>
-            <h3><a href="lungs-me-dard-hona">फेफड़ों में दर्द (Lungs Me Dard)</a></h3>
-            <p>फेफड़ों में दर्द के कारण, लक्षण और इलाज। जानें कब इस समस्या को गंभीर मानना चाहिए।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/burning-feet.png" alt="Pair Me Jalan" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">General Medicine</span>
-            <h3><a href="pair-me-jalan">पैरों में जलन (Jalan)</a></h3>
-            <p>पैरों में जलन के कारण, इलाज और घरेलू उपाय। जानें क्यों होती है और क्या करें।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/heart-health.png" alt="BP High" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Hypertension</span>
-            <h3><a href="bp-high-hone-par-kya-kare">BP High होने पर क्या करें?</a></h3>
-            <p>उच्च रक्तचाप (BP High) होने पर क्या करें, क्या खाएं, क्या न खाएं। लक्षण और उपाय।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
 
-    <!-- Additional Row -->
-    <div class="row g-4 justify-content-center mt-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/hiv-symptoms.png" alt="HIV Symptoms in Women" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Infectious Diseases</span>
-            <h3><a href="hiv-symptoms-in-women">HIV Symptoms in Women: What You Need to Know</a></h3>
-            <p>Early signs, stages, and what to do if you think you may be infected. Expert guidance on HIV awareness.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/swollen-feet.png" alt="Pair Me Sujan" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">General Medicine</span>
-            <h3><a href="pair-me-sujan">पैरों में सूजन (Sujan)</a></h3>
-            <p>पैरों में सूजन के कारण, लक्षण और इलाज। जानें कब डॉक्टर से मिलना चाहिए।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026</div>
-          </div>
-        </div>
-      </div>
-      <!-- NEWLY ADDED BLOGS -->
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/back-exercises.png" alt="Back Exercises for Women" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Orthopedics</span>
-            <h3><a href="back-exercises-for-women-with-back-pain-safe-stretches-for-relief">Back Exercises for Women: Safe Stretches</a></h3>
-            <p>Relieve back pain with these safe and effective stretches and exercises for women.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <div class="blog-icon-bg"><i class="fas fa-microscope"></i></div>
-          <div class="blog-body">
-            <span class="blog-category">Urology</span>
-            <h3><a href="kidney-stone-symptoms-in-men">Kidney Stone Symptoms in Men</a></h3>
-            <p>Common symptoms, causes, and treatment options for kidney stones in men.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%)"><i class="fas fa-venus-mars" style="color:#d81b60"></i></div>
-          <div class="blog-body">
-            <span class="blog-category">Fertility</span>
-            <h3><a href="causes-symptoms-and-treatment-of-ivf">Causes, Symptoms, and Treatment of IVF</a></h3>
-            <p>A comprehensive guide to understanding IVF treatment and the path to parenthood.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)"><i class="fas fa-stethoscope" style="color:#1976d2"></i></div>
-          <div class="blog-body">
-            <span class="blog-category">Orthopedics</span>
-            <h3><a href="cervical-pain-symptoms-in-hindi">सर्वाइकल पेन के लक्षण और कारण</a></h3>
-            <p>गर्दन दर्द (सर्वाइकल पेन) के लक्षण, कारण और बचाव के सही तरीके।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/hiv-symptoms.png" alt="HIV Symptoms Hindi" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Infectious Diseases</span>
-            <h3><a href="hiv-symptoms-in-women-in-hindi">महिलाओं में एचआईवी के लक्षण</a></h3>
-            <p>महिलाओं में एचआईवी के शुरुआती लक्षण, कारण और जागरूकता की जानकारी।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/acl-surgery.png" alt="Knee Replacement" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Orthopedics</span>
-            <h3><a href="how-long-does-a-knee-replacement-surgery-take-procedure-duration-recovery-guide">Knee Replacement: Procedure & Recovery</a></h3>
-            <p>A complete guide on knee replacement surgery duration and recovery timeline.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/swollen-feet.png" alt="Knee Swelling" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Orthopedics</span>
-            <h3><a href="how-to-reduce-knee-swelling-fast-proven-remedies">How to Reduce Knee Swelling Fast</a></h3>
-            <p>Proven home remedies and medical treatments to reduce knee swelling effectively.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/pregnancy-care.png" alt="Hypothyroidism" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Endocrinology</span>
-            <h3><a href="hypothyroidism-symptoms-in-women">Hypothyroidism Symptoms in Women</a></h3>
-            <p>Common signs, symptoms, and causes of hypothyroidism in women.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/back-exercises.png" alt="Winter Joint Pain" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Orthopedics</span>
-            <h3><a href="joint-pain-in-winter-causes-home-remedies-when-to-see-an-orthopedic-doctor">Joint Pain in Winter: Causes & Remedies</a></h3>
-            <p>Discover why joint pain increases in winter and how to find relief.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%)"><i class="fas fa-procedures" style="color:#00796b"></i></div>
-          <div class="blog-body">
-            <span class="blog-category">Nephrology</span>
-            <h3><a href="kidney-failure-symptoms-in-women-early-signs-and-risk-factors">Kidney Failure Symptoms in Women</a></h3>
-            <p>Early signs, symptoms, and risk factors of kidney failure in women.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%)"><i class="fas fa-baby" style="color:#d81b60"></i></div>
-          <div class="blog-body">
-            <span class="blog-category">Pregnancy Care</span>
-            <h3><a href="pregnancy-ke-pehle-week-ke-symptoms">गर्भावस्था के पहले सप्ताह के लक्षण</a></h3>
-            <p>प्रेग्नेंसी के पहले सप्ताह के शुरुआती लक्षण और सावधानियों की जानकारी।</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/infrastructure/LAPAROSCOPIC-SURGERY.jpg" alt="Laparoscopy" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Technology</span>
-            <h3><a href="sankalp-hospital-ambikapur-having-advaned-laproscopy-machine">Advanced Laparoscopy at Sankalp Hospital</a></h3>
-            <p>Minimally invasive surgeries with our state-of-the-art laparoscopy machine.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/infrastructure/ICU.jpg" alt="Smart ICU" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Critical Care</span>
-            <h3><a href="sankalp-hospital-ambikapur-smart-icu-and-trauma-centre-treatment-for-and-fracture-and-recovered">Smart ICU & Trauma Centre</a></h3>
-            <p>Advanced emergency care and rapid recovery at our specialized trauma centre.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/infrastructure/PATHOLOGY-LAB.jpg" alt="Health Packages" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Wellness</span>
-            <h3><a href="sankalp-hospital-health-care-packages">Health Care Packages in Ambikapur</a></h3>
-            <p>Affordable and comprehensive health checkup packages for every age.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <img src="/assets/img/blog/pregnancy-care.png" alt="Hormonal Imbalance" class="blog-card-img">
-          <div class="blog-body">
-            <span class="blog-category">Women's Health</span>
-            <h3><a href="symptoms-of-hormonal-imbalance-in-women">Hormonal Imbalance in Women</a></h3>
-            <p>Common symptoms, causes, and effects of hormonal imbalance in women.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%)"><i class="fas fa-dna" style="color:#7b1fa2"></i></div>
-          <div class="blog-body">
-            <span class="blog-category">Endocrinology</span>
-            <h3><a href="thyroid-symptoms-in-women">Thyroid Symptoms in Women</a></h3>
-            <p>Understanding the signs of thyroid dysfunction and when to see a specialist.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%)"><i class="fas fa-running" style="color:#0288d1"></i></div>
-          <div class="blog-body">
-            <span class="blog-category">Sports Medicine</span>
-            <h3><a href="why-do-my-knees-hurt-when-i-run-prevention-tips">Why Do My Knees Hurt When I Run?</a></h3>
-            <p>Expert tips on preventing and managing knee pain for runners.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%)"><i class="fas fa-female" style="color:#f57c00"></i></div>
-          <div class="blog-body">
-            <span class="blog-category">Women's Health</span>
-            <h3><a href="why-women-feel-pain-during-intercourse-causes-and-when-to-consult-a-doctor">Pain During Intercourse in Women</a></h3>
-            <p>Understanding the physical and emotional causes of painful intercourse.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="blog-card">
-          <div class="blog-icon-bg" style="background:linear-gradient(135deg, #fbe9e7 0%, #ffccbc 100%)"><i class="fas fa-heartbeat" style="color:#d84315"></i></div>
-          <div class="blog-body">
-            <span class="blog-category">Women's Health</span>
-            <h3><a href="symptoms-of-cancer-in-women-early-warning-signs-you-should-not-ignore">Early Warning Signs of Cancer in Women</a></h3>
-            <p>Critical signs of cancer that every woman should know and monitor.</p>
-            <div class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Pagination -->
+    <?php if ($total_pages > 1): ?>
+    <div class="pagination">
+      <?php if ($current_page > 1): ?>
+        <a href="?page=<?php echo $current_page - 1; ?>"><i class="fas fa-chevron-left me-1"></i> Prev</a>
+      <?php else: ?>
+        <span class="disabled"><i class="fas fa-chevron-left me-1"></i> Prev</span>
+      <?php endif; ?>
 
-    <!-- View All Button -->
+      <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+        <?php if ($i == $current_page): ?>
+          <span class="active"><?php echo $i; ?></span>
+        <?php else: ?>
+          <a href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+        <?php endif; ?>
+      <?php endfor; ?>
+
+      <?php if ($current_page < $total_pages): ?>
+        <a href="?page=<?php echo $current_page + 1; ?>">Next <i class="fas fa-chevron-right ms-1"></i></a>
+      <?php else: ?>
+        <span class="disabled">Next <i class="fas fa-chevron-right ms-1"></i></span>
+      <?php endif; ?>
+    </div>
+    <?php endif; ?>
+
+    <!-- View All Button (Reset/Home) -->
     <div class="text-center mt-5">
       <a href="/index" class="btn btn-outline-primary"><i class="fas fa-home me-2"></i>Back to Home</a>
     </div>
@@ -389,3 +485,5 @@
 </section>
 
 <?php include '../includes/footer.php'; ?>
+</body>
+</html>
