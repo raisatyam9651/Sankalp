@@ -386,6 +386,9 @@ $paged_blogs = array_slice($blogs, $offset, $items_per_page);
 <head>
   <title>Health Blog | Sankalp Hospital - Expert Health Tips & Articles</title>
   <meta name="description" content="Read expert health tips, medical articles, and healthcare advice from Sankalp Hospital doctors.">
+  <?php if(isset($_GET['page']) && (int)$_GET['page'] > 1): ?>
+  <meta name="robots" content="noindex, follow">
+  <?php endif; ?>
   <?php include '../includes/header-code.php'; ?>
   <style>
     .blog-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s; height: 100%; display: flex; flex-direction: column; }
