@@ -166,9 +166,9 @@ $blog_faqs = [
 ];
 
 $related_posts = [
-    ['title' => 'Heart Attack vs Cardiac Arrest: Key Differences', 'url' => 'heart-attack-vs-cardiac-arrest.php', 'date' => 'May 10, 2026', 'image' => '/assets/img/blog/heart-health.png'],
-    ['title' => '5 Simple Steps to Keep Your Heart Healthy', 'url' => 'heart-health.php', 'date' => 'January 5, 2024', 'image' => '/assets/img/blog/heart-health.png'],
-    ['title' => 'BP High होने पर क्या करें?', 'url' => 'bp-high-hone-par-kya-kare.php', 'date' => 'May 07, 2026', 'image' => '/assets/img/blog/heart-health.png']
+    ['title' => 'Heart Attack vs Cardiac Arrest: Key Differences', 'url' => 'heart-attack-vs-cardiac-arrest.php', 'date' => 'May 10, 2026', 'image' => 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop'],
+    ['title' => '5 Simple Steps to Keep Your Heart Healthy', 'url' => 'heart-health.php', 'date' => 'January 5, 2024', 'image' => 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop'],
+    ['title' => 'BP High होने पर क्या करें?', 'url' => 'bp-high-hone-par-kya-kare.php', 'date' => 'May 07, 2026', 'image' => 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop']
 ];
 
 include 'blog-post.php';

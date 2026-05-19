@@ -34,7 +34,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="/index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="/blog/" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Orthopedics</p>
-    <img src="/assets/img/blog/acl-surgery.png" alt="ACL Surgery Recovery" class="blog-img-large">
+    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=400&fit=crop" alt="ACL Surgery Recovery and Rehabilitation" class="blog-img-large">
     <h1>Will Your Knee Feel 100% Normal After ACL Surgery? Recovery Facts</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 12 min read &nbsp;&nbsp; <i class="fas fa-bone"></i> Sports Medicine</p>
   </div>
@@ -56,7 +56,7 @@
 
     <p>ACL reconstruction surgery replaces the torn ligament with a graft. This graft can come from several sources:</p>
 
-    <table class="table">
+    <div class="table-wrapper"><table class="table">
       <thead>
         <tr>
           <th>Graft Type</th>
@@ -91,7 +91,7 @@
           <td>Higher complication rates, not first choice</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2>Recovery Timeline: What to Expect Week by Week</h2>
     <p>ACL recovery is a marathon, not a sprint. Understanding the timeline helps set realistic expectations and keeps you motivated throughout the process.</p>
@@ -169,7 +169,7 @@
     </ul>
 
     <h3>Factors That Influence Recovery</h3>
-    <table class="table">
+    <div class="table-wrapper"><table class="table">
       <thead>
         <tr>
           <th>Factor</th>
@@ -214,7 +214,7 @@
           <td>Discuss options with surgeon</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h3>What Patients Typically Experience After Full Recovery</h3>
     <p><strong>Good news:</strong> Many patients report their knee feels "good" or "very good" after full rehabilitation. You can expect to return to most activities without significant limitations.</p>
@@ -266,7 +266,7 @@
     <h2>Understanding Graft Healing Timeline</h2>
     <p>Your new ACL graft doesn't become strong immediately. It goes through a biological remodeling process:</p>
 
-    <table class="table">
+    <div class="table-wrapper"><table class="table">
       <thead>
         <tr>
           <th>Phase</th>
@@ -307,7 +307,7 @@
           <td>Full return to activities, continued strengthening</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2>The Psychological Aspect of Recovery</h2>
     <p>Many patients are surprised to learn that psychological factors play a huge role in ACL recovery. Fear of re-injury, lack of confidence, and anxiety about return to sport can all affect outcomes.</p>

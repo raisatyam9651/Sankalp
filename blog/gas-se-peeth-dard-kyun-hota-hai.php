@@ -53,7 +53,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Gastrology</p>
-    <div class="blog-hero-img"><img src="/assets/img/blog/gas-back-pain.png" alt="Gas and Back Pain"></div>
+    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=400&fit=crop" alt="गैस से पीठ दर्द - पेट की समस्या"></div>
     <h1>गैस से पीठ दर्द क्यों होता है?</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 8 min read</p>
   </div>
@@ -105,7 +105,7 @@
       <li><strong>मलाशय में दर्द:</strong> मल त्यागने में कठिनाई</li>
     </ul>
 
-    <table>
+    <div class="table-wrapper"><table>
       <thead>
         <tr>
           <th>लक्षण</th>
@@ -135,7 +135,7 @@
           <td>आमतौर पर नहीं होती</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2>तुरंत राहत के घरेलू उपाय</h2>
     <div class="tip-box">
@@ -173,7 +173,7 @@
     </div>
 
     <h3>क्या खाएं और क्या न खाएं</h3>
-    <table>
+    <div class="table-wrapper"><table>
       <thead>
         <tr>
           <th>खाएं</th>
@@ -206,7 +206,7 @@
           <td>तला हुआ खाना</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2>रोकथाम के उपाय</h2>
     <p>गैस से पीठ दर्द को रोकने के लिए निम्नलिखित उपाय अपनाएं:</p>

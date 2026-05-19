@@ -6,7 +6,7 @@ $blog_date = "May 11, 2026";
 $blog_readtime = "12 min read";
 $blog_author = "Dr. Tanay Goyal";
 $blog_author_desc = "MBBS, MS (Orthopedics) - Orthopedic Surgeon, Sankalp Hospital";
-$blog_image = "/assets/img/blog/acl-surgery.png";
+$blog_image = "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop";
 $blog_content = <<<'HTML'
 <p class="lead">Experiencing a sharp catch, a dull ache, or a feeling of extreme tightness when trying to fully straighten your leg is a highly common orthopedic complaint. Your knee is one of the largest and most complex hinge joints in your body, designed to bear massive amounts of weight while moving fluidly through extension (straightening) and flexion (bending). When pain interrupts this natural mechanism, it is usually a sign that an underlying structure—whether it be cartilage, a ligament, a tendon, or the joint capsule itself—has been injured, inflamed, or degraded over time.</p>
 
@@ -106,9 +106,9 @@ $blog_faqs = [
 ];
 
 $related_posts = [
-  ['title' => 'Will Your Knee Feel 100% Normal After ACL Surgery?', 'url' => 'will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts', 'date' => 'May 7, 2026', 'image' => '/assets/img/blog/acl-surgery.png'],
-  ['title' => 'Why Do My Knees Hurt When I Run?', 'url' => 'why-do-my-knees-hurt-when-i-run-prevention-tips', 'date' => 'May 11, 2026', 'image' => '/assets/img/blog/acl-surgery.png'],
-  ['title' => 'How to Reduce Knee Swelling Fast', 'url' => 'how-to-reduce-knee-swelling-fast-proven-remedies', 'date' => 'May 11, 2026', 'image' => '/assets/img/blog/swollen-feet.png']
+  ['title' => 'Will Your Knee Feel 100% Normal After ACL Surgery?', 'url' => 'will-your-knee-feel-100-percent-normal-after-acl-surgery-recovery-facts', 'date' => 'May 7, 2026', 'image' => 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop'],
+  ['title' => 'Why Do My Knees Hurt When I Run?', 'url' => 'why-do-my-knees-hurt-when-i-run-prevention-tips', 'date' => 'May 11, 2026', 'image' => 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop'],
+  ['title' => 'How to Reduce Knee Swelling Fast', 'url' => 'how-to-reduce-knee-swelling-fast-proven-remedies', 'date' => 'May 11, 2026', 'image' => 'https://images.unsplash.com/photo-1434596922112-19c563067271?w=400&h=300&fit=crop']
 ];
 
 include 'blog-post.php';

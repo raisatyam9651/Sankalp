@@ -55,7 +55,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Homeopathy</p>
-    <div class="blog-hero-img"><img src="/assets/img/blog/headache.png" alt="Natural Headache Relief"></div>
+    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1514733670139-4d87a1941d55?w=400&h=400&fit=crop" alt="Natural Headache Relief - Homeopathic Medicine"></div>
     <h1>Homeopathic Remedy for Headache: Natural Relief Guide</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 7, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 9 min read</p>
   </div>
@@ -130,7 +130,7 @@
     <h2>Common Homeopathic Remedies for Headaches</h2>
     <p>Homeopathy offers a wide range of remedies for headaches. The following are some of the most commonly used remedies, along with their indications:</p>
 
-    <table>
+    <div class="table-wrapper"><table>
       <thead>
         <tr>
           <th>Remedy</th>
@@ -170,7 +170,7 @@
           <td>Changing location, pressure, weepiness</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h3>1. Belladonna (Deadly Nightshade)</h3>
     <p><strong>Best for:</strong> Sudden, intense throbbing headaches with fullness and pulsation.</p>
@@ -288,7 +288,7 @@
 
     <h2>Headache Trigger Checklist</h2>
     <p>Identifying and avoiding personal triggers is key to managing headaches. Keep a headache diary to track potential triggers:</p>
-    <table>
+    <div class="table-wrapper"><table>
       <thead>
         <tr>
           <th>Category</th>
@@ -317,7 +317,7 @@
           <td>Sinus infections, high blood pressure, neck problems</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
 
     <h2>When to Seek Medical Attention</h2>
     <div class="info-box">

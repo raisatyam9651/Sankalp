@@ -32,7 +32,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Sports Medicine</p>
-    <div class="blog-hero-img"><img src="/assets/img/blog/acl-surgery.png" alt="Running Knee Pain"></div>
+    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1486218119243-13883505764c?w=400&h=400&fit=crop" alt="Running Knee Pain Prevention"></div>
     <h1>Why Do My Knees Hurt When I Run?</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 8 min read</p>
   </div>

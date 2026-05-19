@@ -32,7 +32,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Mental Health</p>
-    <div class="blog-hero-img"><img src="/assets/img/blog/heart-health.png" alt="PTSD Awareness"></div>
+    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=400&fit=crop" alt="PTSD Awareness in Women"></div>
     <h1>PTSD Symptoms in Women: Emotional and Physical Signs</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 10 min read</p>
   </div>

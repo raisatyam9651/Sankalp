@@ -129,8 +129,8 @@ $blog_faqs = [
 ];
 
 $related_posts = [
-    ['title' => 'Heart Attack vs Cardiac Arrest: अंतर जानें', 'url' => 'heart-attack-vs-cardiac-arrest.php', 'date' => 'May 19, 2026', 'image' => '/assets/img/blog/heart-attack-vs-cardiac-arrest.png'],
-    ['title' => 'पैरों में झनझनाहट के कारण', 'url' => 'pair-me-jhunjhuni-hona.php', 'date' => 'May 07, 2026', 'image' => '/assets/img/blog/numbness-feet.png'],
+    ['title' => 'Heart Attack vs Cardiac Arrest: अंतर जानें', 'url' => 'heart-attack-vs-cardiac-arrest.php', 'date' => 'May 19, 2026', 'image' => 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop'],
+    ['title' => 'पैरों में झनझनाहट के कारण', 'url' => 'pair-me-jhunjhuni-hona.php', 'date' => 'May 07, 2026', 'image' => 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop'],
     ['title' => 'Health Care Packages in Ambikapur', 'url' => 'sankalp-hospital-health-care-packages', 'date' => 'May 11, 2026', 'image' => '/assets/img/infrastructure/PATHOLOGY-LAB.jpg']
 ];
 

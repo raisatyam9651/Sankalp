@@ -32,7 +32,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Orthopedics</p>
-    <div class="blog-hero-img"><img src="/assets/img/blog/swollen-feet.png" alt="Knee Swelling Relief"></div>
+    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1434596922112-19c563067271?w=400&h=400&fit=crop" alt="Knee Swelling Relief - Ice Treatment"></div>
     <h1>How to Reduce Knee Swelling Fast: Proven Remedies</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 8 min read</p>
   </div>

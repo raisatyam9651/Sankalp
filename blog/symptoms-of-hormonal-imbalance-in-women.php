@@ -32,7 +32,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Women's Health</p>
-    <div class="blog-hero-img"><img src="/assets/img/blog/pregnancy-care.png" alt="Hormonal Imbalance"></div>
+    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=400&fit=crop" alt="Hormonal Imbalance in Women"></div>
     <h1>Symptoms of Hormonal Imbalance in Women</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 8 min read</p>
   </div>

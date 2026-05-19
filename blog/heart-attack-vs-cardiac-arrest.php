@@ -6,7 +6,7 @@ $blog_date = "May 19, 2026";
 $blog_readtime = "12 min read";
 $blog_author = "Dr. Chandra Mukesh Dhawde";
 $blog_author_desc = "Consultant Neurosurgeon, Sankalp Hospital";
-$blog_image = "https://images.unsplash.com/photo-1628348068343-c6a848a2c3b1?w=400&h=400&fit=crop";
+$blog_image = "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=400&fit=crop";
 $blog_content = <<<'HTML'
 <p class="lead">The terms "heart attack" and "cardiac arrest" are often used interchangeably in everyday conversation, but they represent two very different medical emergencies with distinct causes, symptoms, and treatments. Understanding these differences could mean the difference between life and death for you or a loved one.</p>
 

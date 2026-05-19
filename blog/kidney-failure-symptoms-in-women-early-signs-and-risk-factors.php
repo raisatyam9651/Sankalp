@@ -32,7 +32,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Nephrology</p>
-    <div class="blog-hero-img"><img src="/assets/img/blog/kidney-failure-women.png" alt="Kidney Failure in Women"></div>
+    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=400&fit=crop" alt="Kidney Health in Women"></div>
     <h1>Kidney Failure in Women: Early Signs and Risk Factors</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 8 min read</p>
   </div>

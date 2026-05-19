@@ -32,7 +32,7 @@
 <section class="blog-hero text-center">
   <div class="container">
     <p class="blog-meta"><a href="../index" class="text-white">Home</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> <a href="index" class="text-white">Health Blog</a> <i class="fas fa-chevron-right mx-2" style="font-size:10px"></i> Women's Health</p>
-    <div class="blog-hero-img"><img src="/assets/img/blog/pregnancy-care.png" alt="Lower Abdominal Pain"></div>
+    <div class="blog-hero-img"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=400&fit=crop" alt="Lower Abdominal Pain in Women"></div>
     <h1>Lower Abdominal Pain in Women: Causes and When to Worry</h1>
     <p class="blog-meta"><i class="far fa-calendar"></i> May 11, 2026 &nbsp;&nbsp; <i class="far fa-clock"></i> 9 min read</p>
   </div>
