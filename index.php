@@ -116,6 +116,12 @@ if ($legacySlug !== '' && preg_match('/^[A-Za-z0-9-]+$/', $legacySlug)
     header('Location: /blog/' . $legacySlug, true, 301);
     exit;
 }
+// If the route is neither empty nor 'index.php', and wasn't matched above,
+// it's an invalid path. Redirect to 404.php.
+if ($route !== '' && $route !== 'index.php') {
+    header('Location: /404.php', true, 301);
+    exit;
+}
 
 // Dynamic page configuration
 $pageTitle = "Sankalp Hospital | Best Multi-Specialty Hospital In Ambikapur";
